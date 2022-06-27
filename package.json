@@ -1,0 +1,196 @@
+{
+  "name": "vue-daisy",
+  "displayName": "vue-daisy",
+  "description": "vue enhance，extension for Element-UI,IVIEW",
+  "version": "1.0.0",
+  "publisher": "ryansecreat",
+  "repository": {
+    "url": "https://github.com/jiaolong1021/vue-daisy"
+  },
+  "engines": {
+    "vscode": "^1.25.0"
+  },
+  "categories": [
+    "Snippets",
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:html",
+    "onLanguage:vue",
+    "onCommand:vue-daisy.functionCompletion",
+    "onCommand:vue-daisy.deleteComplete",
+    "onCommand:vue-daisy.blockSelect",
+    "onCommand:vue-daisy.pxRem",
+    "onCommand:vue-daisy.pxToRem",
+    "onCommand:vue-daisy.remToPx"
+  ],
+  "main": "./out/src/extension",
+  "icon": "logo.png",
+  "contributes": {
+    "commands": [
+      {
+        "command": "vue-daisy.pxToRem",
+        "title": "vue-daisy.pxToRem"
+      },
+      {
+        "command": "vue-daisy.remToPx",
+        "title": "vue-daisy.remToPx"
+      },
+      {
+        "command": "vue-daisy.deleteComplete",
+        "title": "vue-daisy.deleteComplete"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "vue-daisy.functionCompletion",
+        "key": "shift+alt+enter",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "alt+z",
+        "command": "vue-daisy.pxRem",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "alt+x",
+        "command": "vue-daisy.blockSelect",
+        "when": "editorTextFocus"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/element.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/iview2.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/vue.json"
+      },
+      {
+        "language": "vue-html",
+        "path": "./snippets/iview-html.json"
+      },
+      {
+        "language": "vue-html",
+        "path": "./snippets/element-html.json"
+      },
+      {
+        "language": "vue-html",
+        "path": "./snippets/vue-html.json"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "Vue Helper",
+      "properties": {
+        "vue-daisy.alias": {
+          "type": "object",
+          "default": {
+            "@": "."
+          },
+          "description": "webpack alias"
+        },
+        "vue-daisy.rem-px": {
+          "type": "number",
+          "default": 16,
+          "description": "1rem equal px value"
+        },
+        "vue-daisy.rem-decimal-length": {
+          "type": "integer",
+          "default": 4,
+          "description": "decimal length"
+        },
+        "vue-daisy.tips": {
+          "type": "string",
+          "default": "tips.json"
+        },
+        "vue-daisy.componentIgnore": {
+          "type": "array",
+          "description": "assign which dir ignore search componennt",
+          "items": {
+            "type": "string"
+          }
+        },
+        "vue-daisy.componentPath": {
+          "type": "array",
+          "description": "assign which dir to search component",
+          "items": {
+            "type": "string"
+          }
+        },
+        "vue-daisy.componentPrefix": {
+          "type": "object",
+          "description": "assign prefix to replace in the file path",
+          "default": {
+            "alias": "@",
+            "path": "src"
+          }
+        },
+        "vue-daisy.tagNameWay": {
+          "description": "dictate the rule of vue component name in html section",
+          "type": "string",
+          "default": "kebabCase",
+          "enum": [
+            "kebabCase",
+            "camelCase",
+            "CamelCase"
+          ]
+        },
+        "vue-daisy.indent-size": {
+          "type": "number",
+          "default": 2,
+          "description": "Indentation size of snippets"
+        },
+        "vue-daisy.quotes": {
+          "type": "string",
+          "default": "double",
+          "description": "Normal quotes of autocomplete",
+          "enum": [
+            "single",
+            "double"
+          ]
+        },
+        "vue-daisy.pug-quotes": {
+          "type": "string",
+          "default": "single",
+          "description": "Pug quotes of autocomplete",
+          "enum": [
+            "single",
+            "double"
+          ]
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "webpack --mode production",
+    "compile": "webpack --mode none",
+    "watch": "webpack --mode none --watch",
+    "test-compile": "tsc -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "npm run compile && node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^10.12.12",
+    "ts-loader": "^6.0.1",
+    "typescript": "^2.6.1",
+    "vscode": "^1.1.32",
+    "webpack": "^4.32.1",
+    "webpack-cli": "^3.3.2"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.1",
+    "glob": "^7.1.3",
+    "hoek": "^5.0.3",
+    "lodash": "^4.17.15",
+    "param-case": "^2.1.1",
+    "pretty": "^2.0.0",
+    "shelljs": "^0.8.3"
+  }
+}
