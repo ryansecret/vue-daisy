@@ -12,7 +12,7 @@ const fs = require('fs')
 const path = require('path')
 
 const prettyHTML = require('pretty');
-export const SCHEME = 'vue-dasiy';
+export const SCHEME = 'vue-daisy';
 
 export interface Query {
   keyword: string
@@ -201,11 +201,12 @@ export class App {
 
   // 遍历组件
   static traverse(poster, search) {
-    const config = workspace.getConfiguration('vue-dasiy')
+    const config = workspace.getConfiguration('vue-daisy')
     let vueFiles = []
-    let cond = null
+    let cond =null
     if (config.componentPath && Array.isArray(config.componentPath) && config.componentPath.length > 0) {
       cond = function (rootPath) {
+        console.log(rootPath)
         return config.componentPath.indexOf(rootPath) !== -1
       }
     } else {
@@ -290,6 +291,11 @@ export class App {
             path: prefix.alias + '/' + dir
           })
         } else {
+          if(name==='index')
+          {
+             
+            name=dir.split('/').reverse()[1]
+          }
           vueFiles.push({
             name: name,
             path: dir.replace(new RegExp('^' + prefix.path), prefix.alias)
@@ -301,6 +307,7 @@ export class App {
 
   // 自动补全
   autoComplement() {
+    
     let editor = window.activeTextEditor;
     if (!editor) { return; }
     let txt = editor.document.lineAt(editor.selection.anchor.line).text
@@ -1192,7 +1199,7 @@ export class ElementCompletionItemProvider implements CompletionItemProvider {
     if (pathRegArr && pathRegArr.length > 0) {
       let tagPath = pathRegArr[0]
       tagPath = tagPath.replace(/(.*['"])/, '')
-      const config = workspace.getConfiguration('vue-dasiy')
+      const config = workspace.getConfiguration('vue-daisy')
       tagPath = tagPath.replace(config.componentPrefix.alias, config.componentPrefix.path)
       if (!tagPath.endsWith('.vue')) {
         tagPath += '.vue'
@@ -1288,7 +1295,7 @@ export class ElementCompletionItemProvider implements CompletionItemProvider {
       this.getCloseTagSuggestion()
       return null
     }
-    const config = workspace.getConfiguration('vue-dasiy');
+    const config = workspace.getConfiguration('vue-daisy');
     this.size = config.get('indent-size');
     this.quotes = config.get('quotes') === 'double' ? '"' : "'";
 

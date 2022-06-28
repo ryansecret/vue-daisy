@@ -299,7 +299,7 @@ export class vueHelperDefinitionProvider implements DefinitionProvider {
     }
 
     // 1. 根据文件目录查询是否存在相应文件
-    let config = workspace.getConfiguration('vue-dasiy')
+    let config = workspace.getConfiguration('vue-daisy')
     if (config || config.alias) {
       // 支持的前缀、后缀
       for (const key in config.alias) {

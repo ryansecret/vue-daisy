@@ -17,7 +17,7 @@ export class JsCompletionItemProvider implements CompletionItemProvider {
     if (pathRegArr && pathRegArr.length > 0) {
       let tagPath = pathRegArr[0]
       tagPath = tagPath.replace(/(.*['"])/, '')
-      const config = workspace.getConfiguration('vue-dasiy')
+      const config = workspace.getConfiguration('vue-daisy')
 
       tagPath = tagPath.replace(config.componentPrefix.alias, config.componentPrefix.path)
       if (!tagPath.endsWith('.vue')) {
@@ -143,7 +143,7 @@ export class JsCompletionItemProvider implements CompletionItemProvider {
       })
       return res
     }
-    let config = workspace.getConfiguration('vue-dasiy')
+    let config = workspace.getConfiguration('vue-daisy')
     if (config.tips) {
       let filePath = path.resolve(workspace.rootPath, config.tips)
       if (fs.existsSync(filePath)) {

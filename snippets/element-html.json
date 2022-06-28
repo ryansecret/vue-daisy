@@ -682,7 +682,7 @@
   "el-empty":{
     "prefix": "el-empty",
     "body": [
-      "<el-empty description=\"$1\" image></el-empty>"
+      "<el-empty description=\"$1\"></el-empty>"
     ]
   }
 }

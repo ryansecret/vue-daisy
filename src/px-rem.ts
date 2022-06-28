@@ -4,7 +4,7 @@ export class PxRem {
   handle() {
     let editor = window.activeTextEditor;
     if (!editor) { return; }
-    let config = workspace.getConfiguration('vue-dasiy')
+    let config = workspace.getConfiguration('vue-daisy')
     let px = config['rem-px']
     if (px === 0) {
       return;
@@ -36,7 +36,7 @@ export class PxRem {
   handlePxToRem(type: string) {
     let editor = window.activeTextEditor;
     if (!editor) { return; }
-    let config = workspace.getConfiguration('vue-dasiy')
+    let config = workspace.getConfiguration('vue-daisy')
     let px = config['rem-px']
     if (px === 0) {
       return;
