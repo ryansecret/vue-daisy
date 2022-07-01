@@ -1,0 +1,7 @@
+{
+  "importVueRouter": {
+    "prefix": "importvt",
+    "body": ["import VueTypes from 'vue-types'"],
+    "description": "import VueTypes from 'vue-types'"
+  }
+}

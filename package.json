@@ -1,0 +1,184 @@
+{
+  "name": "vue-daisy",
+  "displayName": "vue-daisy",
+  "description": "vue enhance，extension for Element-UI,IVIEW",
+  "version": "1.4.0",
+  "publisher": "ryansecreat",
+  "repository": {
+    "url": "https://github.com/ryansecret/vue-daisy"
+  },
+  "engines": {
+    "vscode": "^1.64.0"
+  },
+  "categories": [
+    "Snippets",
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:html",
+    "onLanguage:vue",
+    "onCommand:vue-daisy.ryan",
+    "onCommand:vue-daisy.functionCompletion"
+  ],
+  "main": "./dist/extension.js",
+  "icon": "logo.png",
+  "contributes": {
+    "commands": [
+      {
+        "command": "vue-daisy.ryan",
+        "title": "Hello ryan"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "vue-daisy.functionCompletion",
+        "key": "shift+alt+enter",
+        "when": "editorTextFocus"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/element.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/iview2.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/vue.json"
+      },
+      {
+        "language": "vue-html",
+        "path": "./snippets/iview-html.json"
+      },
+      {
+        "language": "vue-html",
+        "path": "./snippets/element-html.json"
+      },
+      {
+        "language": "vue-html",
+        "path": "./snippets/vue-html.json"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "Vue Daisy",
+      "properties": {
+        "vue-daisy.alias": {
+          "type": "object",
+          "default": {
+            "@": "src"
+          },
+          "description": "webpack alias"
+        },
+        "vue-daisy.rem-px": {
+          "type": "number",
+          "default": 16,
+          "description": "1rem equal px value"
+        },
+        "vue-daisy.rem-decimal-length": {
+          "type": "integer",
+          "default": 4,
+          "description": "decimal length"
+        },
+        "vue-daisy.tips": {
+          "type": "string",
+          "default": "tips.json"
+        },
+        "vue-daisy.componentIgnore": {
+          "type": "array",
+          "description": "assign which dir ignore search componennt",
+          "items": {
+            "type": "string"
+          }
+        },
+        "vue-daisy.componentPath": {
+          "type": "array",
+          "description": "assign which dir to search component",
+          "items": {
+            "type": "string"
+          }
+        },
+        "vue-daisy.componentPrefix": {
+          "type": "object",
+          "description": "assign prefix to replace in the file path",
+          "default": {
+            "alias": "@",
+            "path": "src"
+          }
+        },
+        "vue-daisy.tagNameWay": {
+          "description": "dictate the rule of vue component name in html section",
+          "type": "string",
+          "default": "kebabCase",
+          "enum": [
+            "kebabCase",
+            "camelCase",
+            "CamelCase"
+          ]
+        },
+        "vue-daisy.indent-size": {
+          "type": "number",
+          "default": 2,
+          "description": "Indentation size of snippets"
+        },
+        "vue-daisy.quotes": {
+          "type": "string",
+          "default": "double",
+          "description": "Normal quotes of autocomplete",
+          "enum": [
+            "single",
+            "double"
+          ]
+        },
+        "vue-daisy.pug-quotes": {
+          "type": "string",
+          "default": "single",
+          "description": "Pug quotes of autocomplete",
+          "enum": [
+            "single",
+            "double"
+          ]
+        }
+      }
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git"
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "package": "webpack --mode production --devtool hidden-source-map",
+    "test-compile": "tsc -p ./",
+    "test-watch": "tsc -watch -p ./",
+    "pretest": "npm run test-compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.3",
+    "@types/lodash": "^4.14.182",
+    "@types/mocha": "^8.2.2",
+    "@types/node": "14.x",
+    "@types/vscode": "^1.64.0",
+    "@typescript-eslint/eslint-plugin": "^4.26.0",
+    "@typescript-eslint/parser": "^4.26.0",
+    "eslint": "^7.27.0",
+    "glob": "^7.1.7",
+    "mocha": "^8.4.0",
+    "pretty": "^2.0.0",
+    "ts-loader": "^9.2.2",
+    "typescript": "^4.3.2",
+    "vscode-test": "^1.5.2",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0",
+    "cz-conventional-changelog": "^2.1.0",
+    "cz-git": "^1.3.4"
+  }
+}

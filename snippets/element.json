@@ -1,0 +1,10 @@
+{
+  "reg-phone": {
+    "prefix": "reg-phone",
+    "body": "/^[1][3,4,5,7,8][0-9]{9}$/"
+  },
+  "reg-email": {
+    "prefix": "reg-email",
+    "body": "/^[A-Za-z\\d]+([-_.][A-Za-z\\d]+)*@([A-Za-z\\d]+[-.])+[A-Za-z\\d]{2,4}$/"
+  }
+}
