@@ -4,9 +4,9 @@ import { window, commands, Disposable, workspace, Position, CompletionItemKind, 
 import Documents from './documents';
 import * as fs from 'fs';
 import * as path from 'path';
-
-
-
+import * as LRU from 'lru-cache';
+import { serialize } from 'v8';
+const cache = new LRU({ max: 30, maxAge: 20000 });
 interface FileInfo {
   name: string,
   path: string
@@ -181,13 +181,17 @@ export class App {
   }
 
   // 遍历组件
-  static traverse(poster: string, search: string) {
+  static traverse(poster: string, search: string): FileInfo[] {
     const config = workspace.getConfiguration('vue-daisy');
+    const cacheKey = `file_${poster}_${search}`;
+    let components = cache.get<FileInfo[]>(cacheKey);
+    if (components) {
+      return components;
+    }
     let vueFiles: FileInfo[] = [];
     let cond = null;
     if (config.componentPath && Array.isArray(config.componentPath) && config.componentPath.length > 0) {
       cond = function (rootPath: any) {
-        console.log(rootPath);
         return config.componentPath.indexOf(rootPath) !== -1;
       };
     } else {
@@ -217,7 +221,7 @@ export class App {
         }
       }
     }
-
+    cache.set(cacheKey, vueFiles);
     return vueFiles;
   }
 
