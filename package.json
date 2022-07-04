@@ -73,20 +73,6 @@
           },
           "description": "webpack alias"
         },
-        "vue-daisy.rem-px": {
-          "type": "number",
-          "default": 16,
-          "description": "1rem equal px value"
-        },
-        "vue-daisy.rem-decimal-length": {
-          "type": "integer",
-          "default": 4,
-          "description": "decimal length"
-        },
-        "vue-daisy.tips": {
-          "type": "string",
-          "default": "tips.json"
-        },
         "vue-daisy.componentIgnore": {
           "type": "array",
           "description": "assign which dir ignore search componennt",
@@ -101,6 +87,11 @@
             "type": "string"
           }
         },
+        "vue-daisy.componentDirRgex": {
+          "type": "string",
+          "description": "component dir regex to search",
+          "default": ".*/components/.*"
+        },
         "vue-daisy.componentPrefix": {
           "type": "object",
           "description": "assign prefix to replace in the file path",
@@ -112,7 +103,7 @@
         "vue-daisy.tagNameWay": {
           "description": "dictate the rule of vue component name in html section",
           "type": "string",
-          "default": "kebabCase",
+          "default": "CamelCase",
           "enum": [
             "kebabCase",
             "camelCase",
@@ -128,15 +119,6 @@
           "type": "string",
           "default": "double",
           "description": "Normal quotes of autocomplete",
-          "enum": [
-            "single",
-            "double"
-          ]
-        },
-        "vue-daisy.pug-quotes": {
-          "type": "string",
-          "default": "single",
-          "description": "Pug quotes of autocomplete",
           "enum": [
             "single",
             "double"
@@ -159,7 +141,8 @@
     "test-watch": "tsc -watch -p ./",
     "pretest": "npm run test-compile && npm run lint",
     "lint": "eslint src --ext ts",
-    "test": "node ./out/test/runTest.js"
+    "test": "node ./out/test/runTest.js",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
   },
   "devDependencies": {
     "@types/glob": "^7.1.3",

@@ -6,7 +6,8 @@ import * as fs from 'fs';
 import * as path from 'path';
 import * as LRU from 'lru-cache';
 import { serialize } from 'v8';
-const cache = new LRU({ max: 30, maxAge: 20000 });
+import { first } from 'lodash';
+const cache = new LRU({ max: 30, maxAge: 5000 });
 interface FileInfo {
   name: string,
   path: string
@@ -14,6 +15,7 @@ interface FileInfo {
 
 export class App {
   private _disposable!: Disposable;
+  private static innerIgonre = ['node_modules', 'dist', 'build'];
   public WORD_REG: RegExp = /(-?\d*\.\d\w*)|([^\`\~\!\@\$\^\&\*\(\)\=\+\[\{\]\}\\\|\;\:\'\"\,\.\<\>\/\s]+)/gi;
   public static vueFiles: FileInfo[] = [];
   public static tagNameWay = 'kebabCase';
@@ -90,11 +92,6 @@ export class App {
         let importString = `import ${name} from '${vf.path}'\n`;
         let importLine = line;
 
-        // if (line < countLine) {
-        //   editor.edit((editBuilder) => {
-        //     editBuilder.insert(new Position(line, 0), importString);
-        //   });
-        // }
         if (line < countLine) {
           let prorityInsertLine = 0;
           let secondInsertLine = 0;
@@ -190,6 +187,7 @@ export class App {
     }
     let vueFiles: FileInfo[] = [];
     let cond = null;
+
     if (config.componentPath && Array.isArray(config.componentPath) && config.componentPath.length > 0) {
       cond = function (rootPath: any) {
         return config.componentPath.indexOf(rootPath) !== -1;
@@ -199,7 +197,7 @@ export class App {
       if (!Array.isArray(ignore)) {
         ignore = [ignore];
       }
-      ignore = ignore.concat(['node_modules', 'dist', 'build']);
+      ignore = ignore.concat(this.innerIgonre);
       cond = function (rootPath: string) {
         return !(rootPath.charAt(0) === '.' || ignore.indexOf(rootPath) !== -1);
       };
@@ -227,7 +225,8 @@ export class App {
 
   // 遍历处理
   static traverseHandle(postPath: string, vueFiles: FileInfo[], prefix: any, poster: string, search: string) {
-    let fileDirs = fs.readdirSync(path.join(workspace.rootPath!, postPath));
+    const config = workspace.getConfiguration('vue-daisy');
+    let fileDirs = fs.readdirSync(path.join(workspace.rootPath!, postPath)).filter(d => !this.innerIgonre.includes(d));
     for (let i = 0; i < fileDirs.length; i++) {
       const rootPath = fileDirs[i];
       if (!(rootPath.charAt(0) === '.')) {
@@ -235,7 +234,7 @@ export class App {
         let stat = fs.statSync(path.join(workspace.rootPath!, dir));
         if (stat.isDirectory()) {
           App.traverseHandle(dir, vueFiles, prefix, poster, search);
-        } else {
+        } else if (config.componentDirRgex && new RegExp(config.componentDirRgex).test(dir)) {
           App.traverseAdd(rootPath, dir, vueFiles, prefix, poster, search);
         }
       }
@@ -279,7 +278,7 @@ export class App {
             path: prefix.alias + '/' + dir
           });
         } else {
-          if (name === 'index') {
+          if (name.toLowerCase() === 'index') {
 
             name = dir.split('/').reverse()[1];
           }
