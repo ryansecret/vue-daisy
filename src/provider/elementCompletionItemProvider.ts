@@ -7,6 +7,7 @@ import {
 import { App } from '../app';
 import ATTRS from '../vue-attributes';
 import TAGS from '../vue-tags';
+import COMMON_PROPS from "../common/commonProps"
 import * as prettyHTML from 'pretty';
 import * as fs from 'fs';
 import * as path from 'path';
@@ -156,6 +157,7 @@ export default class ElementCompletionItemProvider implements CompletionItemProv
         sug && suggestions.push(sug);
       }
     }
+    suggestions = suggestions.concat(this.getCommonPropsSuggestion())
     return suggestions;
   }
 
@@ -215,6 +217,20 @@ export default class ElementCompletionItemProvider implements CompletionItemProv
     } else { return; }
   }
 
+  getCommonPropsSuggestion() {
+
+    return Object.entries<{ description }>(COMMON_PROPS).map(([attr, value]) => {
+      return {
+        label: attr,
+        insertText: new SnippetString(`${attr}=${this.quotes}$1${this.quotes}$0`),
+        kind: CompletionItemKind.Variable,
+        detail: 'CommonProps',
+        documentation: "daisy----" + value.description
+      };
+    })
+
+  }
+
   // 获取属性值
   getAttrValues(tag: string | undefined, attr: string | undefined) {
     let attrItem = this.getAttrItem(tag, attr);
@@ -241,7 +257,7 @@ export default class ElementCompletionItemProvider implements CompletionItemProv
 
   // 获取属性项
   getAttrItem(tag: string | undefined, attr: string | undefined) {
-    return ATTRS[`${tag}/${attr}`] || ATTRS[attr];
+    return ATTRS[`${tag}/${attr}`] || ATTRS[attr] || COMMON_PROPS[attr];
   }
 
   // 属性值开始
@@ -390,7 +406,7 @@ export default class ElementCompletionItemProvider implements CompletionItemProv
 
       documentText = fs.readFileSync(tagPath, 'utf8');
     } else {
-      return;
+      return [];
     }
 
     // 2. 获取标签文件中的prop属性
@@ -485,7 +501,9 @@ export default class ElementCompletionItemProvider implements CompletionItemProv
         // 插件提供
         return this.getAttrSuggestion(tag.text);
       } else {
-        return this.getPropAttr(this._document.getText(), tag.text);
+        const propsSugestion = this.getPropAttr(this._document.getText(), tag.text);
+
+        return [...propsSugestion, ...this.getCommonPropsSuggestion()]
       }
     } else if (this.isTagStart()) { // 标签开始
       switch (document.languageId) {

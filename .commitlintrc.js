@@ -60,7 +60,7 @@ module.exports = {
     ],
     useEmoji: true,
     themeColorCode: '',
-    scopes: ['snippets','doc'],
+    scopes: ['snippets','CompletionItemProvider','HoverProvider','doc'],
     allowCustomScopes: true,
     allowEmptyScopes: true,
     customScopesAlign: 'bottom',
