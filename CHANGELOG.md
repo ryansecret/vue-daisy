@@ -1,3 +1,12 @@
+# [1.6.0](https://github.com/ryansecret/vue-daisy/compare/v1.5.0...v1.6.0) (2022-07-06)
+
+
+### Features
+
+* **CompletionItemProvider:** :sparkles: 添加组件公共属性的提示 ([3b05eb8](https://github.com/ryansecret/vue-daisy/commit/3b05eb86ec0b7dc7b32d2a413316756b8fef9a31))
+
+
+
 # 1.5.0 (2022-07-04)
 
 
