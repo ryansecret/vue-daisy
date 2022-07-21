@@ -1,3 +1,12 @@
+## [1.6.1](https://github.com/ryansecret/vue-daisy/compare/v1.6.0...v1.6.1) (2022-07-21)
+
+
+### Features
+
+* **CompletionItemProvider:** :sparkles: 兼容[@views](https://github.com/views) alias ([3a0e308](https://github.com/ryansecret/vue-daisy/commit/3a0e308b20803641f9a714ef207fc0a8877d7c03))
+
+
+
 # [1.6.0](https://github.com/ryansecret/vue-daisy/compare/v1.5.0...v1.6.0) (2022-07-06)
 
 
