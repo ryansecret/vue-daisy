@@ -389,14 +389,20 @@ export default class ElementCompletionItemProvider implements CompletionItemProv
       let tagPath = pathRegArr[0];
       tagPath = tagPath.replace(/(.*['"])/, '');
       const config = workspace.getConfiguration('vue-daisy');
-      tagPath = tagPath.replace(config.componentPrefix.alias, config.componentPrefix.path);
+      const indexAlias = config.componentPrefix.alias.indexOf(tagPath);
+      const aliasAfter = tagPath.substring(indexAlias, 1);
+      let comPath = config.componentPrefix.path;
+      if (aliasAfter !== '/') {
+        comPath = path.join(config.componentPrefix.path, '/');
+      }
+      tagPath = tagPath.replace(config.componentPrefix.alias, comPath);
       if (!tagPath.endsWith('.vue')) {
         tagPath += '.vue';
       }
       if (tagPath.indexOf('./') > 0 || tagPath.indexOf('../') > 0) {
         tagPath = path.join(this._document.fileName, '../', tagPath);
       } else {
-        tagPath = path.join(workspace.rootPath, tagPath);
+        tagPath = path.join(workspace.workspaceFolders[0].uri.path, tagPath);
       }
       try {
         fs.accessSync(tagPath);

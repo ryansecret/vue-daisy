@@ -38,7 +38,7 @@
    组件所在文件夹的regex，默认为 `.*/components/.*`
 1. component Prefix
 
-   主要为了精确找到组件的路径，如果配置了webpack alias就需要配置下，默认值  {"alias": "@","path": "src"}
+   主要为了精确找到组件的路径，如果配置了webpack alias就需要配置下，默认值  {"alias": "@","path": "client/src"}
 
 1. Tag Name Way
 

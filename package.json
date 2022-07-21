@@ -50,6 +50,10 @@
         "path": "./snippets/vue.json"
       },
       {
+        "language": "javascript",
+        "path": "./snippets/javascript.json"
+      },
+      {
         "language": "vue-html",
         "path": "./snippets/iview-html.json"
       },
@@ -97,7 +101,7 @@
           "description": "assign prefix to replace in the file path",
           "default": {
             "alias": "@",
-            "path": "src"
+            "path": "client/src"
           }
         },
         "vue-daisy.tagNameWay": {
