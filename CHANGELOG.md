@@ -1,3 +1,12 @@
+## [1.6.2](https://github.com/ryansecret/vue-daisy/compare/v1.6.1...v1.6.2) (2022-07-26)
+
+
+### Features
+
+* **snippets:** :sparkles: avatar\result\descriptions 添加 ([d79b9ff](https://github.com/ryansecret/vue-daisy/commit/d79b9ffad6beb3c7aaef545b7ed5d00f66c62457))
+
+
+
 ## [1.6.1](https://github.com/ryansecret/vue-daisy/compare/v1.6.0...v1.6.1) (2022-07-21)
 
 
