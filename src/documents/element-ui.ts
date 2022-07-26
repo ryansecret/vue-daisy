@@ -1,5 +1,5 @@
 export default {
-"el-row": `[element：http://element-cn.eleme.io/#/zh-CN/component/layout](http://element-cn.eleme.io/#/zh-CN/component/layout) \n
+  "el-row": `[element：http://element-cn.eleme.io/#/zh-CN/component/layout](http://element-cn.eleme.io/#/zh-CN/component/layout) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | gutter | 栅格间隔 | number | — | 0 |
@@ -7,7 +7,7 @@ export default {
 | justify | flex 布局下的水平排列方式 | string | start/end/center/space-around/space-between | start |
 | align | flex 布局下的垂直排列方式 | string | top/middle/bottom | top |
 | tag | 自定义元素标签 | string | * | div |`,
-"el-col": `[element：http://element-cn.eleme.io/#/zh-CN/component/layout](http://element-cn.eleme.io/#/zh-CN/component/layout) \n
+  "el-col": `[element：http://element-cn.eleme.io/#/zh-CN/component/layout](http://element-cn.eleme.io/#/zh-CN/component/layout) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | span | 栅格占据的列数 | number | — | 24 |
@@ -20,23 +20,23 @@ export default {
 | lg | ≥1200px 响应式栅格数或者栅格属性对象 | number/object (例如： {span: 4, offset: 4}) | — | — |
 | xl | ≥1920px 响应式栅格数或者栅格属性对象 | number/object (例如： {span: 4, offset: 4}) | — | — |
 | tag | 自定义元素标签 | string | * | div |`,
-"el-container": `[element：http://element-cn.eleme.io/#/zh-CN/component/container](http://element-cn.eleme.io/#/zh-CN/component/container) \n
+  "el-container": `[element：http://element-cn.eleme.io/#/zh-CN/component/container](http://element-cn.eleme.io/#/zh-CN/component/container) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | direction | 子元素的排列方向 | string | horizontal / vertical | 子元素中有 el-header 或 el-footer 时为 vertical，否则为 horizontal |`,
-"el-header": `[element：http://element-cn.eleme.io/#/zh-CN/component/container](http://element-cn.eleme.io/#/zh-CN/component/container) \n
+  "el-header": `[element：http://element-cn.eleme.io/#/zh-CN/component/container](http://element-cn.eleme.io/#/zh-CN/component/container) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | height | 顶栏高度 | string | — | 60px |`,
-"el-aside": `[element：http://element-cn.eleme.io/#/zh-CN/component/container](http://element-cn.eleme.io/#/zh-CN/component/container) \n
+  "el-aside": `[element：http://element-cn.eleme.io/#/zh-CN/component/container](http://element-cn.eleme.io/#/zh-CN/component/container) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | width | 侧边栏宽度 | string | — | 300px |`,
-"el-footer": `[element：http://element-cn.eleme.io/#/zh-CN/component/layout](http://element-cn.eleme.io/#/zh-CN/component/layout) \n
+  "el-footer": `[element：http://element-cn.eleme.io/#/zh-CN/component/layout](http://element-cn.eleme.io/#/zh-CN/component/layout) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | height | 底栏高度 | string | — | 60px |`,
-"el-button": `[element：http://element-cn.eleme.io/#/zh-CN/component/button](http://element-cn.eleme.io/#/zh-CN/component/button) \n
+  "el-button": `[element：http://element-cn.eleme.io/#/zh-CN/component/button](http://element-cn.eleme.io/#/zh-CN/component/button) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | size | 尺寸 | string | medium / small / mini | — |
@@ -52,7 +52,7 @@ export default {
 | 事件名称 | 说明 | 回调参数 |
 | :--- | :--- | :--- |
 | click | 点击时触发事件 | event |`,
-"el-radio": `[element：http://element-cn.eleme.io/#/zh-CN/component/radio](http://element-cn.eleme.io/#/zh-CN/component/radio) \n
+  "el-radio": `[element：http://element-cn.eleme.io/#/zh-CN/component/radio](http://element-cn.eleme.io/#/zh-CN/component/radio) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | label | Radio 的 value | string / number / boolean | — | — |
@@ -63,7 +63,7 @@ export default {
 | 事件名称 | 说明 | 回调参数 |
 | :--- | :--- | :--- |
 | change | 绑定值变化时触发的事件 | 选中的 Radio label 值 |`,
-"el-radio-group": `[element：http://element-cn.eleme.io/#/zh-CN/component/radio](http://element-cn.eleme.io/#/zh-CN/component/radio) \n
+  "el-radio-group": `[element：http://element-cn.eleme.io/#/zh-CN/component/radio](http://element-cn.eleme.io/#/zh-CN/component/radio) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | size | 单选框组尺寸，仅对按钮形式的 Radio 或带有边框的 Radio 有效 | string | medium / small / mini | — |
@@ -73,13 +73,13 @@ export default {
 | 事件名称 | 说明 | 回调参数 |
 | :--- | :--- | :--- |
 | change | 绑定值变化时触发的事件 | 选中的 Radio label 值 |`,
-"el-radio-button": `[element：http://element-cn.eleme.io/#/zh-CN/component/radio](http://element-cn.eleme.io/#/zh-CN/component/radio) \n
+  "el-radio-button": `[element：http://element-cn.eleme.io/#/zh-CN/component/radio](http://element-cn.eleme.io/#/zh-CN/component/radio) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | label | Radio 的 value | string / number | — | — |
 | disabled | 是否禁用 | boolean | — | false |
 | name | 原生 name 属性 | string | — | — |`,
-"el-checkbox": `[element：http://element-cn.eleme.io/#/zh-CN/component/checkbox](http://element-cn.eleme.io/#/zh-CN/component/checkbox) \n
+  "el-checkbox": `[element：http://element-cn.eleme.io/#/zh-CN/component/checkbox](http://element-cn.eleme.io/#/zh-CN/component/checkbox) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | label | 选中状态的值（只有在checkbox-group或者绑定对象类型为array时有效） | string / number / boolean | — | — |
@@ -94,7 +94,7 @@ export default {
 | 事件名称 | 说明 | 回调参数 |
 | :--- | :--- | :--- |
 | change | 当绑定值变化时触发的事件 | 更新后的值 |`,
-"el-checkbox-group": `[element：http://element-cn.eleme.io/#/zh-CN/component/checkbox](http://element-cn.eleme.io/#/zh-CN/component/checkbox) \n
+  "el-checkbox-group": `[element：http://element-cn.eleme.io/#/zh-CN/component/checkbox](http://element-cn.eleme.io/#/zh-CN/component/checkbox) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | size | 多选框组尺寸，仅对按钮形式的 Checkbox 或带有边框的 Checkbox 有效 | string | medium / small / mini | — |
@@ -106,7 +106,7 @@ export default {
 | 事件名称 | 说明 | 回调参数 |
 | :--- | :--- | :--- |
 | change | 当绑定值变化时触发的事件 | 更新后的值 |`,
-"el-checkbox-button": `[element：http://element-cn.eleme.io/#/zh-CN/component/checkbox](http://element-cn.eleme.io/#/zh-CN/component/checkbox) \n
+  "el-checkbox-button": `[element：http://element-cn.eleme.io/#/zh-CN/component/checkbox](http://element-cn.eleme.io/#/zh-CN/component/checkbox) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | label | 选中状态的值（只有在checkbox-group或者绑定对象类型为array时有效） | string / number / boolean | — | — |
@@ -115,7 +115,7 @@ export default {
 | disabled | 是否禁用 | boolean | — | false |
 | name | 原生 name 属性 | string | — | — |
 | checked | 当前是否勾选 | boolean | — | false |`,
-"el-input":`[element：http://element-cn.eleme.io/#/zh-CN/component/input](http://element-cn.eleme.io/#/zh-CN/component/input) \n
+  "el-input": `[element：http://element-cn.eleme.io/#/zh-CN/component/input](http://element-cn.eleme.io/#/zh-CN/component/input) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | type | 类型 | string | text，textarea 和其他 原生 input 的 type 值 | text |
@@ -159,7 +159,7 @@ export default {
 | focus | 使 input 获取焦点 | — |
 | blur | 使 input 失去焦点 | — |
 | select | 选中 input 中的文字 | — |`,
-"el-autocomplete":`[element：http://element-cn.eleme.io/#/zh-CN/component/input](http://element-cn.eleme.io/#/zh-CN/component/input) \n
+  "el-autocomplete": `[element：http://element-cn.eleme.io/#/zh-CN/component/input](http://element-cn.eleme.io/#/zh-CN/component/input) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | placeholder | 输入框占位文本 | string | — | — |
@@ -193,7 +193,7 @@ export default {
 | 方法名 | 说明 | 参数 |
 | :--- | :--- | :--- |
 | focus | 使 input 获取焦点 | - |`,
-"el-input-number": `[element：http://element-cn.eleme.io/#/zh-CN/component/input-number](http://element-cn.eleme.io/#/zh-CN/component/input-number) \n
+  "el-input-number": `[element：http://element-cn.eleme.io/#/zh-CN/component/input-number](http://element-cn.eleme.io/#/zh-CN/component/input-number) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | value | 绑定值 | number | — | — |
@@ -215,7 +215,7 @@ export default {
 | 方法名 | 说明 | 参数 |
 | :--- | :--- | :--- |
 | focus | 使 input 获取焦点 | - |`,
-"el-select": `[element：http://element-cn.eleme.io/#/zh-CN/component/select](http://element-cn.eleme.io/#/zh-CN/component/select) \n
+  "el-select": `[element：http://element-cn.eleme.io/#/zh-CN/component/select](http://element-cn.eleme.io/#/zh-CN/component/select) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | multiple | 是否多选 | boolean | — | false |
@@ -255,18 +255,18 @@ export default {
 | :--- | :--- |
 | — | Option 组件列表 |
 | prefix | Select 组件头部内容 |`,
-"el-option-group": `[element：http://element-cn.eleme.io/#/zh-CN/component/select](http://element-cn.eleme.io/#/zh-CN/component/select) \n
+  "el-option-group": `[element：http://element-cn.eleme.io/#/zh-CN/component/select](http://element-cn.eleme.io/#/zh-CN/component/select) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | label | 分组的组名 | string | — | — |
 | disabled | 是否将该分组下所有选项置为禁用 | boolean | — | false |`,
-"el-option": `[element：http://element-cn.eleme.io/#/zh-CN/component/select](http://element-cn.eleme.io/#/zh-CN/component/select) \n
+  "el-option": `[element：http://element-cn.eleme.io/#/zh-CN/component/select](http://element-cn.eleme.io/#/zh-CN/component/select) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | value | 选项的值 | string/number/object | — | — |
 | label | 选项的标签，若不设置则默认与 value 相同 | string/number | — | — |
 | disabled | 是否禁用该选项 | boolean | — | false |`,
-"el-cascader": `[element：http://element-cn.eleme.io/#/zh-CN/component/cascader](http://element-cn.eleme.io/#/zh-CN/component/cascader) \n
+  "el-cascader": `[element：http://element-cn.eleme.io/#/zh-CN/component/cascader](http://element-cn.eleme.io/#/zh-CN/component/cascader) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | options | 可选项数据源，键名可通过 props 属性配置 | array | — | — |
@@ -290,7 +290,7 @@ export default {
 | active-item-change | 当父级选项变化时触发的事件，仅在 change-on-select 为 false 时可用 | 各父级选项组成的数组 |
 | blur | 在 Cascader 失去焦点时触发 | (event: Event) |
 | focus | 在 Cascader 获得焦点时触发 | (event: Event) |`,
-"el-switch": `[element：http://element-cn.eleme.io/#/zh-CN/component/switch](http://element-cn.eleme.io/#/zh-CN/component/switch) \n
+  "el-switch": `[element：http://element-cn.eleme.io/#/zh-CN/component/switch](http://element-cn.eleme.io/#/zh-CN/component/switch) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | disabled | 是否禁用 | boolean | — | false |
@@ -310,7 +310,7 @@ export default {
 | 方法名 | 说明 | 参数 |
 | :--- | :--- | :--- |
 | focus | 使 Switch 获取焦点 | - |`,
-"el-slider": `[element：http://element-cn.eleme.io/#/zh-CN/component/slider](http://element-cn.eleme.io/#/zh-CN/component/slider) \n
+  "el-slider": `[element：http://element-cn.eleme.io/#/zh-CN/component/slider](http://element-cn.eleme.io/#/zh-CN/component/slider) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | min | 最小值 | number | — | 0 |
@@ -332,7 +332,7 @@ export default {
 | 事件名称 | 说明 | 回调参数 |
 | :--- | :--- | :--- |
 | change | 值改变时触发（使用鼠标拖曳时，只在松开鼠标后触发） | 改变后的值 |`,
-"el-time-picker": `[element：http://element-cn.eleme.io/#/zh-CN/component/time-picker](http://element-cn.eleme.io/#/zh-CN/component/time-picker) \n
+  "el-time-picker": `[element：http://element-cn.eleme.io/#/zh-CN/component/time-picker](http://element-cn.eleme.io/#/zh-CN/component/time-picker) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | readonly | 完全只读 | boolean | — | false |
@@ -363,7 +363,7 @@ export default {
 | 方法名 | 说明 | 参数 |
 | :--- | :--- | :--- |
 | focus | 使 input 获取焦点 | - |`,
-"el-date-picker": `[element：http://element-cn.eleme.io/#/zh-CN/component/date-picker](http://element-cn.eleme.io/#/zh-CN/component/date-picker) \n
+  "el-date-picker": `[element：http://element-cn.eleme.io/#/zh-CN/component/date-picker](http://element-cn.eleme.io/#/zh-CN/component/date-picker) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | readonly | 完全只读 | boolean | — | false |
@@ -395,7 +395,7 @@ export default {
 | 方法名 | 说明 | 参数 |
 | :--- | :--- | :--- |
 | focus | 使 input 获取焦点 | — |`,
-"el-upload": `[element：http://element-cn.eleme.io/#/zh-CN/component/upload](http://element-cn.eleme.io/#/zh-CN/component/upload) \n
+  "el-upload": `[element：http://element-cn.eleme.io/#/zh-CN/component/upload](http://element-cn.eleme.io/#/zh-CN/component/upload) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | action | 必选参数，上传的地址 | string | — | — |
@@ -431,7 +431,7 @@ export default {
 | clearFiles | 清空已上传的文件列表（该方法不支持在 before-upload 中调用） | — |
 | abort | 取消上传请求 | （ file: fileList 中的 file 对象 ） |
 | submit | 手动上传文件列表 | — |`,
-"el-rate": `[element：http://element-cn.eleme.io/#/zh-CN/component/rate](http://element-cn.eleme.io/#/zh-CN/component/rate) \n
+  "el-rate": `[element：http://element-cn.eleme.io/#/zh-CN/component/rate](http://element-cn.eleme.io/#/zh-CN/component/rate) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | max | 最大分值 | number | — | 5 |
@@ -453,7 +453,7 @@ export default {
 | 事件名称 | 说明 | 回调参数 |
 | :--- | :--- | :--- |
 | change | 分值改变时触发 | 改变后的分值 |`,
-"el-color-picker": `[element：http://element-cn.eleme.io/#/zh-CN/component/color-picker](http://element-cn.eleme.io/#/zh-CN/component/color-picker) \n
+  "el-color-picker": `[element：http://element-cn.eleme.io/#/zh-CN/component/color-picker](http://element-cn.eleme.io/#/zh-CN/component/color-picker) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | disabled | 是否禁用 | boolean | — | false |
@@ -466,7 +466,7 @@ export default {
 | :--- | :--- | :--- |
 | change | 当绑定值变化时触发 | 当前值 |
 | active-change | 面板中当前显示的颜色发生改变时触发 | 当前显示的颜色值 |`,
-"el-transfer": `[element：http://element-cn.eleme.io/#/zh-CN/component/transfer](http://element-cn.eleme.io/#/zh-CN/component/transfer) \n
+  "el-transfer": `[element：http://element-cn.eleme.io/#/zh-CN/component/transfer](http://element-cn.eleme.io/#/zh-CN/component/transfer) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | data | Transfer 的数据源 | array[{ key, label, disabled }] | — | [ ] |
@@ -493,7 +493,7 @@ export default {
 | change | 右侧列表元素变化时触发 | 当前值、数据移动的方向（'left' / 'right'）、发生移动的数据 key 数组 |
 | left-check-change | 左侧列表元素被用户选中 / 取消选中时触发 | 当前被选中的元素的 key 数组、选中状态发生变化的元素的 key 数组 |
 | right-check-change | 右侧列表元素被用户选中 / 取消选中时触发 | 当前被选中的元素的 key 数组、选中状态发生变化的元素的 key 数组 |`,
-"el-form": `element：http://element-cn.eleme.io/#/zh-CN/component/form](http://element-cn.eleme.io/#/zh-CN/component/form) \n
+  "el-form": `element：http://element-cn.eleme.io/#/zh-CN/component/form](http://element-cn.eleme.io/#/zh-CN/component/form) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | model | 表单数据对象 | object | — | — |
@@ -518,7 +518,7 @@ export default {
 | 事件名称 | 说明 | 回调参数 |
 | :--- | :--- | :--- |
 | validate | 任一表单项被校验后触发 | 被校验的表单项 prop 值，校验是否通过，错误消息（如果存在） |`,
-"el-form-item": `[element：http://element-cn.eleme.io/#/zh-CN/component/form](http://element-cn.eleme.io/#/zh-CN/component/form) \n
+  "el-form-item": `[element：http://element-cn.eleme.io/#/zh-CN/component/form](http://element-cn.eleme.io/#/zh-CN/component/form) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | prop | 表单域 model 字段，在使用 validate、resetFields 方法的情况下，该属性是必填的 | string | 传入 Form 组件的 model 中的字段 | — |
@@ -541,7 +541,7 @@ export default {
 | :--- | :--- | :--- |
 | resetField | 对该表单项进行重置，将其值重置为初始值并移除校验结果 | - |
 | clearValidate | 移除该表单项的校验结果 | - |`,
-"el-table": `[element：http://element-cn.eleme.io/#/zh-CN/component/table](http://element-cn.eleme.io/#/zh-CN/component/table) \n
+  "el-table": `[element：http://element-cn.eleme.io/#/zh-CN/component/table](http://element-cn.eleme.io/#/zh-CN/component/table) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | data | 显示的数据 | array | — | — |
@@ -606,7 +606,7 @@ export default {
 | name | 说明 |
 | :--- | :--- |
 | append | 插入至表格最后一行之后的内容，如果需要对表格的内容进行无限滚动操作，可能需要用到这个 slot。若表格有合计行，该 slot 会位于合计行之上。 |`,
-"el-table-column": `[element：http://element-cn.eleme.io/#/zh-CN/component/table](http://element-cn.eleme.io/#/zh-CN/component/table) \n
+  "el-table-column": `[element：http://element-cn.eleme.io/#/zh-CN/component/table](http://element-cn.eleme.io/#/zh-CN/component/table) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | type | 对应列的类型。 selection 显示多选框，index 显示该行的索引, expand 显示可展开的按钮 | string | selection/index/expand | - |
@@ -641,7 +641,7 @@ export default {
 | — | 自定义列的内容，参数为 { row, column, $index } |
 | header | 自定义表头的内容. 参数为 { column, $index } |
 `,
-"el-tag": `[element：http://element-cn.eleme.io/#/zh-CN/component/tag](http://element-cn.eleme.io/#/zh-CN/component/tag) \n
+  "el-tag": `[element：http://element-cn.eleme.io/#/zh-CN/component/tag](http://element-cn.eleme.io/#/zh-CN/component/tag) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | type | 主题 | string | success/info/warning/danger | — |
@@ -653,7 +653,7 @@ export default {
 | 事件名称 | 说明 | 回调参数 |
 | :--- | :--- | :--- |
 | close | 关闭 Tag 时触发的事件 | — |`,
-"el-progress": `[element：http://element-cn.eleme.io/#/zh-CN/component/progress](http://element-cn.eleme.io/#/zh-CN/component/progress) \n
+  "el-progress": `[element：http://element-cn.eleme.io/#/zh-CN/component/progress](http://element-cn.eleme.io/#/zh-CN/component/progress) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | percentage | 百分比（必填） | number | 0-100 | 0 |
@@ -664,7 +664,7 @@ export default {
 | color | 进度条背景色（会覆盖 status 状态颜色） | string | — | — |
 | width | 环形进度条画布宽度（只在 type=circle 时可用） | number | | 126 |
 | show-text | 是否显示进度条文字内容 | boolean | — | true |`,
-"el-tree": `[element：http://element-cn.eleme.io/#/zh-CN/component/tree](http://element-cn.eleme.io/#/zh-CN/component/tree) \n
+  "el-tree": `[element：http://element-cn.eleme.io/#/zh-CN/component/tree](http://element-cn.eleme.io/#/zh-CN/component/tree) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | data | 展示数据 | array | — | — |
@@ -755,7 +755,7 @@ export default {
   | select | 菜单激活回调 | index: 选中菜单项的 index, indexPath: 选中菜单项的 index path |
   | open | sub-menu 展开的回调 | index: 打开的 sub-menu 的 index， indexPath: 打开的 sub-menu 的 index path |
   | close | sub-menu 收起的回调 | index: 收起的 sub-menu 的 index， indexPath: 收起的 sub-menu 的 index path |`,
-"el-submenu": `[element：http://element-cn.eleme.io/#/zh-CN/component/menu](http://element-cn.eleme.io/#/zh-CN/component/menu) \n
+  "el-submenu": `[element：http://element-cn.eleme.io/#/zh-CN/component/menu](http://element-cn.eleme.io/#/zh-CN/component/menu) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | index | 唯一标志 | string | — | — |
@@ -764,17 +764,17 @@ export default {
 | hide-timeout | 收起 sub-menu 的延时 | number | — | 300 |
 | disabled | 是否禁用 | boolean | — | false |
 | popper-append-to-body | 是否将弹出菜单插入至 body 元素。在菜单的定位出现问题时，可尝试修改该属性 | boolean | — | 一级子菜单：true / 非一级子菜单：false |`,
-"el-menu-item": `[element：http://element-cn.eleme.io/#/zh-CN/component/menu](http://element-cn.eleme.io/#/zh-CN/component/menu) \n
+  "el-menu-item": `[element：http://element-cn.eleme.io/#/zh-CN/component/menu](http://element-cn.eleme.io/#/zh-CN/component/menu) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | index | 唯一标志 | string | — | — |
 | route | Vue Router 路径对象 | Object | — | — |
 | disabled | 是否禁用 | boolean | — | false |`,
-"el-menu-group": `[element：http://element-cn.eleme.io/#/zh-CN/component/menu](http://element-cn.eleme.io/#/zh-CN/component/menu) \n
+  "el-menu-group": `[element：http://element-cn.eleme.io/#/zh-CN/component/menu](http://element-cn.eleme.io/#/zh-CN/component/menu) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | title | 分组标题 | string | — | — |`,
-"el-tabs": `[element：http://element-cn.eleme.io/#/zh-CN/component/tabs](http://element-cn.eleme.io/#/zh-CN/component/tabs) \n
+  "el-tabs": `[element：http://element-cn.eleme.io/#/zh-CN/component/tabs](http://element-cn.eleme.io/#/zh-CN/component/tabs) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | type | 风格类型 | string | card/border-card | — |
@@ -791,7 +791,7 @@ export default {
 | tab-remove | 点击 tab 移除按钮后触发 | 被删除的标签的 name |
 | tab-add | 点击 tabs 的新增按钮后触发 | — |
 | edit | 点击 tabs 的新增按钮或 tab 被关闭后触发 | (targetName, action) |`,
-"el-tab-pane": `[element：http://element-cn.eleme.io/#/zh-CN/component/tabs](http://element-cn.eleme.io/#/zh-CN/component/tabs) \n
+  "el-tab-pane": `[element：http://element-cn.eleme.io/#/zh-CN/component/tabs](http://element-cn.eleme.io/#/zh-CN/component/tabs) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | label | 选项卡标题 | string | — | — |
@@ -799,7 +799,7 @@ export default {
 | name | 与选项卡 activeName 对应的标识符，表示选项卡别名 | string | — | 该选项卡在选项卡列表中的顺序值，如第一个选项卡则为'1' |
 | closable | 标签是否可关闭 | boolean | — | false |
 | lazy | 标签是否延迟渲染 | boolean | — | false |`,
-"el-breadcrumb": `[element：http://element-cn.eleme.io/#/zh-CN/component/breadcrumb](http://element-cn.eleme.io/#/zh-CN/component/breadcrumb) \n
+  "el-breadcrumb": `[element：http://element-cn.eleme.io/#/zh-CN/component/breadcrumb](http://element-cn.eleme.io/#/zh-CN/component/breadcrumb) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | separator | 分隔符 | string | — | 斜杠'/' |
@@ -808,7 +808,7 @@ export default {
 | :--- | :--- | :--- | :--- | :--- |
 | to | 路由跳转对象，同 vue-router 的 to | string/object | — | — |
 | replace | 在使用 to 进行路由跳转时，启用 replace 将不会向 history 添加新记录 | boolean | — | false |`,
-"el-dropdown": `[element：http://element-cn.eleme.io/#/zh-CN/component/dropdown](http://element-cn.eleme.io/#/zh-CN/component/dropdown) \n
+  "el-dropdown": `[element：http://element-cn.eleme.io/#/zh-CN/component/dropdown](http://element-cn.eleme.io/#/zh-CN/component/dropdown) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | type | 菜单按钮类型，同 Button 组件(只在split-button为 true 的情况下有效) | string | — | — |
@@ -829,7 +829,7 @@ export default {
 | command | 指令 | string/number/object | — | — |
 | disabled | 禁用 | boolean | — | false |
 | divided | 显示分割线 | boolean | — | false |`,
-"el-steps": `[element：http://element-cn.eleme.io/#/zh-CN/component/steps](http://element-cn.eleme.io/#/zh-CN/component/steps) \n
+  "el-steps": `[element：http://element-cn.eleme.io/#/zh-CN/component/steps](http://element-cn.eleme.io/#/zh-CN/component/steps) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | space | 每个 step 的间距，不填写将自适应间距。支持百分比。 | number / string | — | — |
@@ -839,7 +839,7 @@ export default {
 | finish-status | 设置结束步骤的状态 | string | wait / process / finish / error / success | finish |
 | align-center | 进行居中对齐 | boolean | - | false |
 | simple | 是否应用简洁风格 | boolean | - | false |`,
-"el-step": `[element：http://element-cn.eleme.io/#/zh-CN/component/steps](http://element-cn.eleme.io/#/zh-CN/component/steps) \n
+  "el-step": `[element：http://element-cn.eleme.io/#/zh-CN/component/steps](http://element-cn.eleme.io/#/zh-CN/component/steps) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | title | 标题 | string | — | — |
@@ -851,7 +851,7 @@ export default {
 | icon | 图标 |
 | title | 标题 |
 | description | 描述性文字 |`,
-"el-dialog": `[element：http://element-cn.eleme.io/#/zh-CN/component/dialog](http://element-cn.eleme.io/#/zh-CN/component/dialog) \n
+  "el-dialog": `[element：http://element-cn.eleme.io/#/zh-CN/component/dialog](http://element-cn.eleme.io/#/zh-CN/component/dialog) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | visible | 是否显示 Dialog，支持 .sync 修饰符 | boolean | — | false |
@@ -880,7 +880,7 @@ export default {
 | opened | Dialog 打开动画结束时的回调 | — |
 | close | Dialog 关闭的回调 | — |
 | closed | Dialog 关闭动画结束时的回调 | — |`,
-"el-tooltip": `[element：http://element-cn.eleme.io/#/zh-CN/component/tooltip](http://element-cn.eleme.io/#/zh-CN/component/tooltip) \n
+  "el-tooltip": `[element：http://element-cn.eleme.io/#/zh-CN/component/tooltip](http://element-cn.eleme.io/#/zh-CN/component/tooltip) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | effect | 默认提供的主题 | String | dark/light | dark |
@@ -897,7 +897,7 @@ export default {
 | popper-class | 为 Tooltip 的 popper 添加类名 | String | — | — |
 | enterable | 鼠标是否可进入到 tooltip 中 | Boolean | — | true |
 | hide-after | Tooltip 出现后自动隐藏延时，单位毫秒，为 0 则不会自动隐藏 | number | — | 0 |`,
-"el-popover": `[element：http://element-cn.eleme.io/#/zh-CN/component/popover](http://element-cn.eleme.io/#/zh-CN/component/popover) \n
+  "el-popover": `[element：http://element-cn.eleme.io/#/zh-CN/component/popover](http://element-cn.eleme.io/#/zh-CN/component/popover) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | trigger | 触发方式 | String | click/focus/hover/manual | click |
@@ -923,13 +923,13 @@ export default {
 | after-enter | 显示动画播放完毕后触发 | — |
 | hide | 隐藏时触发 | — |
 | after-leave | 隐藏动画播放完毕后触发 | — |`,
-"el-card": `[element：http://element-cn.eleme.io/#/zh-CN/component/card](http://element-cn.eleme.io/#/zh-CN/component/card) \n
+  "el-card": `[element：http://element-cn.eleme.io/#/zh-CN/component/card](http://element-cn.eleme.io/#/zh-CN/component/card) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | header | 设置 header，也可以通过 slot#header 传入 DOM | string | — | — |
 | body-style | 设置 body 的样式 | object | — | { padding: '20px' } |
 | shadow | 设置阴影显示时机 | string | always / hover / never | always |`,
-"el-carousel": `[element：http://element-cn.eleme.io/#/zh-CN/component/carousel](http://element-cn.eleme.io/#/zh-CN/component/carousel) \n
+  "el-carousel": `[element：http://element-cn.eleme.io/#/zh-CN/component/carousel](http://element-cn.eleme.io/#/zh-CN/component/carousel) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | height | 走马灯的高度 | string | — | — |
@@ -948,12 +948,12 @@ export default {
 | setActiveItem | 手动切换幻灯片 | 需要切换的幻灯片的索引，从 0 开始；或相应 el-carousel-item 的 name 属性值 |
 | prev | 切换至上一张幻灯片 | — |
 | next | 切换至下一张幻灯片 | — |`,
-"el-carousel-item": `[element：http://element-cn.eleme.io/#/zh-CN/component/carousel](http://element-cn.eleme.io/#/zh-CN/component/carousel) \n
+  "el-carousel-item": `[element：http://element-cn.eleme.io/#/zh-CN/component/carousel](http://element-cn.eleme.io/#/zh-CN/component/carousel) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | name | 幻灯片的名字，可用作 setActiveItem 的参数 | string | — | — |
 | label | 该幻灯片所对应指示器的文本 | string | — | — |`,
-"el-collapse": `[element：http://element-cn.eleme.io/#/zh-CN/component/collapse](http://element-cn.eleme.io/#/zh-CN/component/collapse) \n
+  "el-collapse": `[element：http://element-cn.eleme.io/#/zh-CN/component/collapse](http://element-cn.eleme.io/#/zh-CN/component/collapse) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | accordion | 是否手风琴模式 | boolean | — | false |
@@ -965,11 +965,11 @@ export default {
 | :--- | :--- | :--- | :--- | :--- |
 | name | 唯一标志符 | string/number | — | — |
 | title | 面板标题 | string | — | — |`,
-"el-timeline": `[element:https://element.eleme.cn/#/zh-CN/component/timeline](https://element.eleme.cn/#/zh-CN/component/timeline) \n
+  "el-timeline": `[element:https://element.eleme.cn/#/zh-CN/component/timeline](https://element.eleme.cn/#/zh-CN/component/timeline) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | reverse | 指定节点排序方向，默认为正序 | boolean | — | false |`,
-"el-timeline-item": `[element:https://element.eleme.cn/#/zh-CN/component/timeline](https://element.eleme.cn/#/zh-CN/component/timeline) \n
+  "el-timeline-item": `[element:https://element.eleme.cn/#/zh-CN/component/timeline](https://element.eleme.cn/#/zh-CN/component/timeline) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | timestamp | 时间戳 | string | — | - |
@@ -983,18 +983,18 @@ export default {
 | :--- | :--- |
 | - | Timeline-Item 的内容 |
 | dot | 自定义节点 |`,
-"el-divider": `[element：https://element.eleme.cn/#/zh-CN/component/divider](https://element.eleme.cn/#/zh-CN/component/divider) \n
+  "el-divider": `[element：https://element.eleme.cn/#/zh-CN/component/divider](https://element.eleme.cn/#/zh-CN/component/divider) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | direction | 设置分割线方向 | string | horizontal / vertical | horizontal |
 | content-position | 设置分割线文案的位置 | string | left / right / center | center |`,
-"el-calendar": `[element：https://element.eleme.cn/#/zh-CN/component/calendar](https://element.eleme.cn/#/zh-CN/component/calendar) \n
+  "el-calendar": `[element：https://element.eleme.cn/#/zh-CN/component/calendar](https://element.eleme.cn/#/zh-CN/component/calendar) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | value / v-model | 绑定值 | string | Date/string/number | - |
 | range | 时间范围，包括开始时间与结束时间.开始时间必须是周一，结束时间必须是周日，且时间跨度不能超过两个月。 | Array | - |
 | first-day-of-week | 周起始日 | Number | 1 到 7 | 1 |`,
-"el-image": `[element：https://element.eleme.cn/#/zh-CN/component/image](https://element.eleme.cn/#/zh-CN/component/image) \n
+  "el-image": `[element：https://element.eleme.cn/#/zh-CN/component/image](https://element.eleme.cn/#/zh-CN/component/image) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | src | 图片源，同原生 | string | - | - |
@@ -1013,7 +1013,7 @@ export default {
 | :--- | :--- |
 | placeholder | 图片未加载的占位内容 |
 | error | 加载失败的内容 |`,
-"el-backtop": `[element：https://element.eleme.cn/#/zh-CN/component/backtop](https://element.eleme.cn/#/zh-CN/component/backtop) \n
+  "el-backtop": `[element：https://element.eleme.cn/#/zh-CN/component/backtop](https://element.eleme.cn/#/zh-CN/component/backtop) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | target | 触发滚动的对象 | string | Date/string/number | - |
@@ -1023,7 +1023,7 @@ export default {
 | 事件 | 说明 | 回调参数 |
 | :--- | :--- | :--- |
 | click | 点击按钮触发的事件 | 点击事件 |`,
-"el-drawer": `[element：https://element.eleme.cn/#/zh-CN/component/drawer](https://element.eleme.cn/#/zh-CN/component/drawer) \n
+  "el-drawer": `[element：https://element.eleme.cn/#/zh-CN/component/drawer](https://element.eleme.cn/#/zh-CN/component/drawer) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | append-to-body | Drawer 自身是否插入至 body 元素上。嵌套的 Drawer 必须指定该属性并赋值为 true | boolean | - | false |
@@ -1049,7 +1049,7 @@ export default {
 | opened | Drawer 打开动画结束时的回调 | - |
 | close | Drawer 关闭的回调 | - |
 | closed | Drawer 关闭动画结束时的回调 | - |`,
-"el-empty": `[element：https://element.eleme.cn/#/zh-CN/component/empty](https://element.eleme.cn/#/zh-CN/component/empty) \n
+  "el-empty": `[element：https://element.eleme.cn/#/zh-CN/component/empty](https://element.eleme.cn/#/zh-CN/component/empty) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | image          | 图片地址         | string  |          —             |    —     |
@@ -1060,4 +1060,72 @@ export default {
 | default | 自定义底部内容  |
 | image | 自定义图片     |
 | description | 自定义描述文字     |`,
+
+  "el-descriptions": `[element：https://element.eleme.cn/#/zh-CN/component/descriptions](https://element.eleme.cn/#/zh-CN/component/descriptions) \n
+| 参数          | 说明            | 类型            | 可选值                 | 默认值   |
+|:-------------  |:---------------- |:---------------- |:---------------------- |-------- |
+| border        | 是否带有边框         | boolean  |          —             |    false     |
+| column        | 一行 "Descriptions Item" 的数量  | number | — |    3  |
+| direction     | 排列的方向  | string | vertical / horizontal |    horizontal  |
+| size          | 列表的尺寸    | string  |    medium / small / mini  |  — |
+| title         | 标题文本，显示在左上方    | string  |    —  |  — |
+| extra         | 操作区文本，显示在右上方    | string  |    —  |  — |
+| colon         | 是否显示冒号    | boolean  |    —  |  true |
+| labelClassName | 自定义标签类名    | string |    —  |  — |
+| contentClassName | 自定义内容类名    | string |    —  | — |
+| labelStyle | 自定义标签样式 | object |    —  | — |
+| contentStyle | 自定义内容样式    | object |    —  | — |
+|Descriptions Slots|
+| Name | 说明 |
+|:------|:--------|
+| title | 自定义标题，显示在左上方  |
+| extra | 自定义操作区，显示在右上方  |`,
+
+  "el-descriptions-item": `[element：https://element.eleme.cn/#/zh-CN/component/descriptions](https://element.eleme.cn/#/zh-CN/component/descriptions) \n
+  | 参数          | 说明            | 类型            | 可选值                 | 默认值   |
+  |-------------  |---------------- |---------------- |---------------------- |-------- |
+  | label          | 标签文本         | string  |          —             |    —     |
+  | span          | 列的数量         | number  |          —             |    1     |
+  | labelClassName | 自定义标签类名    | string |    —  |  — |
+  | contentClassName | 自定义内容类名    | string |    —  | — |
+  | labelStyle | 自定义标签样式 | object |    —  | — |
+  | contentStyle | 自定义内容样式    | object |    —  | — |
+|Descriptions Slots|
+| Name | 说明 |
+|------|--------|
+| label | 自定义标签文本  `,
+  "el-result": `[element：https://element.eleme.cn/#/zh-CN/component/result](https://element.eleme.cn/#/zh-CN/component/result) \n
+| 参数          | 说明            | 类型            | 可选值                 | 默认值   |
+|-------------  |---------------- |---------------- |---------------------- |-------- |
+| title          | 标题         | string  |          —             |    —     |
+| sub-title    | 二级标题  | string | — |    —  |
+| icon  | 图标类型    | string  |    success / warning / info / error  |  info |
+### Result Slots
+| Name | 说明 |
+|------|--------|
+| icon | 自定义图标  |
+| title | 自定义标题     |
+| subTitle | 自定义二级标题     |
+| extra | 自定义底部额外区域     |  `,
+  "el-avatar": `[element：https://element.eleme.cn/#/zh-CN/component/avatar](https://element.eleme.cn/#/zh-CN/component/avatar) \n
+  | 参数              | 说明                             | 类型            | 可选值 | 默认值 |
+  | ----------------- | -------------------------------- | --------------- | ------ | ------ |
+  | icon              | 设置头像的图标类型，参考 Icon 组件   | string          |        |        |
+  | size              | 设置头像的大小                     | number/string | number / large / medium / small | large  |
+  | shape             | 设置头像的形状  | string |    circle / square     |   circle  |
+  | src               | 图片头像的资源地址 | string |        |      |
+  | srcSet            | 以逗号分隔的一个或多个字符串列表表明一系列用户代理使用的可能的图像 | string |        |      |
+  | alt               | 描述图像的替换文本 | string |        |      |
+  | fit               | 当展示类型为图片的时候，设置图片如何适应容器框 | string |    fill / contain / cover / none / scale-down    |   cover   |
+  ### Events
+
+  | 事件名 | 说明               | 回调参数 |
+  | ------ | ------------------ | -------- |
+  | error  | 图片类头像加载失败的回调， 返回 false 会关闭组件默认的 fallback 行为 |(e: Event)  |
+
+  ### Slot
+
+  | 名称	 | 说明               |
+  | ------ | ------------------ |
+  | default  | 自定义头像展示内容 | `
 }

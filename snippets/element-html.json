@@ -1,12 +1,7 @@
 {
   "el-alert": {
     "prefix": "el-alert",
-    "body": [
-      "<el-alert",
-      "\ttitle=\"success\"",
-      "\ttype=\"success\">",
-      "</el-alert>"
-    ],
+    "body": ["<el-alert", "\ttitle=\"success\"", "\ttype=\"success\">", "</el-alert>"],
     "description": "alert"
   },
   "el-alert:icon": {
@@ -66,12 +61,7 @@
   },
   "el-card": {
     "prefix": "el-card",
-    "body": [
-      "<el-card>",
-      "\t<div slot=\"header\">$1</div>",
-      "\t<div></div>",
-      "</el-card>"
-    ]
+    "body": ["<el-card>", "\t<div slot=\"header\">$1</div>", "\t<div></div>", "</el-card>"]
   },
   "el-carousel": {
     "prefix": "el-carousel",
@@ -399,11 +389,7 @@
   },
   "el-row": {
     "prefix": "el-row",
-    "body": [
-      "<el-row :gutter=\"${1:10}\">",
-      "\t<el-col :span=\"${2:6}\">$3</el-col>",
-      "</el-row>"
-    ]
+    "body": ["<el-row :gutter=\"${1:10}\">", "\t<el-col :span=\"${2:6}\">$3</el-col>", "</el-row>"]
   },
   "el-select": {
     "prefix": "el-select",
@@ -432,11 +418,7 @@
   },
   "el-steps:simple": {
     "prefix": "el-steps:simple",
-    "body": [
-      "<el-steps simple>",
-      "\t<el-step title=\"step1\"></el-step>",
-      "</el-steps>"
-    ]
+    "body": ["<el-steps simple>", "\t<el-step title=\"step1\"></el-step>", "</el-steps>"]
   },
   "el-steps:icon": {
     "prefix": "el-steps:icon",
@@ -504,11 +486,7 @@
   },
   "el-table-column:slot": {
     "prefix": "el-table-column:slot",
-    "body": [
-      "<template slot-scope=\"scope\">",
-      "\t{{scope.row.status}}",
-      "</template>"
-    ]
+    "body": ["<template slot-scope=\"scope\">", "\t{{scope.row.status}}", "</template>"]
   },
   "el-tag": {
     "prefix": "el-tag",
@@ -557,12 +535,7 @@
   },
   "el-transfer": {
     "prefix": "el-transfer",
-    "body": [
-      "<el-transfer",
-      "\tv-model=\"$1\"",
-      "\t:data=\"$2\">",
-      "</el-transfer>"
-    ]
+    "body": ["<el-transfer", "\tv-model=\"$1\"", "\t:data=\"$2\">", "</el-transfer>"]
   },
   "el-transfer:search": {
     "prefix": "el-transfer:search",
@@ -578,13 +551,7 @@
   },
   "el-tree": {
     "prefix": "el-tree",
-    "body": [
-      "<el-tree",
-      "\t:data=\"$1\"",
-      "\t:props=\"$2\"",
-      "\t@node-click=\"$3\">",
-      "</el-tree>"
-    ]
+    "body": ["<el-tree", "\t:data=\"$1\"", "\t:props=\"$2\"", "\t@node-click=\"$3\">", "</el-tree>"]
   },
   "el-tree:select": {
     "prefix": "el-tree:select",
@@ -642,9 +609,7 @@
   },
   "el-calendar": {
     "prefix": "el-calendar",
-    "body": [
-      "<el-calendar v-model=\"${1:value}\"></el-calendar>"
-    ]
+    "body": ["<el-calendar v-model=\"${1:value}\"></el-calendar>"]
   },
   "el-image": {
     "prefix": "el-image",
@@ -657,7 +622,9 @@
   },
   "el-backtop": {
     "prefix": "el-backtop",
-    "body": ["<el-backtop target=\"${1:.page-component__scroll .el-scrollbar__wrap}\">$2</el-backtop>"]
+    "body": [
+      "<el-backtop target=\"${1:.page-component__scroll .el-scrollbar__wrap}\">$2</el-backtop>"
+    ]
   },
   "el-infinite-scroll": {
     "prefix": "el-infinite-scroll",
@@ -679,10 +646,30 @@
       "</el-drawer>"
     ]
   },
-  "el-empty":{
+  "el-empty": {
     "prefix": "el-empty",
+    "body": ["<el-empty description=\"$1\"></el-empty>"]
+  },
+  "el-descriptions": {
+    "prefix": "el-descriptions",
     "body": [
-      "<el-empty description=\"$1\"></el-empty>"
+      "<el-descriptions title=\"$1\">",
+      " <el-descriptions-item label=\"$2\">todo</el-descriptions-item>",
+      "</el-descriptions>"
     ]
+  },
+  "el-result": {
+    "prefix": "el-result",
+    "body": [
+      "<el-result icon=\"success\" title=\"成功提示\" subTitle=\"请根据提示进行操作\">",
+      " <template slot=\"extra\">",
+      " <el-button type=\"primary\" size=\"medium\">返回</el-button>",
+      "</template>",
+      "</el-result>"
+    ]
+  },
+  "el-avatar": {
+    "prefix": "el-avatar",
+    "body": ["<el-avatar shape=\"square\" :size=\"$1\" :src=\"$2\"></el-avatar>"]
   }
 }

@@ -65,7 +65,7 @@ export default {
     "framework": "element-ui"
   },
   "el-input-number": {
-    "attributes": ["value", "min", "max", "step", "size", "disabled", "controls-position", "controls", "debounce", "change","precision"],
+    "attributes": ["value", "min", "max", "step", "size", "disabled", "controls-position", "controls", "debounce", "change", "precision"],
     "defaults": ["v-model", "placeholder"],
     "framework": "element-ui"
   },
@@ -332,5 +332,23 @@ export default {
   },
   "el-drawer": {
     "attributes": ["append-to-body", "before-close", "close-on-press-escape", "custom-class", "destroy-on-close", "modal", "modal-append-to-body", "direction", "show-close", "size", "title", "visible", "wrapperClosable", "open", "opened", "close", "closed"]
+  },
+  "el-descriptions": {
+    "attributes": ["border", "column", "direction", "title", "extra", "colon", "labelClassName", "contentClassName", "labelStyle", "contentStyle"],
+    "defaults": ["title"],
+    "subtags": ["el-descriptions-item"],
+  },
+  "el-descriptions-item": {
+    "attributes": ["label", "span", "labelClassName", "contentClassName", "labelStyle", "contentStyle"],
+    "defaults": ["label"],
+    "subtags": ["el-descriptions-item"],
+  },
+  "el-result": {
+    "attributes": ["title", "sub-title", "icon"],
+    "defaults": ["title"],
+  },
+  "el-avatar": {
+    "attributes": ["icon", "size", "shape", "src", "srcSet", "fit", "alt", "error"],
+
   }
 }

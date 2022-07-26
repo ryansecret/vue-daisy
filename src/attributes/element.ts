@@ -469,6 +469,8 @@ export default {
   "el-timeline-item/size": ["normal", "large"],
   "el-divider/direction": ["horizontal", "vertical"],
   "el-divider/content-position": ["left", "right", "center"],
-  "el-image/fit": ["fill", "contain", "cover", "none", "scale-down"]
+  "el-image/fit": ["fill", "contain", "cover", "none", "scale-down"],
+  "el-avatar/fit": ["fill", "contain", "cover", "none", "scale-down"],
+  "el-avatar/size": ["large", "medium", "small", "large"],
 }
 
