@@ -1,3 +1,12 @@
+## [1.6.3](https://github.com/ryansecret/vue-daisy/compare/v1.6.2...v1.6.3) (2022-07-27)
+
+
+### Features
+
+* **snippets:** :sparkles: class 中添加样式值 ([1cdbe57](https://github.com/ryansecret/vue-daisy/commit/1cdbe578c3f56bccf156eb227dedaa11615cf651))
+
+
+
 ## [1.6.2](https://github.com/ryansecret/vue-daisy/compare/v1.6.1...v1.6.2) (2022-07-26)
 
 
