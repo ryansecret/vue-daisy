@@ -1,3 +1,12 @@
+## [1.6.4](https://github.com/ryansecret/vue-daisy/compare/v1.6.3...v1.6.4) (2022-07-28)
+
+
+### Features
+
+* **snippets:** :sparkles: vue Use snippets ([44d72e4](https://github.com/ryansecret/vue-daisy/commit/44d72e4b8fff8d181552d3ab86aa8776e7ec53ac))
+
+
+
 ## [1.6.3](https://github.com/ryansecret/vue-daisy/compare/v1.6.2...v1.6.3) (2022-07-27)
 
 
