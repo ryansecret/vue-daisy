@@ -3,5 +3,229 @@
     "prefix": "importvt",
     "body": ["import VueTypes from 'vue-types'"],
     "description": "import VueTypes from 'vue-types'"
-  }
+  },
+  "vueUseInject": {
+    "prefix": "vuInject",
+    "body": [
+      "import { computed, ref } from 'vue-demi'",
+      "import { createInjectionState } from '@vueuse/shared'",
+      "const [useProvideCounterStore, useCounterStore] = createInjectionState((initialValue) => {",
+      "const count = ref(initialValue)",
+      "const double = computed(() => count.value * 2)",
+      " function increment() {count.value++}",
+      "return { count, double, increment }",
+      "})",
+      "export { useProvideCounterStore,useCounterStore }"
+    ]
+  },
+  "vueUseCached": {
+    "prefix": "vuCache",
+    "body": [
+      "const source = ref({ value: 42, extra: 0 })",
+      "const cached = useCached(source, (a, b) => a.value === b.value)"
+    ]
+  },
+  "vueUseEventBus": {
+    "prefix": "vuEBus",
+    "body": [
+      "const bus = useEventBus(\"$1:eventKey\")",
+      "bus.on(()=>{})",
+      "bus.emit()",
+      "bus.once(()=>{})",
+      "bus.reset()"
+    ]
+  },
+  "vueUseListener": {
+    "prefix": "vuListener",
+    "body": ["useEventListener(document, 'visibilitychange', (evt) => { console.log(evt) })"]
+  },
+  "vueUseIntersectionObserver": {
+    "prefix": "vuIsb",
+    "body": [
+      "const target = ref(null)",
+      "const targetIsVisible = ref(false)",
+      " const { stop } = useIntersectionObserver(target,",
+      "([{ isIntersecting }], observerElement) => {",
+      "targetIsVisible.value = isIntersecting })"
+    ]
+  },
+  "vueUseKeyModifier": {
+    "prefix": "vukm",
+    "body": [
+      "const capsLockState = useKeyModifier('CapsLock', { events: ['mouseup', 'mousedown'] })",
+      "console.log(capsLockState)"
+    ]
+  },
+  "vueUseMagicKeys": {
+    "prefix": "vuMk",
+    "body": [
+      "const { shift, space, a /* keys you want to monitor */ } = useMagicKeys()",
+      "watch(space, (v) => {if (v) console.log('space has been pressed')})"
+    ]
+  },
+  "vueUseRefHistory": {
+    "prefix": "vurh",
+    "body": [
+      "const counter = ref(0)",
+      "const { history, commit, undo, redo } = useManualRefHistory(counter)"
+    ]
+  },
+  "vueUseStore": {
+    "prefix": "vuStore",
+    "body": [
+      "const state = useStorage('my-store', { hello: 'hi', greeting: 'Hello' })",
+      "state.value = null",
+      "const state = useStorage('my-store', { hello: 'hi', greeting: 'hello' }, localStorage)"
+    ]
+  },
+  "vueUseModel": {
+    "prefix": "vuModel",
+    "body": [" const data = useVModel(props, 'data', emit)"]
+  },
+  "vueUseModels": {
+    "prefix": "vuModels",
+    "body": [" const { foo, bar } = useVModels(props, emit)"]
+  },
+  "vueUseCookies": {
+    "prefix": "vuCookies",
+    "body": [
+      "const cookies = useCookies(['locale'])",
+      "cookies.get('locale') ",
+      "cookies.set('locale','cn') "
+    ]
+  },
+  "vueUseFuse": {
+    "prefix": "vuFuse",
+    "body": [
+      "import { useFuse } from '@vueuse/integrations/useFuse'",
+      "const data = ['John Smith','John Doe','Jane Doe' ]",
+      "const input = ref('Jhon D')",
+      "const { results } = useFuse(input, data)"
+    ]
+  },
+  "vueUseGlobalState": {
+    "prefix": "vuGs",
+    "body": [
+      "import { createGlobalState, useStorage } from '@vueuse/core'",
+      "export const useGlobalState = createGlobalState(",
+      "() => useStorage('vueuse-local-storage', 'initialValue'))"
+    ]
+  },
+  "vueUseReactiveComputed": {
+    "prefix": "vurd",
+    "body": ["const state = reactiveComputed(() => {return {foo: 'bar',bar: 'baz',}})"]
+  },
+  "vueUseReactiveOmit": {
+    "prefix": "vuRo",
+    "body": ["const childProps = reactiveOmit(props, 'value')"]
+  },
+  "vueUseReactivePick": {
+    "prefix": "vuRp",
+    "body": ["const childProps = reactivePick(props, 'color', 'font')"]
+  },
+  "vueUseRefDefault": {
+    "prefix": "vurefdefault",
+    "body": ["const raw = useStorage('key')", "const state = refDefault(raw, 'default')"]
+  },
+  "vueUseTimeout": {
+    "prefix": "vuTimeout",
+    "body": ["const { isPending, start, stop } = useTimeoutFn(() => {/* ... */}, 3000)"]
+  },
+  "vueUseDebounce": {
+    "prefix": "vuDebounce",
+    "body": ["const debouncedFn = useDebounceFn(() => {/* ... */}, 1000, { maxWait: 5000 })"]
+  },
+  "vueUseuseThrottle": {
+    "prefix": "useThrottleFn",
+    "body": ["const throttledFn = useThrottleFn(() => { /* ... */}, 1000)"]
+  },
+  "vueWatchArray": {
+    "prefix": "vuWatchArray",
+    "body": [
+      "watchArray(list, (newList, oldList, added, removed) => {console.log(newList); console.log(oldList); /* [1, 2, 3]*/ ",
+      "console.log(added) // [4]",
+      "console.log(removed) // []",
+      "})"
+    ]
+  },
+  "vueWatchDebounce": {
+    "prefix": "vuWatchDebounce",
+    "body": [
+      "watchDebounced(source,() => { console.log('changed!') },{ debounce: 500, maxWait: 1000 })"
+    ]
+  },
+  "vueWatchWithFilter": {
+    "prefix": "vuwatchWithFilter",
+    "body": [
+      "watchWithFilter(source,() => { console.log('changed!') }, ",
+      "{eventFilter: debounceFilter(500),",
+      "// throttledFilter, pausabledFilter or custom filters",
+      "},)"
+    ]
+  },
+  "vueToReactive": {
+    "prefix": "vueToReactive",
+    "body": ["const refState = ref({ foo: 'bar' })", "const state = toReactive(refState) "]
+  },
+  "vueUseTimeFormat": {
+    "prefix": "vuTimeFormat",
+    "body": ["const formatted = useDateFormat(useNow(), 'YYYY-MM-DD HH:mm:ss')"]
+  },
+  "vueUseDateFormat": {
+    "prefix": "vuDateFormat",
+    "body": [
+      "import { formatDate, normalizeDate } from '@vueuse/core'",
+      "const formatted=formatDate(normalizeDate(time),'YYYY-MM-DD HH:mm:ss')"
+    ]
+  },
+  "vueUseWatchPause": {
+    "prefix": "vuWatchPause",
+    "body": [
+      "const watcher = watchPausable(source,v => (log.value += `Changed to '${v}'`),)",
+      "watcher.pause()",
+      "watcher.resume()"
+    ]
+  },
+  "vueUseWatchOnce": {
+    "prefix": "vuWatchOnce",
+    "body": ["watchOnce(source, () => { console.log('source changed!')})"]
+  },
+  "vueUseWhenever": {
+    "prefix": "vuWhenever",
+    "body": ["whenever(() => counter.value === 7,() => console.log('counter is 7 now!'),)"]
+  },
+  "vueNullishCheck": {
+    "prefix": "vuNullishCheck",
+    "body": ["if (isDefined(example))"]
+  },
+  "vueUseComputedAsync": {
+    "prefix": "vuComputedAsync",
+    "body": [
+      "const userInfo = computedAsync(",
+      "async () => { return await mockLookUp(name.value) }, null, )"
+    ]
+  },
+  "vueUseRafFn": {
+    "prefix": "vuUseRafFn",
+    "body": [
+      "const { pause, resume } = useRafFn(() => {",
+      "count.value++; console.log(count.value);})"
+    ]
+  },
+  "vueUseChangeCase": {
+    "prefix": "vuChangeCase",
+    "body": [
+      "const changeCase = useChangeCase('hello world', 'camelCase')",
+      "const arr = ['camelCase','capitalCase','constantCase','dotCase','headerCase', 'noCase','paramCase', 'pascalCase','pathCase','sentenceCase','snakeCase']"
+    ]
+  },
+  "vueUseAsyncValidator": {
+    "prefix": "vuAsyncValidator",
+    "body": [
+      "const form = reactive({ email: '', name: '', age: '' })",
+      "const rules = {name: { type: 'string',min: 5, max: 20,required: true},age: {type: 'number',required: true}}",
+      "const { pass, isFinished, errorFields } = useAsyncValidator(form, rules)"
+    ]
+  },
+  ""
 }
