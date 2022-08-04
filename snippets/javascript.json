@@ -227,5 +227,47 @@
       "const { pass, isFinished, errorFields } = useAsyncValidator(form, rules)"
     ]
   },
-  ""
+  "vueUseBreakpoints": {
+    "prefix": "vuBreakpoints",
+    "body": [
+      "import { breakpointsTailwind, useBreakpoints } from '@vueuse/core'",
+      "const breakpoints = useBreakpoints(breakpointsTailwind)",
+      "const sm = breakpoints.smaller('sm')",
+      "const md = breakpoints.between('sm', 'md')",
+      "const lg = breakpoints.between('md', 'lg')"
+    ]
+  },
+  "vueUseCycleList": {
+    "prefix": "vuCycleList",
+    "body": [
+      "import { useCycleList } from '@vueuse/core'",
+      "const list = ['Dog', 'Cat','Lizard','Shark']",
+      "const { state, next, prev } = useCycleList(list)"
+    ]
+  },
+  "vueUseFileDialog": {
+    "prefix": "vuFileDialog",
+    "body": [
+      "import { useFileDialog } from '@vueuse/core'",
+      "const { files, open, reset } = useFileDialog()"
+    ]
+  },
+  "vueUseStepper": {
+    "prefix": "vuStepper",
+    "body": [
+      "import { useStepper } from '@vueuse/core'",
+      "const {steps, stepNames,current,next, previous,isLast,goTo,goNext,goPrevious,goBackTo,isNext, isPrevious,isCurrent,} = useStepper(['billing-address','terms', 'payment'])",
+      "console.log(current.value) // 'billing-address'"
+    ]
+  },
+  "vueUseWatchTriggerable": {
+    "prefix": "vuwatchTriggerable",
+    "body": [
+      "const source = ref(0)",
+      "const { trigger, ignoreUpdates } = watchTriggerable(source,v => console.log(`Changed to ${v}!`),)",
+      "source.value = 'bar'",
+      "await nextTick()",
+      "trigger() // logs: Changed to bar!"
+    ]
+  }
 }
