@@ -1,3 +1,12 @@
+## [1.6.5](https://github.com/ryansecret/vue-daisy/compare/v1.6.4...v1.6.5) (2022-08-04)
+
+
+### Features
+
+* **snippets:** :sparkles: vueUse 添加vueUseCycleList vueUseCycleList vueUseStepper vueUseWatchTriggerable ([d2ef2b7](https://github.com/ryansecret/vue-daisy/commit/d2ef2b7c8885235d5cc35eedea2c3b9247c36144))
+
+
+
 ## [1.6.4](https://github.com/ryansecret/vue-daisy/compare/v1.6.3...v1.6.4) (2022-07-28)
 
 
