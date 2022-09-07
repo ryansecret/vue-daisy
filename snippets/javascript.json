@@ -40,7 +40,7 @@
     "body": ["useEventListener(document, 'visibilitychange', (evt) => { console.log(evt) })"]
   },
   "vueUseIntersectionObserver": {
-    "prefix": "vuIsb",
+    "prefix": "vuIntersectionObserver",
     "body": [
       "const target = ref(null)",
       "const targetIsVisible = ref(false)",
@@ -50,21 +50,21 @@
     ]
   },
   "vueUseKeyModifier": {
-    "prefix": "vukm",
+    "prefix": "vuKeyModifier",
     "body": [
       "const capsLockState = useKeyModifier('CapsLock', { events: ['mouseup', 'mousedown'] })",
       "console.log(capsLockState)"
     ]
   },
   "vueUseMagicKeys": {
-    "prefix": "vuMk",
+    "prefix": "vuMagicKeys",
     "body": [
       "const { shift, space, a /* keys you want to monitor */ } = useMagicKeys()",
       "watch(space, (v) => {if (v) console.log('space has been pressed')})"
     ]
   },
   "vueUseRefHistory": {
-    "prefix": "vurh",
+    "prefix": "vuRefHistory",
     "body": [
       "const counter = ref(0)",
       "const { history, commit, undo, redo } = useManualRefHistory(counter)"
@@ -104,7 +104,7 @@
     ]
   },
   "vueUseGlobalState": {
-    "prefix": "vuGs",
+    "prefix": "vuGlobalState",
     "body": [
       "import { createGlobalState, useStorage } from '@vueuse/core'",
       "export const useGlobalState = createGlobalState(",
@@ -112,15 +112,15 @@
     ]
   },
   "vueUseReactiveComputed": {
-    "prefix": "vurd",
+    "prefix": "vuReactiveComputed",
     "body": ["const state = reactiveComputed(() => {return {foo: 'bar',bar: 'baz',}})"]
   },
   "vueUseReactiveOmit": {
-    "prefix": "vuRo",
+    "prefix": "vuReactiveOmit",
     "body": ["const childProps = reactiveOmit(props, 'value')"]
   },
   "vueUseReactivePick": {
-    "prefix": "vuRp",
+    "prefix": "vuReactivePick",
     "body": ["const childProps = reactivePick(props, 'color', 'font')"]
   },
   "vueUseRefDefault": {
