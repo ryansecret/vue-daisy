@@ -1,3 +1,12 @@
+# [1.7.0](https://github.com/ryansecret/vue-daisy/compare/v1.6.5...v1.7.0) (2022-09-07)
+
+
+### Features
+
+* **snippets:** :sparkles: vueuse 修改prefix ([647be12](https://github.com/ryansecret/vue-daisy/commit/647be12647a6f23d0bcb88c86a3d92eec6d5f320))
+
+
+
 ## [1.6.5](https://github.com/ryansecret/vue-daisy/compare/v1.6.4...v1.6.5) (2022-08-04)
 
 
