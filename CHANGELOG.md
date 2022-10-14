@@ -1,3 +1,12 @@
+# [1.8.0](https://github.com/ryansecret/vue-daisy/compare/v1.7.0...v1.8.0) (2022-10-14)
+
+
+### Features
+
+* **snippets:** :sparkles: vueUse & phone regex ([279c4c4](https://github.com/ryansecret/vue-daisy/commit/279c4c49b51b4120607381b49b60859aee70221e))
+
+
+
 # [1.7.0](https://github.com/ryansecret/vue-daisy/compare/v1.6.5...v1.7.0) (2022-09-07)
 
 
