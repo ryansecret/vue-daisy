@@ -269,5 +269,28 @@
       "await nextTick()",
       "trigger() // logs: Changed to bar!"
     ]
+  },
+  "vueUseusePrecision": {
+    "prefix": "vuPrecision",
+    "body": [
+      "const value = ref(3.1415)",
+      "const result = usePrecision(value, 2) // 3.14",
+      "const ceilResult = usePrecision(value, 2, {math: 'ceil'})"
+    ]
+  },
+  "vueUseToNumber": {
+    "prefix": "vuToNumber",
+    "body": ["const str = ref('123')", "const number = useToNumber(str)"]
+  },
+  "vueUseCloned": {
+    "prefix": "vuCloned",
+    "body": ["const original = ref({ key: 'value' })", "const { cloned } = useCloned(original)"]
+  },
+  "vueUseElementHover": {
+    "prefix": "vuElementHover",
+    "body": [
+      "const myHoverableElement = ref()",
+      "const isHovered = useElementHover(myHoverableElement)"
+    ]
   }
 }
