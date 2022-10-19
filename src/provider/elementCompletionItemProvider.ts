@@ -412,7 +412,8 @@ export default class ElementCompletionItemProvider implements CompletionItemProv
       if (!tagPath.endsWith('.vue')) {
         tagPath += '.vue';
       }
-      if (tagPath.indexOf('./') > 0 || tagPath.indexOf('../') > 0) {
+
+      if (tagPath.indexOf('./') > -1 || tagPath.indexOf('../') > -1) {
         tagPath = path.join(this._document.fileName, '../', tagPath);
       } else {
         tagPath = path.join(workspace.workspaceFolders[0].uri.path, tagPath);
