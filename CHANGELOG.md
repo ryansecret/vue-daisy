@@ -1,3 +1,12 @@
+## [1.9.1](https://github.com/ryansecret/vue-daisy/compare/v1.9.0...v1.9.1) (2022-10-19)
+
+
+### Bug Fixes
+
+* **CompletionItemProvider:** :bug: fix 相对路径自定义组件的查找 ([429a6de](https://github.com/ryansecret/vue-daisy/commit/429a6deabe85098565ba974917a88e415b305bf0))
+
+
+
 # [1.9.0](https://github.com/ryansecret/vue-daisy/compare/v1.8.0...v1.9.0) (2022-10-19)
 
 
