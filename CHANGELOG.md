@@ -1,3 +1,12 @@
+# [1.9.0](https://github.com/ryansecret/vue-daisy/compare/v1.8.0...v1.9.0) (2022-10-19)
+
+
+### Bug Fixes
+
+* **CompletionItemProvider:** :bug: 解决多行文本标签为空 ([df713e0](https://github.com/ryansecret/vue-daisy/commit/df713e0f984e1b39614cb4c44dd4062bccea4065))
+
+
+
 # [1.8.0](https://github.com/ryansecret/vue-daisy/compare/v1.7.0...v1.8.0) (2022-10-14)
 
 
