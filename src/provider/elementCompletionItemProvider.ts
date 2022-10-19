@@ -35,7 +35,7 @@ export default class ElementCompletionItemProvider implements CompletionItemProv
       if (line !== this._position.line) {
         txt = this._document.lineAt(line).text;
       }
-      tag = this.matchTag(this.tagReg, txt, line);
+      tag = this.matchTag(/<([\w-]+)/g, txt, line);
 
       if (tag === 'break') { return; }
       if (tag) { return <TagObject>tag; }
@@ -81,7 +81,20 @@ export default class ElementCompletionItemProvider implements CompletionItemProv
     return arr.pop() || '';
   }
 
-  // 获取本行位置前的文本
+  // // 获取本行位置前的文本
+  // getTextBeforePosition(position: Position): string {
+  //   let retry = 0;
+  //   let line = position.line;
+  //   let text = "";
+  //   while (!text && retry < 15) {
+  //     var start = new Position(line, 0);
+  //     var range = new Range(start, position);
+  //     text = this._document.getText(range);
+  //     retry++;
+  //     line--;
+  //   }
+  //   return text;
+  // }
   getTextBeforePosition(position: Position): string {
     var start = new Position(position.line, 0);
     var range = new Range(start, position);
