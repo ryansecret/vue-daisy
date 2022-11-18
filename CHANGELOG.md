@@ -1,3 +1,12 @@
+# [1.10.0](https://github.com/ryansecret/vue-daisy/compare/v1.9.1...v1.10.0) (2022-11-18)
+
+
+### Features
+
+* **snippets:** :sparkles: vueuse & element 添加snippets ([3c9d806](https://github.com/ryansecret/vue-daisy/commit/3c9d80633e75c116be106e7422650608fbb8946c))
+
+
+
 ## [1.9.1](https://github.com/ryansecret/vue-daisy/compare/v1.9.0...v1.9.1) (2022-10-19)
 
 
