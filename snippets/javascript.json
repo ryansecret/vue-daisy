@@ -292,5 +292,41 @@
       "const myHoverableElement = ref()",
       "const isHovered = useElementHover(myHoverableElement)"
     ]
+  },
+  "vueUseClipboard": {
+    "prefix": "vuseClipboard",
+    "body": [
+        "",
+        "const input = ref('')",
+        "",
+        "const { text, isSupported, copy } = useClipboard()",
+        "const permissionRead = usePermission('clipboard-read')",
+        "const permissionWrite = usePermission('clipboard-write')"
+    ]
+   },
+   "vueUsefocusTrap": {
+    "prefix": "vuseForcusTrap",
+    "body": [
+        "const target = ref()",
+        "const { hasFocus, activate, deactivate } = useFocusTrap(target, { immediate: true })"
+    ]
+   },
+   "vuseWebSocket": {
+    "prefix": "vuseWebSock",
+    "body": [
+        "import { useWebSocket } from '@vueuse/core'",
+        "",
+        "const { status, data, send, open, close } = useWebSocket('ws://websocketurl', {",
+        "  protocols: ['soap'], // ['soap', 'wamp']",
+        "})"
+    ]
+  },
+  "vuseClickOutside": {
+    "prefix": "vuseOutside",
+    "body": [
+        "\tconst target = ref(null)",
+        "",
+        "\tonClickOutside(target, (event) => console.log(event))"
+    ]
   }
 }

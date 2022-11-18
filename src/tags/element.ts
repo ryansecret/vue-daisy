@@ -349,6 +349,10 @@ export default {
   },
   "el-avatar": {
     "attributes": ["icon", "size", "shape", "src", "srcSet", "fit", "alt", "error"],
-
+  },
+  "el-statistic": {
+    "attributes": ["group-separator", "precision", "value", "title"],
+    "description": "Used to highlight a certain number or group of numbers, such as showing a numerical value, such as a dollar amount, ranking, etc.",
+    "framework": "element-ui"
   }
 }

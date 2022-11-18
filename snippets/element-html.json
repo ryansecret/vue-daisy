@@ -675,5 +675,11 @@
   "el-page-header": {
     "prefix": "el-page-header",
     "body": ["<el-page-header @back=\"goBack\" content=\"详情页面\">", "</el-page-header>"]
+  },
+  "el-statistic ": {
+    "prefix": "el-statistic ",
+    "body": [
+        " <el-statistic group-separator=\",\" :precision=\"2\" :value=\"value2\" :title=\"title\" />"
+    ]
   }
 }

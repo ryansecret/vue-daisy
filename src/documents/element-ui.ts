@@ -1127,5 +1127,48 @@ export default {
 
   | 名称	 | 说明               |
   | ------ | ------------------ |
-  | default  | 自定义头像展示内容 | `
+  | default  | 自定义头像展示内容 | `,
+  "el-statistic": `[element：https://element.eleme.cn/#/zh-CN/component/statistic](https://element.eleme.cn/#/zh-CN/component/statistic) \n
+  | 参数          | 说明            | 类型            | 可选值                 | 默认值   |
+  |-------------  |---------------- |---------------- |---------------------- |-------- |
+  | value            | 数值内容                 | string \| number    | -          | -       |
+  | decimalSeparator | 设置小数点            | string                  | -      | .       |
+  | formatter        | 自定义数值展示| v-slot \|({value}) => VNode | -   | -      |
+  | groupSeparator   | 设置千分位标识符              | string           | -             | ,       |
+  | precision        | 数值精度      | number                | -        | 0      |
+  | prefix           | 设置数值的前缀          | string \| v-slot | -             | -       |
+  | suffix           |设置数值的后缀          | string \| v-slot     | -         | -       |
+  | title            | 	数值的标题               | string \| v-slot   | -           | -       |
+  | valueStyle       | 设置数值的样式          | style             | -            | -       |
+  | rate       | 设置倍率          | number             | -            | 1000       |
+
+
+  ### Statistic Slots
+
+  | name | 说明 |
+  |------|--------|
+  | prefix | 数值的前缀 |
+  | suffix | 数值的后缀 |
+  | formatter | 数值内容 |
+  | title | 数值的标题 |
+
+
+  ### Statistic.Countdown  Attributes
+
+  | 参数          | 说明            | 类型            | 可选值                 | 默认值   |
+  |-------------  |---------------- |---------------- |---------------------- |-------- |
+  | timeIndices       | 是否开启倒计时功能     | boolean     | true\|false                        | false      |
+  | value         | 必填值，输入绑定值   | string  | — | — |
+  | format         | 格式化倒计时展示   | string  | — | 'HH:mm:ss' |
+  ### Statistic.Countdown Events
+  | 事件名称 | 说明 | 回调参数 |
+  |---------|--------|---------|
+  | change | 在倒计时的功能中开启 | (value:  Date) |
+  | finish | 在倒计时完成后启动 | (value: boolean) |
+
+  ### Statistic Methods
+  | 方法名 | 说明 | 参数 |回调参数|
+  | ---- | ---- | ---- |---- |
+  | suspend | 暂停倒计时|(value:boolean) |(value:  Date) |
+  `
 }

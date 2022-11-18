@@ -157,7 +157,7 @@ export default class ElementCompletionItemProvider implements CompletionItemProv
     }
 
     tagAttrs.forEach((attr: string | undefined) => {
-      const attrItem = this.getAttrItem(tag, attr);
+      const attrItem = this.getAttrItem(tag, attr) || {};
       if (attrItem && (!prefix?.trim() || this.firstCharsEqual(attr!, prefix))) {
         const sug = this.buildAttrSuggestion({ attr, tag, bind, method }, attrItem);
         sug && suggestions.push(sug);
