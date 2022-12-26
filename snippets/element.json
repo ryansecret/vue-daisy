@@ -6,5 +6,11 @@
   "reg-email": {
     "prefix": "reg-email",
     "body": "/^[A-Za-z\\d]+([-_.][A-Za-z\\d]+)*@([A-Za-z\\d]+[-.])+[A-Za-z\\d]{2,4}$/"
+  },
+  "reg-domain": {
+    "prefix": "reg-domain",
+    "body": [
+        "/([0-9a-zA-Z-]+[.]{1})+[a-zA-Z-]+/g"
+    ]
   }
 }

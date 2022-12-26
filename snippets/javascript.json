@@ -252,14 +252,6 @@
       "const { files, open, reset } = useFileDialog()"
     ]
   },
-  "vueUseStepper": {
-    "prefix": "vuStepper",
-    "body": [
-      "import { useStepper } from '@vueuse/core'",
-      "const {steps, stepNames,current,next, previous,isLast,goTo,goNext,goPrevious,goBackTo,isNext, isPrevious,isCurrent,} = useStepper(['billing-address','terms', 'payment'])",
-      "console.log(current.value) // 'billing-address'"
-    ]
-  },
   "vueUseWatchTriggerable": {
     "prefix": "vuwatchTriggerable",
     "body": [
@@ -328,5 +320,134 @@
         "",
         "\tonClickOutside(target, (event) => console.log(event))"
     ]
-  }
+  },
+  "vuseStepper": {
+    "prefix": "vuseStepper",
+    "body": [
+        "\tconst {",
+        "\t  steps,",
+        "\t  stepNames,",
+        "\t  index,",
+        "\t  current,",
+        "\t  next,",
+        "\t  previous,",
+        "\t  isFirst,",
+        "\t  isLast,",
+        "\t  goTo,",
+        "\t  goNext,",
+        "\t  goPrevious,",
+        "\t  goBackTo,",
+        "\t  isNext,",
+        "\t  isPrevious,",
+        "\t  isCurrent,",
+        "\t  isBefore,",
+        "\t  isAfter",
+        "\t} = useStepper(['billing-address', 'terms', 'payment'])",
+        "",
+        "\t// Access the step through `current`",
+        "\tconsole.log(current.value) // 'billing-address'"
+    ]
+  },
+  "vusePage": {
+    "prefix": "vusePage",
+    "body": [
+        "function fetchData({ currentPage, currentPageSize }: { currentPage: number; currentPageSize: number }) {",
+        "  fetch(currentPage, currentPageSize).then((responseData) => {",
+        "\tdata.value = responseData",
+        "  })",
+        "}",
+        "",
+        "const {",
+        "  currentPage,",
+        "  currentPageSize,",
+        "  pageCount,",
+        "  isFirstPage,",
+        "  isLastPage,",
+        "  prev,",
+        "  next,",
+        "} = useOffsetPagination({",
+        "  total: database.value.length,",
+        "  page: 1,",
+        "  pageSize,",
+        "  onPageChange: fetchData,",
+        "  onPageSizeChange: fetchData,",
+        "})",
+        ""
+    ]
+  },
+  "vuseMagicKeys": {
+    "prefix": "vuseMagicKeys",
+    "body": [
+        "import { useMagicKeys } from '@vueuse/core'",
+        "",
+        "const keys = useMagicKeys()",
+        "const shiftCtrlA = keys['Shift+Ctrl+A']",
+        "",
+        "watch(shiftCtrlA, (v) => {",
+        "  if (v)",
+        "\tconsole.log('Shift + Ctrl + A have been pressed')",
+        "})"
+    ]
+  },
+  "vuseKeyModifier": {
+    "prefix": "vuseKeyModifier",
+    "body": [
+        "import { useKeyModifier } from '@vueuse/core'",
+        "",
+        "const capsLockState = useKeyModifier('CapsLock')",
+        "",
+        "console.log(capsLockState.value)"
+    ]
+  },
+  "vuseIdle": {
+    "prefix": "vuseIdle",
+    "body": [
+        "const { idle, lastActive } = useIdle(5 * 60 * 1000) // 5 min",
+        "",
+        "console.log(idle.value) /"
+    ]
+  },
+  "vuseFullScreen": {
+    "prefix": "vuseFullScreen",
+    "body": [
+        "",
+        "const { isFullscreen, enter, exit, toggle } = useFullscreen(el)"
+    ]
+  },
+  "vuseMouseInElement": {
+    "prefix": "vuseMouseInElement",
+    "body": [
+        "\tconst target = ref(null)",
+        "",
+        "\tconst { x, y, isOutside } = useMouseInElement(target)",
+        "",
+        "\treturn { x, y, isOutside }"
+    ]
+ },
+ "vuseWebWorkerFn": {
+  "prefix": "vuseWebWorkerFn",
+  "body": [
+      "const { workerFn, workerStatus, workerTerminate } = useWebWorkerFn(",
+      "  dates => dates.sort(dateFns.compareAsc),",
+      "  {",
+      "\ttimeout: 50000,",
+      "\tdependencies: [",
+      "\t  'https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.30.1/date_fns.js', // dateFns",
+      "\t],",
+      "  },",
+      ")"
+  ]
+ },
+ "vuseScriptTag": {
+  "prefix": "vuseScriptTag",
+  "body": [
+      "useScriptTag(",
+      "  'https://player.twitch.tv/js/embed/v1.js',",
+      "  // on script tag loaded.",
+      "  (el: HTMLScriptElement) => {",
+      "\t// do something",
+      "  },",
+      ")"
+  ]
+}
 }
