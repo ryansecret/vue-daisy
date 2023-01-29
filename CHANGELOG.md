@@ -1,3 +1,13 @@
+# [1.11.0](https://github.com/ryansecret/vue-daisy/compare/v1.10.0...v1.11.0) (2023-01-29)
+
+
+### Features
+
+* **CompletionItemProvider:** :sparkles: element 属性值支持智能提示 ([56194f3](https://github.com/ryansecret/vue-daisy/commit/56194f310d29105d42548bd5226baa9c11b6f012))
+* **snippets:** :sparkles: vueuse snippet update ([a8e698d](https://github.com/ryansecret/vue-daisy/commit/a8e698d02f721e5afbc2aa956e7ec3e72c75fe53))
+
+
+
 # [1.10.0](https://github.com/ryansecret/vue-daisy/compare/v1.9.1...v1.10.0) (2022-11-18)
 
 
