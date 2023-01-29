@@ -449,5 +449,30 @@
       "  },",
       ")"
   ]
-}
+ },
+ "excludeModules": {
+  "prefix": "excludeModule",
+  "body": [
+      "import { APP_CONFIG } from '@/utils/setting'",
+      "",
+      "function check(el, binding) {",
+      "  if (!APP_CONFIG.excludeModules.includes(binding.value)) return",
+      "  if (el.parentNode) {",
+      "\tel.parentNode.removeChild(el)",
+      "  }",
+      "}",
+      "",
+      "export function setupExcludModules(app) {",
+      "  app.directive('excludeModules', {",
+      "\tupdate: function(el, binding) {",
+      "\t  check(el, binding)",
+      "\t},",
+      "\tinserted: function(el, binding) {",
+      "\t  check(el, binding)",
+      "\t}",
+      "  })",
+      "}",
+      ""
+  ]
+ }
 }

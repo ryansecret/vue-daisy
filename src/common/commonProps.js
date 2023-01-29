@@ -1,3 +1,3 @@
 export default  {
-  'v-excludeModules': { "description": "number of column the grid spans", options: ['helpDoc'] },
+  'v-excludeModules': { "description": "排除掉相关的功能", options: ['helpDoc'] },
 };

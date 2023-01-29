@@ -681,5 +681,11 @@
     "body": [
         " <el-statistic group-separator=\",\" :precision=\"2\" :value=\"value2\" :title=\"title\" />"
     ]
+  },
+  "el-divider ": {
+    "prefix": "el-divider ",
+    "body": [
+        "<el-divider />"
+    ]
   }
 }

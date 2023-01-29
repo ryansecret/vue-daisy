@@ -158,7 +158,7 @@ export default class ElementCompletionItemProvider implements CompletionItemProv
 
     tagAttrs.forEach((attr: string | undefined) => {
       const attrItem = this.getAttrItem(tag, attr) || {};
-      if (attrItem && (!prefix?.trim() || this.firstCharsEqual(attr!, prefix))) {
+      if (attrItem && (!prefix?.trim() || attr!.startsWith(prefix))) {
         const sug = this.buildAttrSuggestion({ attr, tag, bind, method }, attrItem);
         sug && suggestions.push(sug);
       }
@@ -241,7 +241,6 @@ export default class ElementCompletionItemProvider implements CompletionItemProv
         documentation: "daisy----" + value.description
       };
     })
-
   }
 
   // 获取属性值
@@ -258,7 +257,7 @@ export default class ElementCompletionItemProvider implements CompletionItemProv
         ATTRS['icons'].forEach((icon: string) => {
           options.push(icon.replace(/^el-icon-/, ''));
         });
-      }
+      } else { options = attrItem; }
     }
     return options || [];
   }
