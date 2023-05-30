@@ -1,3 +1,12 @@
+# [1.12.0](https://github.com/ryansecret/vue-daisy/compare/v1.11.0...v1.12.0) (2023-05-30)
+
+
+### Features
+
+* **___CUSTOM___:** :sparkles: 添加jelement-biz组件 opertionCheck\editWhiteList\JcbBillPeriodRadio\jcb-charge  snipets和文档 ([ffd836b](https://github.com/ryansecret/vue-daisy/commit/ffd836bd6fd9ca10e5b57e20585415f014a88e2a))
+
+
+
 # [1.11.0](https://github.com/ryansecret/vue-daisy/compare/v1.10.0...v1.11.0) (2023-01-29)
 
 
