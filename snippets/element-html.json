@@ -187,7 +187,7 @@
   "el-form": {
     "prefix": "el-form",
     "body": [
-      "<el-form ref=\"${1:form}\" :model=\"${2:form}\" label-width=\"${3:80px}\">",
+      "<el-form ref=\"${1:formRef}\" :model=\"${2:form}\" label-width=\"${3:120px}\" label-suffix=\"：\" @submit.native.prevent>",
       "\t$4",
       "</el-form>"
     ]
@@ -195,8 +195,7 @@
   "el-form:inline": {
     "prefix": "el-form:inline",
     "body": [
-      "<el-form :inline=\"true\" ref=\"${1:form}\" :model=\"${2:form}\" label-width=\"${3:80px}\">",
-      "\t$4",
+      "<el-form :inline=\"true\" ref=\"${1:formRef}\" :model=\"${2:form}\" label-width=\"${3:120px}\" label-suffix=\"：\" @submit.native.prevent>",
       "</el-form>"
     ]
   },
@@ -687,5 +686,45 @@
     "body": [
         "<el-divider />"
     ]
-  }
+  } ,
+  "jcb-chargeInfo": {
+    "prefix": "jcb-charge",
+    "body": [
+        " <jcb-charge-info :charge-info=\"row.charge\" />"
+    ]
+  },
+  "jcb-bill-period": {
+    "prefix": "jcb-period",
+    "body": [
+        "\t\t\t\t<JcbBillPeriodRadio",
+        "\t\t\t\t  v-model=\"selectedPeriod\"",
+        "\t\t\t\t  :service-code=\"serviceCode\"",
+        "\t\t\t\t  :region-id=\"regionId\"",
+        "\t\t\t\t/>"
+    ]
+  },
+  "opertionCheck": {
+    "prefix": "operationCheck",
+    "body": [
+        " <jcb-operation-check :instance=\"instanceInfo\" :externalCheck=\"checkAccout\">",
+        "\t\t\t<template #default=\"{ canOperate }\">",
+        "\t\t\t  <el-button type=\"primary\" :disabled=\"!canOperate\">",
+        "\t\t\t\t编辑",
+        "\t\t\t  </el-button>",
+        "\t\t\t</template>",
+        "\t\t</jcb-operation-check>"
+    ]
+  },
+  "editWhiteList": {
+    "prefix": "editWhiteList",
+    "body": [
+        " <jcb-edit-white-list ",
+        "\t\t  :instance=\"instanceInfo\"  ",
+        "\t\t  :edit-action=\"editWhiteList\"",
+        "\t\t  :region-id=\"regionId\"",
+        "\t\t  :ip-list=\"ipList\"",
+        "\t\t  :group-name=\"groupName\"",
+        "\t\t  @editDone=\"refresh\"/>"
+    ]
+   }
 }
