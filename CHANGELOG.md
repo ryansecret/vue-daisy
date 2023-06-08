@@ -1,3 +1,12 @@
+# [1.13.0](https://github.com/ryansecret/vue-daisy/compare/v1.12.0...v1.13.0) (2023-06-08)
+
+
+### Features
+
+* **snippets:** :sparkles: dbUI 组件添加snippet & tag 提示 ([02ae14c](https://github.com/ryansecret/vue-daisy/commit/02ae14c480f0c1f64afe721da05a622e5e0c7349))
+
+
+
 # [1.12.0](https://github.com/ryansecret/vue-daisy/compare/v1.11.0...v1.12.0) (2023-05-30)
 
 
