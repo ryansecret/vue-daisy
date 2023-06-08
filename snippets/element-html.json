@@ -726,5 +726,108 @@
         "\t\t  :group-name=\"groupName\"",
         "\t\t  @editDone=\"refresh\"/>"
     ]
+   },
+   "dbStatus": {
+    "prefix": "dbStatus",
+    "body": [
+        "\t\t\t\t<db-status",
+        "\t\t\t\t  :status=\"row.instanceStatus\"",
+        "\t\t\t\t  :status-text=\"\\$t('instanceStatus')\"",
+        "\t\t\t\t  :middle-status=\"INSTANCE_MIDDLE_STATUS\"",
+        "\t\t\t\t/>"
+    ]
+   },
+   "dbConfirm": {
+    "prefix": "db-confirm",
+    "body": [
+        "\t<db-confirm :visible.sync=\"dgShow\" :cb=\"confirm\" :title=\"\">",
+        "\t  <el-form",
+        "\t\tref=\"formRef\"",
+        "\t\t:model=\"state\"",
+        "\t\tlabel-width=\"100px\"",
+        "\t\tlabel-suffix=\"：\"",
+        "\t\t@submit.native.prevent",
+        "\t  >",
+        "\t  ",
+        "\t  </el-form>",
+        "\t</db-confirm>"
+    ]
+  },
+  "dbCopybtn": {
+    "prefix": "db-copy-btn",
+    "body": [
+        " <db-copy-btn :content=\"\" class=\"inline\" />"
+    ]
+  },
+  "dbInputNumber": {
+    "prefix": "db-input-number",
+    "body": [
+        "\t\t\t\t\t<db-input-number",
+        "\t\t\t\t\t  v-model=\"\"",
+        "\t\t\t\t\t  :min=\"1\"",
+        "\t\t\t\t\t  :max=\"100\"",
+        "\t\t\t\t\t  :precision=\"0\"",
+        "\t\t\t\t\t/>"
+    ]
+   },
+   "dbAutoLoadSelect": {
+    "prefix": "db-auto-load-select",
+    "body": [
+        "\t<db-auto-load-select",
+        "\t  v-show=\"false\"",
+        "\t  ref=\"vpcRef\"",
+        "\t  v-model=\"currentVpc\"",
+        "\t  :loading.sync=\"loading\"",
+        "\t  lable-key=\"vpcName\"",
+        "\t  :get-list=\"getList\"",
+        "\t  :disabled=\"disableVpc\"",
+        "\t  :placeholder=\"\\$t('choiceVPC')\"",
+        "\t  class=\"w-5/12\"",
+        "\t  value-key=\"vpcId\"",
+        "\t  :page-size=\"10\"",
+        "\t/>"
+    ]
+  },
+  "dbHelpInfo": {
+    "prefix": "db-help-info",
+    "body": [
+        "<db-help-info :info=\"tip\" />"
+    ]
+   },
+   "dbVpcLink": {
+    "prefix": "db-vpc-link",
+    "body": [
+        "\t\t<db-vpc-link",
+        "\t\t\t:region-id=\"regionId\"",
+        "\t\t\t:vpc-id=\"instance.vpcId\"",
+        "\t\t\t:subnet-id=\"instance.subnetId\"",
+        "\t\t  />"
+    ]
+   },
+   "dbExcludeContainer": {
+    "prefix": "db-exclude-container",
+    "body": [
+        "\t\t <db-exclude-container module-id=\"showBilling\">",
+        "\t\t  ",
+        "\t\t </db-exclude-container>"
+    ]
+   },
+   "dbDateRange": {
+    "prefix": "db-date-range",
+    "body": [
+        "<db-date-range class=\"mx-1\" @change=\"setTime\" />"
+    ]
+   },
+   "dbVpcSelect": {
+    "prefix": "db-vpc-select",
+    "body": [
+        "\t\t   <db-vpc-select",
+        "\t\t\t\t\tclass=\"w-3/5\"",
+        "\t\t\t\t\t:region-id=\"regionId\"",
+        "\t\t\t\t\t:vpc.sync=\"buyInfo.vpc\"",
+        "\t\t\t\t\t:subnet.sync=\"buyInfo.subnet\"",
+        "\t\t\t\t\t:need-ip=\"needIpNum\"",
+        "\t\t\t\t  />"
+    ]
    }
 }
