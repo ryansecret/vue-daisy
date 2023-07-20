@@ -11,8 +11,12 @@ export default {
       },
       "db-date-range": {
         "attributes": ["defaultShortcutsIndex","timeDefault","enabledInit", "needDatePicker"],
-        "description": "下拉自动加载的select",
+        "description": "时间选择",
         "framework": "dbUI"
       },
-      
+      "db-deploy-az": {
+        "attributes": ["regionId","serviceCode","supportMultiRadio", "showAzTip","labelWidth","min","max","arch","type","soldOutMethod","disableAzMethod","azsMapMethod","defaultSelectAzNum"],
+        "description": "az 部署",
+        "framework": "dbUI"
+      },
 };

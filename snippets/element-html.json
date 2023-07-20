@@ -801,6 +801,7 @@
         "\t\t\t:region-id=\"regionId\"",
         "\t\t\t:vpc-id=\"instance.vpcId\"",
         "\t\t\t:subnet-id=\"instance.subnetId\"",
+        "\t\t\t:onlyShowId=\"false\"",
         "\t\t  />"
     ]
    },
@@ -829,5 +830,19 @@
         "\t\t\t\t\t:need-ip=\"needIpNum\"",
         "\t\t\t\t  />"
     ]
-   }
+   },
+   "dbDeployAz": {
+    "prefix": "dbAz",
+    "body": [
+        "\t  <db-deploy-az",
+        "\t\tv-model=\"az\"",
+        "\t\t:regionId=\"regionId\"",
+        "\t\t:serviceCode=\"serviceCode\"",
+        "\t\t:azsMapMethod=\"azsMapFunction\"",
+        "\t\t:min=\"2\"",
+        "\t\t:max=\"3\"",
+        "\t  >",
+        "\t  </db-deploy-az>"
+    ]
+  }
 }
