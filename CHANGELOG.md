@@ -1,3 +1,12 @@
+## [1.13.1](https://github.com/ryansecret/vue-daisy/compare/v1.13.0...v1.13.1) (2023-07-24)
+
+
+### Features
+
+* **snippets:** :sparkles: 添加dbDeployAz 代码段& daterange\autoloadSelect\vpclink 文档 ([1619371](https://github.com/ryansecret/vue-daisy/commit/1619371956b8f3f1a2cbb5fa0ab7b3c1541214e5))
+
+
+
 # [1.13.0](https://github.com/ryansecret/vue-daisy/compare/v1.12.0...v1.13.0) (2023-06-08)
 
 
