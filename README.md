@@ -1,6 +1,6 @@
 # vue daisy
 
-本项目为vue 插件，方便的提供了一些常用的代码段，并为常用的组件如elementUI、iview以及自定义组件提供了智能提示。
+本项目为vue 插件，方便的提供了一些常用的代码段，并为常用的组件如elementUI、@jdcloud/jelement-biz、@jdcloud/dbU以及自定义组件提供了智能提示。
 
 
 ## 使用说明
