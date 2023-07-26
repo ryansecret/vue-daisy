@@ -1,3 +1,14 @@
+## [1.13.2](https://github.com/ryansecret/vue-daisy/compare/v1.13.0...v1.13.2) (2023-07-26)
+
+
+### Features
+
+* **doc:** :sparkles: update readme ([6180aee](https://github.com/ryansecret/vue-daisy/commit/6180aee897870565980670c9645a8b9c30f3d95e))
+* **package:** :sparkles: snippets 兼容voltar ([0fdcbe4](https://github.com/ryansecret/vue-daisy/commit/0fdcbe4d5692346dd56c14e04faf40100aacf1ca))
+* **snippets:** :sparkles: 添加dbDeployAz 代码段& daterange\autoloadSelect\vpclink 文档 ([1619371](https://github.com/ryansecret/vue-daisy/commit/1619371956b8f3f1a2cbb5fa0ab7b3c1541214e5))
+
+
+
 ## [1.13.1](https://github.com/ryansecret/vue-daisy/compare/v1.13.0...v1.13.1) (2023-07-24)
 
 
