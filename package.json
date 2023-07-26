@@ -1,7 +1,7 @@
 {
   "name": "vue-daisy",
   "displayName": "vue-daisy",
-  "description": "vue enhance，extension for Element-UI,IVIEW",
+  "description": "vue enhance extension for elementUI、@jdcloud/jelement-biz、@jdcloud/dbU",
   "version": "1.13.1",
   "publisher": "ryansecreat",
   "repository": {
@@ -17,7 +17,6 @@
   "activationEvents": [
     "onLanguage:html",
     "onLanguage:vue",
-    "onCommand:vue-daisy.ryan",
     "onCommand:vue-daisy.functionCompletion"
   ],
   "main": "./dist/extension.js",
@@ -56,6 +55,10 @@
       {
         "language": "vue-html",
         "path": "./snippets/iview-html.json"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/element-html.json"
       },
       {
         "language": "vue-html",
