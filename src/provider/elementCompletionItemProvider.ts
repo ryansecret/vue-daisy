@@ -7,7 +7,7 @@ import {
 import { App } from '../app';
 import ATTRS from '../vue-attributes';
 import TAGS from '../vue-tags';
-import COMMON_PROPS from "../common/commonProps"
+import COMMON_PROPS from "../common/commonProps";
 import * as prettyHTML from 'pretty';
 import * as fs from 'fs';
 import * as path from 'path';
@@ -81,20 +81,7 @@ export default class ElementCompletionItemProvider implements CompletionItemProv
     return arr.pop() || '';
   }
 
-  // // 获取本行位置前的文本
-  // getTextBeforePosition(position: Position): string {
-  //   let retry = 0;
-  //   let line = position.line;
-  //   let text = "";
-  //   while (!text && retry < 15) {
-  //     var start = new Position(line, 0);
-  //     var range = new Range(start, position);
-  //     text = this._document.getText(range);
-  //     retry++;
-  //     line--;
-  //   }
-  //   return text;
-  // }
+ 
   getTextBeforePosition(position: Position): string {
     var start = new Position(position.line, 0);
     var range = new Range(start, position);
@@ -170,7 +157,7 @@ export default class ElementCompletionItemProvider implements CompletionItemProv
         sug && suggestions.push(sug);
       }
     }
-    suggestions = suggestions.concat(this.getCommonPropsSuggestion())
+    suggestions = suggestions.concat(this.getCommonPropsSuggestion());
     return suggestions;
   }
 
@@ -240,7 +227,7 @@ export default class ElementCompletionItemProvider implements CompletionItemProv
         detail: 'CommonProps',
         documentation: "daisy----" + value.description
       };
-    })
+    });
   }
 
   // 获取属性值
@@ -522,7 +509,7 @@ export default class ElementCompletionItemProvider implements CompletionItemProv
       } else {
         const propsSugestion = this.getPropAttr(this._document.getText(), tag.text);
 
-        return [...propsSugestion, ...this.getCommonPropsSuggestion()]
+        return [...propsSugestion, ...this.getCommonPropsSuggestion()];
       }
     } else if (this.isTagStart()) { // 标签开始
       switch (document.languageId) {

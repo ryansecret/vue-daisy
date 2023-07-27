@@ -42,21 +42,23 @@ export default class DocumentHoverProvider implements HoverProvider {
     const textSplite = [' ', '<', '>', '"', '\'', '.', '\\', "=", ":"];
     // 通过前后字符串拼接成选择文本
     let posIndex = position.character;
-    let textMeta = line.text.substr(posIndex, 1);
+    let textMeta = line.text.substring(posIndex, posIndex+1);
     let selectText = '';
     // 前向获取符合要求的字符串
     while (textSplite.indexOf(textMeta) === -1 && posIndex <= line.text.length) {
       selectText += textMeta;
-      textMeta = line.text.substr(++posIndex, 1);
+      const startIndex=++posIndex;
+      textMeta = line.text.substring(startIndex, startIndex+1);
     }
     // 往后获取符合要求的字符串
     posIndex = position.character - 1;
-    textMeta = line.text.substr(posIndex, 1);
+    textMeta = line.text.substring(posIndex, posIndex+1);
     while (textSplite.indexOf(textMeta) === -1 && posIndex > 0) {
       selectText = textMeta + selectText;
-      textMeta = line.text.substr(--posIndex, 1);
+      const startIndex=--posIndex;
+      textMeta = line.text.substring(startIndex, startIndex+1);
     }
-    textMeta = line.text.substr(posIndex, 1);
+    textMeta = line.text.substring(posIndex, posIndex+1);
 
     // tag标签便利
     // @ts-ignore

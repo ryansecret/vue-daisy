@@ -65,6 +65,10 @@
         "path": "./snippets/element-html.json"
       },
       {
+        "language": "html",
+        "path": "./snippets/vue-html.json"
+      },
+      {
         "language": "vue-html",
         "path": "./snippets/vue-html.json"
       }

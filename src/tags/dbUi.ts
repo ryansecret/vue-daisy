@@ -19,4 +19,9 @@ export default {
         "description": "az 部署",
         "framework": "dbUI"
       },
+      "db-specification": {
+        "attributes": ["regionId"," v-model","all-specs", "soldOutFilter","displayType","columnNum"],
+        "description": "规格展示",
+        "framework": "dbUI"
+      },
 };

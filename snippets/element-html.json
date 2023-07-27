@@ -187,7 +187,7 @@
   "el-form": {
     "prefix": "el-form",
     "body": [
-      "<el-form ref=\"${1:formRef}\" :model=\"${2:form}\" label-width=\"${3:120px}\" label-suffix=\"：\" @submit.native.prevent>",
+      "<el-form ref=\"${1:formRef}\" :model=\"${2:formData}\" label-width=\"${3:120px}\" label-suffix=\"：\" @submit.native.prevent>",
       "\t$4",
       "</el-form>"
     ]
@@ -843,6 +843,18 @@
         "\t\t:max=\"3\"",
         "\t  >",
         "\t  </db-deploy-az>"
+    ]
+  },
+  "dbSpecification": {
+    "prefix": "dbSpec",
+    "body": [
+        "<db-specification",
+        "\tv-model=\"${1:spec}\"",
+        "\t:region-id=\"${2:regionId}\"",
+        "\t:all-specs=\"${3:classList}\"",
+        "\t:displayType=\"${4:true|false}\"",
+        "\t:sold-out-filter=\"${5:isSoldOut}\"",
+        "  />"
     ]
   }
 }
