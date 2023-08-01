@@ -1,3 +1,13 @@
+## [1.13.3](https://github.com/ryansecret/vue-daisy/compare/v1.13.2...v1.13.3) (2023-08-01)
+
+
+### Features
+
+* **___CUSTOM___:** :sparkles: 补充dbUI 中组件的snipets和文档 ([21069fa](https://github.com/ryansecret/vue-daisy/commit/21069facf5db0734e226c1e80052daa817e8f18f))
+* **snippets:** :sparkles: dbSpec ([4a89769](https://github.com/ryansecret/vue-daisy/commit/4a897692d11f50adb8b26a8cb5e52da89a175d14))
+
+
+
 ## [1.13.2](https://github.com/ryansecret/vue-daisy/compare/v1.13.0...v1.13.2) (2023-07-26)
 
 
