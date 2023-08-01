@@ -1082,14 +1082,14 @@ export default {
 | extra | 自定义操作区，显示在右上方  |`,
 
   "el-descriptions-item": `[element：https://element.eleme.io/#/zh-CN/component/descriptions](https://element.eleme.io/#/zh-CN/component/descriptions) \n
-  | 参数          | 说明            | 类型            | 可选值                 | 默认值   |
-  |-------------  |---------------- |---------------- |---------------------- |-------- |
-  | label          | 标签文本         | string  |          —             |    —     |
-  | span          | 列的数量         | number  |          —             |    1     |
-  | labelClassName | 自定义标签类名    | string |    —  |  — |
-  | contentClassName | 自定义内容类名    | string |    —  | — |
-  | labelStyle | 自定义标签样式 | object |    —  | — |
-  | contentStyle | 自定义内容样式    | object |    —  | — |
+| 参数          | 说明            | 类型            | 可选值                 | 默认值   |
+|-------------  |---------------- |---------------- |---------------------- |-------- |
+| label          | 标签文本         | string  |          —             |    —     |
+| span          | 列的数量         | number  |          —             |    1     |
+| labelClassName | 自定义标签类名    | string |    —  |  — |
+| contentClassName | 自定义内容类名    | string |    —  | — |
+| labelStyle | 自定义标签样式 | object |    —  | — |
+| contentStyle | 自定义内容样式    | object |    —  | — |
 |Descriptions Slots|
 | Name | 说明 |
 |------|--------|
@@ -1108,67 +1108,67 @@ export default {
 | subTitle | 自定义二级标题     |
 | extra | 自定义底部额外区域     |  `,
   "el-avatar": `[element：https://element.eleme.io/#/zh-CN/component/avatar](https://element.eleme.io/#/zh-CN/component/avatar) \n
-  | 参数              | 说明                             | 类型            | 可选值 | 默认值 |
-  | ----------------- | -------------------------------- | --------------- | ------ | ------ |
-  | icon              | 设置头像的图标类型，参考 Icon 组件   | string          |        |        |
-  | size              | 设置头像的大小                     | number/string | number / large / medium / small | large  |
-  | shape             | 设置头像的形状  | string |    circle / square     |   circle  |
-  | src               | 图片头像的资源地址 | string |        |      |
-  | srcSet            | 以逗号分隔的一个或多个字符串列表表明一系列用户代理使用的可能的图像 | string |        |      |
-  | alt               | 描述图像的替换文本 | string |        |      |
-  | fit               | 当展示类型为图片的时候，设置图片如何适应容器框 | string |    fill / contain / cover / none / scale-down    |   cover   |
+| 参数              | 说明                             | 类型            | 可选值 | 默认值 |
+| ----------------- | -------------------------------- | --------------- | ------ | ------ |
+| icon              | 设置头像的图标类型，参考 Icon 组件   | string          |        |        |
+| size              | 设置头像的大小                     | number/string | number / large / medium / small | large  |
+| shape             | 设置头像的形状  | string |    circle / square     |   circle  |
+| src               | 图片头像的资源地址 | string |        |      |
+| srcSet            | 以逗号分隔的一个或多个字符串列表表明一系列用户代理使用的可能的图像 | string |        |      |
+| alt               | 描述图像的替换文本 | string |        |      |
+| fit               | 当展示类型为图片的时候，设置图片如何适应容器框 | string |    fill / contain / cover / none / scale-down    |   cover   |
   ### Events
 
-  | 事件名 | 说明               | 回调参数 |
-  | ------ | ------------------ | -------- |
-  | error  | 图片类头像加载失败的回调， 返回 false 会关闭组件默认的 fallback 行为 |(e: Event)  |
+| 事件名 | 说明               | 回调参数 |
+| ------ | ------------------ | -------- |
+| error  | 图片类头像加载失败的回调， 返回 false 会关闭组件默认的 fallback 行为 |(e: Event)  |
 
   ### Slot
 
-  | 名称	 | 说明               |
-  | ------ | ------------------ |
-  | default  | 自定义头像展示内容 | `,
+| 名称	 | 说明               |
+| ------ | ------------------ |
+| default  | 自定义头像展示内容 | `,
   "el-statistic": `[element：https://element.eleme.io/#/zh-CN/component/statistic](https://element.eleme.io/#/zh-CN/component/statistic) \n
-  | 参数          | 说明            | 类型            | 可选值                 | 默认值   |
-  |-------------  |---------------- |---------------- |---------------------- |-------- |
-  | value            | 数值内容                 | string \| number    | -          | -       |
-  | decimalSeparator | 设置小数点            | string                  | -      | .       |
-  | formatter        | 自定义数值展示| v-slot \|({value}) => VNode | -   | -      |
-  | groupSeparator   | 设置千分位标识符              | string           | -             | ,       |
-  | precision        | 数值精度      | number                | -        | 0      |
-  | prefix           | 设置数值的前缀          | string \| v-slot | -             | -       |
-  | suffix           |设置数值的后缀          | string \| v-slot     | -         | -       |
-  | title            | 	数值的标题               | string \| v-slot   | -           | -       |
-  | valueStyle       | 设置数值的样式          | style             | -            | -       |
-  | rate       | 设置倍率          | number             | -            | 1000       |
+| 参数          | 说明            | 类型            | 可选值                 | 默认值   |
+|-------------  |---------------- |---------------- |---------------------- |-------- |
+| value            | 数值内容                 | string \| number    | -          | -       |
+| decimalSeparator | 设置小数点            | string                  | -      | .       |
+| formatter        | 自定义数值展示| v-slot \|({value}) => VNode | -   | -      |
+| groupSeparator   | 设置千分位标识符              | string           | -             | ,       |
+| precision        | 数值精度      | number                | -        | 0      |
+| prefix           | 设置数值的前缀          | string \| v-slot | -             | -       |
+| suffix           |设置数值的后缀          | string \| v-slot     | -         | -       |
+| title            | 	数值的标题               | string \| v-slot   | -           | -       |
+| valueStyle       | 设置数值的样式          | style             | -            | -       |
+| rate       | 设置倍率          | number             | -            | 1000       |
 
 
   ### Statistic Slots
 
-  | name | 说明 |
-  |------|--------|
-  | prefix | 数值的前缀 |
-  | suffix | 数值的后缀 |
-  | formatter | 数值内容 |
-  | title | 数值的标题 |
+| name | 说明 |
+|------|--------|
+| prefix | 数值的前缀 |
+| suffix | 数值的后缀 |
+| formatter | 数值内容 |
+| title | 数值的标题 |
 
 
   ### Statistic.Countdown  Attributes
 
-  | 参数          | 说明            | 类型            | 可选值                 | 默认值   |
-  |-------------  |---------------- |---------------- |---------------------- |-------- |
-  | timeIndices       | 是否开启倒计时功能     | boolean     | true\|false                        | false      |
-  | value         | 必填值，输入绑定值   | string  | — | — |
-  | format         | 格式化倒计时展示   | string  | — | 'HH:mm:ss' |
-  ### Statistic.Countdown Events
-  | 事件名称 | 说明 | 回调参数 |
-  |---------|--------|---------|
-  | change | 在倒计时的功能中开启 | (value:  Date) |
-  | finish | 在倒计时完成后启动 | (value: boolean) |
+| 参数          | 说明            | 类型            | 可选值                 | 默认值   |
+|-------------  |---------------- |---------------- |---------------------- |-------- |
+| timeIndices       | 是否开启倒计时功能     | boolean     | true\|false                        | false      |
+| value         | 必填值，输入绑定值   | string  | — | — |
+| format         | 格式化倒计时展示   | string  | — | 'HH:mm:ss' |
+### Statistic.Countdown Events
+| 事件名称 | 说明 | 回调参数 |
+|---------|--------|---------|
+| change | 在倒计时的功能中开启 | (value:  Date) |
+| finish | 在倒计时完成后启动 | (value: boolean) |
 
   ### Statistic Methods
-  | 方法名 | 说明 | 参数 |回调参数|
-  | ---- | ---- | ---- |---- |
-  | suspend | 暂停倒计时|(value:boolean) |(value:  Date) |
+| 方法名 | 说明 | 参数 |回调参数|
+| ---- | ---- | ---- |---- |
+| suspend | 暂停倒计时|(value:boolean) |(value:  Date) |
   `
 };

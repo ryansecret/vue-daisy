@@ -756,7 +756,7 @@
   "dbCopybtn": {
     "prefix": "db-copy-btn",
     "body": [
-        " <db-copy-btn :content=\"\" class=\"inline\" />"
+        "<db-copy-btn :content=\"\" class=\"inline\" />"
     ]
   },
   "dbInputNumber": {
@@ -856,5 +856,44 @@
         "\t:sold-out-filter=\"${5:isSoldOut}\"",
         "  />"
     ]
-  }
+  },
+  "dbCreateaccount": {
+    "prefix": "dbCreateaccount",
+    "body": [
+        " <db-create-account",
+        "\t\t:regionId=\"regionId\"",
+        "\t\t:instanceId=\"instanceId\"",
+        "\t\t:createAction=\"createAction\"",
+        "\t\t:validateOption=\"validateOption\"",
+        "\t  >",
+        "\t\t<template #accountTips> 这里写入自定义的账号tips </template>",
+        "\t\t<template #passwordTips> 这里写入自定义的密码tips </template>",
+        "\t  </db-create-account>"
+    ],
+    "description": "创建账号密码"
+  },
+  "dbResetPassword": {
+    "prefix": "dbResetPassword",
+    "body": [
+        " <db-reset-password",
+        "\t\taccountName=\"ryan\"",
+        "\t\t:regionId=\"regionId\"",
+        "\t\t:instanceId=\"instanceId\"",
+        "\t\t:modifyAction=\"modifyAction\"",
+        "\t\t:validateOption=\"validateOption\"",
+        "\t  ></db-reset-password>"
+    ],
+    "description": "修改密码"
+  },
+  "dbDeleteInstance": {
+    "prefix": "dbDeleteInstance",
+    "body": [
+        "\t  <db-delete-instance",
+        "\t\t:region-id=\"regionId\"",
+        "\t\t:instance=\"instance\"",
+        "\t\t:callback=\"cb\"",
+        "\t\t:delete-action=\"deleteInstance\"",
+        "\t  />"
+    ]
+}
 }
