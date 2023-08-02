@@ -43,8 +43,8 @@ export default {
 | 参数  | 描述  | 类型  | require | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | nameReg | 账号名regex | Regex | true | -   | /^(?=.*[a-z])[a-zA-Z0-9_]{1,16}$/   |
-| pwdReg | 密码regex | Regex | true | -   | /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])[^/|@|"|'|\\|\u4e00-\u9fa5]{8,32}$/  |
-| keepWords | 账号名保留字 | Regex | true | -   | ['root', 'jd_replicator']  |
+| pwdReg | 密码regex | Regex | true | -   | /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])[A-Za-z\d=!@#$%^&*()+\-_?]{8,32}$/  |
+| keepWords | 账号名保留字 | Regex | true | -   | ['jacdb_operator', 'default']  |
 | customNameValidate | 账号自定义验证，用户更精细化的验证和提示 | Function | true | -   | - |
 | customPwdValidate | 密码自定义验证，用户更精细化的验证和提示 | Function | true | -   | - |
 
@@ -67,8 +67,8 @@ export default {
 | 参数  | 描述  | 类型  | require | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | nameReg | 账号名regex | Regex | true | -   | /^(?=.*[a-z])[a-zA-Z0-9_]{1,16}$/   |
-| pwdReg | 密码regex | Regex | true | -   |  /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])[^/|@|"|'|\\\\|\\u4e00-\\u9fa5]{8,32}$/   |
-| keepWords | 账号名保留字 | Regex | true | -   | ['root', 'jd_replicator']  |
+| pwdReg | 密码regex | Regex | true | -   | /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])[A-Za-z\d=!@#$%^&*()+\-_?]{8,32}$/  |
+| keepWords | 账号名保留字 | Regex | true | -   | ['jacdb_operator', 'default'] |
 | customNameValidate | 账号自定义验证，用户更精细化的验证和提示 | Function | true | -   | - |
 | customPwdValidate | 密码自定义验证，用户更精细化的验证和提示 | Function | true | -   | - |
 
