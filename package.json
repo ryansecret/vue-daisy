@@ -28,13 +28,6 @@
         "title": "Hello ryan"
       }
     ],
-    "keybindings": [
-      {
-        "command": "vue-daisy.functionCompletion",
-        "key": "shift+alt+enter",
-        "when": "editorTextFocus"
-      }
-    ],
     "snippets": [
       {
         "language": "javascript",
