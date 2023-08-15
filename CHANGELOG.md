@@ -1,3 +1,13 @@
+# [1.14.0](https://github.com/ryansecret/vue-daisy/compare/v1.13.3...v1.14.0) (2023-08-15)
+
+
+### Features
+
+* **___CUSTOM___:** :sparkles: element 更新文档\tags\attributes ([82d15d8](https://github.com/ryansecret/vue-daisy/commit/82d15d80e2ce9fa363628bd2a7ea23ff30b17dae))
+* **doc:** :sparkles: dbUi 更新db-create-account&db-reset-password 文档 ([55adb1e](https://github.com/ryansecret/vue-daisy/commit/55adb1e4bb9860e8e97bb083f2755ad9c608a91b))
+
+
+
 ## [1.13.3](https://github.com/ryansecret/vue-daisy/compare/v1.13.2...v1.13.3) (2023-08-01)
 
 
