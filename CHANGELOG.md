@@ -1,3 +1,12 @@
+## [1.14.1](https://github.com/ryansecret/vue-daisy/compare/v1.14.0...v1.14.1) (2023-08-24)
+
+
+### Features
+
+* **doc:** :sparkles: 更新element 文档,提供组件中子项的doc ([91c19c7](https://github.com/ryansecret/vue-daisy/commit/91c19c73a55a7c79a5410ba1b62b86e2f4f52966))
+
+
+
 # [1.14.0](https://github.com/ryansecret/vue-daisy/compare/v1.13.3...v1.14.0) (2023-08-15)
 
 
