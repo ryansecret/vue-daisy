@@ -5,7 +5,7 @@ export default {
         "framework": "jelement-biz"
       },
      "jcb-operation-check": {
-        "attributes": ["instanceInfo", "deadlineTimeSpan","externalCheck","needInstanceStatus","needChargeNormal","tipPlacement"],
+        "attributes": ["instanceInfo","runningStatus", "deadlineTimeSpan","externalCheck","needInstanceStatus","needChargeNormal","tipPlacement"],
         "description": "操作是否可用check",
         "framework": "jelement-biz"
       },
