@@ -1,3 +1,7 @@
+# [1.15.0](https://github.com/ryansecret/vue-daisy/compare/v1.14.1...v1.15.0) (2023-10-09)
+
+
+
 ## [1.14.1](https://github.com/ryansecret/vue-daisy/compare/v1.14.0...v1.14.1) (2023-08-24)
 
 
