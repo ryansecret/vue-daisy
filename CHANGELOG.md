@@ -1,3 +1,13 @@
+# [1.16.0](https://github.com/ryansecret/vue-daisy/compare/v1.15.0...v1.16.0) (2023-10-10)
+
+
+### Features
+
+* **___CUSTOM___:** :sparkles: 更新jelement-biz 文档 ([650c331](https://github.com/ryansecret/vue-daisy/commit/650c33112ce3c38805addcfcb25e026697d07c92))
+* **HoverProvider:** :sparkles: 组件名称支持camelcase ([10cf088](https://github.com/ryansecret/vue-daisy/commit/10cf08883b9efb6eae28aecd203c4fe0026fe9b7))
+
+
+
 # [1.15.0](https://github.com/ryansecret/vue-daisy/compare/v1.14.1...v1.15.0) (2023-10-09)
 
 
