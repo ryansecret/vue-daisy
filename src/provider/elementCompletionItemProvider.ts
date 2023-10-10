@@ -38,7 +38,8 @@ export default class ElementCompletionItemProvider implements CompletionItemProv
       tag = this.matchTag(/<([\w-]+)/g, txt, line);
 
       if (tag === 'break') { return; }
-      if (tag) { return <TagObject>tag; }
+      if (tag) { 
+        return <TagObject>tag; }
       line--;
     }
     return;
@@ -498,7 +499,8 @@ export default class ElementCompletionItemProvider implements CompletionItemProv
 
     // 标签、属性
     let tag: TagObject | string | undefined = this.getPreTag();
-
+    const kebabize = (str) => str.replace(/[A-Z]+(?![a-z])|[A-Z]/g, ($, ofs) => (ofs ? "-" : "") + $.toLowerCase());
+    tag.text=kebabize(tag.text);
     let attr = this.getPreAttr();
     if (this.isAttrValueStart(tag, attr)) { // 属性值开始
       return this.getAttrValueSuggestion(tag.text, attr);

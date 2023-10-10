@@ -59,7 +59,9 @@ export default class DocumentHoverProvider implements HoverProvider {
       textMeta = line.text.substring(startIndex, startIndex+1);
     }
     textMeta = line.text.substring(posIndex, posIndex+1);
-
+    
+    const kebabize = (str) => str.replace(/[A-Z]+(?![a-z])|[A-Z]/g, ($, ofs) => (ofs ? "-" : "") + $.toLowerCase());
+    selectText=kebabize(selectText);
     // tag标签便利
     // @ts-ignore
     if (Documents[selectText]) {
