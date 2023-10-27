@@ -1,3 +1,12 @@
+## [1.16.1](https://github.com/ryansecret/vue-daisy/compare/v1.16.0...v1.16.1) (2023-10-27)
+
+
+### Features
+
+* **doc:** :sparkles: 替换正确的jelement 文档地址 ([1046720](https://github.com/ryansecret/vue-daisy/commit/104672055fc27111df7263c25a3230e81165d2af))
+
+
+
 # [1.16.0](https://github.com/ryansecret/vue-daisy/compare/v1.15.0...v1.16.0) (2023-10-10)
 
 
