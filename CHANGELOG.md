@@ -1,3 +1,12 @@
+## [1.16.2](https://github.com/ryansecret/vue-daisy/compare/v1.16.1...v1.16.2) (2023-11-09)
+
+
+### Features
+
+* **snippets:** :sparkles: rewnew snipets update ([2c2ac81](https://github.com/ryansecret/vue-daisy/commit/2c2ac813e8a137a37ee5dd99edeaeb96f975d451))
+
+
+
 ## [1.16.1](https://github.com/ryansecret/vue-daisy/compare/v1.16.0...v1.16.1) (2023-10-27)
 
 
