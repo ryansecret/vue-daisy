@@ -693,6 +693,21 @@
         " <jcb-charge-info :charge-info=\"row.charge\" />"
     ]
   },
+  "jdbrenew": {
+    "prefix": "jdbrenew",
+    "body": [
+        "\t\t\t  <JcbRenewButton",
+        "\t\t\t\tref=\"renewRef\"",
+        "\t\t\t\t:disabled=\"!canOperate\"",
+        "\t\t\t\t:resource-type=\"APP_CONFIG.serviceCode\"",
+        "\t\t\t\t:service-code=\"APP_CONFIG.serviceCode\"",
+        "\t\t\t\t:resource-id=\"instanceId\"",
+        "\t\t\t\t:region-id=\"regionId\"",
+        "\t\t\t\t:charge-mode=\"instance.charge?.chargeMode\"",
+        "\t\t\t  />"
+    ],
+    "description": "renew"
+  },
   "jcb-bill-period": {
     "prefix": "jcb-period",
     "body": [
