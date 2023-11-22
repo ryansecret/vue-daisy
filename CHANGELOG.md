@@ -1,3 +1,12 @@
+## [1.16.3](https://github.com/ryansecret/vue-daisy/compare/v1.16.2...v1.16.3) (2023-11-22)
+
+
+### Features
+
+* **doc:** :sparkles: 更新element 属性和属性值的智能提示 ([295c790](https://github.com/ryansecret/vue-daisy/commit/295c79017d05d8873462e07b31aa55a9ccb85482))
+
+
+
 ## [1.16.2](https://github.com/ryansecret/vue-daisy/compare/v1.16.1...v1.16.2) (2023-11-09)
 
 
