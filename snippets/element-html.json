@@ -762,6 +762,7 @@
         "\t\tlabel-width=\"100px\"",
         "\t\tlabel-suffix=\"：\"",
         "\t\t@submit.native.prevent",
+        "\t\tlabel-position=\"left\"",
         "\t  >",
         "\t  ",
         "\t  </el-form>",
