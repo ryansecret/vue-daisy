@@ -1,3 +1,12 @@
+## [1.16.4](https://github.com/ryansecret/vue-daisy/compare/v1.16.3...v1.16.4) (2023-11-23)
+
+
+### Features
+
+* **snippets:** :sparkles: el-form 默认  label-position="left" ([c77a60a](https://github.com/ryansecret/vue-daisy/commit/c77a60a767cb6d1047a35ec58b69bf0da5b6607d))
+
+
+
 ## [1.16.3](https://github.com/ryansecret/vue-daisy/compare/v1.16.2...v1.16.3) (2023-11-22)
 
 
