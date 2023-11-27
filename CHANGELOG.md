@@ -1,3 +1,12 @@
+## [1.16.6](https://github.com/ryansecret/vue-daisy/compare/v1.16.5...v1.16.6) (2023-11-27)
+
+
+### Features
+
+* **snippets:** :sparkles: el-scrollbar ([ba8edbd](https://github.com/ryansecret/vue-daisy/commit/ba8edbdfc37d9fb7636090d4f149a47e66f1cf70))
+
+
+
 ## [1.16.5](https://github.com/ryansecret/vue-daisy/compare/v1.16.4...v1.16.5) (2023-11-27)
 
 
