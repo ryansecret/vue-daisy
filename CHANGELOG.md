@@ -1,3 +1,12 @@
+## [1.16.5](https://github.com/ryansecret/vue-daisy/compare/v1.16.4...v1.16.5) (2023-11-27)
+
+
+### Features
+
+* **snippets:** :sparkles: 添加vmodel,兼容vue3 ([272e720](https://github.com/ryansecret/vue-daisy/commit/272e72031e5c70e9b5d9b6348955baa3e9c12c2f))
+
+
+
 ## [1.16.4](https://github.com/ryansecret/vue-daisy/compare/v1.16.3...v1.16.4) (2023-11-23)
 
 
