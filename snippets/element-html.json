@@ -911,5 +911,13 @@
         "\t\t:delete-action=\"deleteInstance\"",
         "\t  />"
     ]
-}
+  },
+  "el-scrollbar": {
+    "prefix": "el-scroll",
+    "body": [
+        "\t\t<el-scrollbar view-class=\"view-list\" :noresize=\"true\" tag=\"div\">",
+        "\t\t   ",
+        "\t\t</el-scrollbar>"
+    ]
+  }
 }

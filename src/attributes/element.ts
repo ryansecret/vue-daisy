@@ -46,45 +46,45 @@ export default {
     description:
       'fires when alert is closed\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/alert)'
   },
-  'el-avatar/icon': {
+  'el-avatar-avatar/icon': {
     type: 'string',
     description:
       'set representation type to Icon, more info on Icon Component\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/avatar)'
   },
-  'el-avatar/size': {
+  'el-avatar-avatar/size': {
     type: 'number|string',
     options: ['number', 'large', 'medium', 'small'],
     description:
       'set avatar size, default: large.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/avatar)'
   },
-  'el-avatar/shape': {
+  'el-avatar-avatar/shape': {
     type: 'string',
     options: ['circle', 'square'],
     description:
       'set avatar shape, default: circle.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/avatar)'
   },
-  'el-avatar/src': {
+  'el-avatar-avatar/src': {
     type: 'string',
     description:
       'the address of the image for an image avatar\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/avatar)'
   },
-  'el-avatar/src-set': {
+  'el-avatar-avatar/src-set': {
     type: 'string',
     description:
       'A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/avatar)'
   },
-  'el-avatar/alt': {
+  'el-avatar-avatar/alt': {
     type: 'string',
     description:
       'This attribute defines an alternative text description of the image\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/avatar)'
   },
-  'el-avatar/fit': {
+  'el-avatar-avatar/fit': {
     type: 'string',
     options: ['fill', 'contain', 'cover', 'none', 'scale-down'],
     description:
       'set how the image fit its container for an image avatar, default: cover.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/avatar)'
   },
-  'el-avatar/error': {
+  'el-avatar-avatar/error': {
     type: 'event',
     description:
       'handler when img load error, return false to prevent default fallback behavior\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/avatar)'
@@ -150,25 +150,23 @@ export default {
     description:
       'class name of icon separator\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/breadcrumb)'
   },
-  'el-breadcrumb/to': {
+  'el-breadcrumb-item/to': {
     type: 'string|object',
     description:
       'target route of the link, same as `to` of `vue-router`\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/breadcrumb)'
   },
-  'el-breadcrumb/replace': {
+  'el-breadcrumb-item/replace': {
     type: 'boolean',
     description:
       'if `true`, the navigation will not leave a history record, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/breadcrumb)'
   },
   'el-button/size': {
     type: 'string',
-    options: ['large', 'medium', 'small', 'mini'],
     description:
       'button size, default: small.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/button)'
   },
   'el-button/type': {
     type: 'string',
-    options: ['primary', 'success', 'warning', 'danger', 'info', 'text'],
     description:
       'button type\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/button)'
   },
@@ -209,7 +207,6 @@ export default {
   },
   'el-button/native-type': {
     type: 'string',
-    options: ['button', 'submit', 'reset'],
     description:
       "same as native button's `type`, default: button.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/button)"
   },
@@ -305,12 +302,12 @@ export default {
     description:
       'triggers when the active slide switches\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/carousel)'
   },
-  'el-carousel/name': {
+  'el-carousel-item/name': {
     type: 'string',
     description:
       'name of the item, can be used in `setActiveItem`\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/carousel)'
   },
-  'el-carousel/label': {
+  'el-carousel-item/label': {
     type: 'string',
     description:
       'text content for the corresponding indicator\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/carousel)'
@@ -420,30 +417,54 @@ export default {
     description:
       'triggers when remove tag in multiple selection mode\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/cascader)'
   },
-  'el-checkbox/model-value': {
+  'el-cascaderpanel/model-value': {
+    description:
+      'binding value\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/cascader)'
+  },
+  'el-cascaderpanel/options': {
     type: 'array',
+    description:
+      'data of the options，the key of `value` and `label` can be customize by `Props`.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/cascader)'
+  },
+  'el-cascaderpanel/props': {
+    type: 'object',
+    description:
+      'configuration options, see the following table.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/cascader)'
+  },
+  'el-cascaderpanel/change': {
+    type: 'event',
+    description:
+      'triggers when the binding value changes\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/cascader)'
+  },
+  'el-cascaderpanel/expand-change': {
+    type: 'event',
+    description:
+      'triggers when expand option changes\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/cascader)'
+  },
+  'el-checkbox/model-value': {
+    type: 'string|number|boolean',
     description:
       'binding value\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/checkbox)'
   },
   'el-checkbox/label': {
     type: 'string|number|boolean',
     description:
-      'value of the checkbox when used inside a `checkbox-group`\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/checkbox)'
+      'value of the Checkbox when used inside a `checkbox-group`\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/checkbox)'
   },
   'el-checkbox/true-label': {
     type: 'string|number',
     description:
-      "value of the checkbox if it's checked\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/checkbox)"
+      "value of the Checkbox if it's checked\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/checkbox)"
   },
   'el-checkbox/false-label': {
     type: 'string|number',
     description:
-      "value of the checkbox if it's not checked\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/checkbox)"
+      "value of the Checkbox if it's not checked\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/checkbox)"
   },
   'el-checkbox/disabled': {
     type: 'boolean',
     description:
-      'whether the checkbox is disabled, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/checkbox)'
+      'whether the Checkbox is disabled, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/checkbox)'
   },
   'el-checkbox/border': {
     type: 'boolean',
@@ -453,7 +474,7 @@ export default {
   'el-checkbox/size': {
     type: 'string',
     description:
-      'size of checkbox buttons or bordered checkboxes\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/checkbox)'
+      'size of the Checkbox, only works when `border` is true\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/checkbox)'
   },
   'el-checkbox/name': {
     type: 'string',
@@ -463,7 +484,7 @@ export default {
   'el-checkbox/checked': {
     type: 'boolean',
     description:
-      'if the checkbox is checked, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/checkbox)'
+      'if the Checkbox is checked, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/checkbox)'
   },
   'el-checkbox/indeterminate': {
     type: 'boolean',
@@ -475,25 +496,75 @@ export default {
     description:
       'triggers when the binding value changes\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/checkbox)'
   },
-  'el-checkbox/min': {
+  'el-checkbox-group/model-value': {
+    type: 'array',
+    description:
+      'binding value\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/checkbox)'
+  },
+  'el-checkbox-group/size': {
+    type: 'string',
+    description:
+      'size of checkbox buttons or bordered checkboxes\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/checkbox)'
+  },
+  'el-checkbox-group/disabled': {
+    type: 'boolean',
+    description:
+      'whether the nesting checkboxes are disabled, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/checkbox)'
+  },
+  'el-checkbox-group/min': {
     type: 'number',
     description:
       'minimum number of checkbox checked\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/checkbox)'
   },
-  'el-checkbox/max': {
+  'el-checkbox-group/max': {
     type: 'number',
     description:
       'maximum number of checkbox checked\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/checkbox)'
   },
-  'el-checkbox/text-color': {
+  'el-checkbox-group/text-color': {
     type: 'string',
     description:
       'font color when button is active, default: #ffffff.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/checkbox)'
   },
-  'el-checkbox/fill': {
+  'el-checkbox-group/fill': {
     type: 'string',
     description:
       'border and background color when button is active, default: #409EFF.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/checkbox)'
+  },
+  'el-checkbox-group/change': {
+    type: 'event',
+    description:
+      'triggers when the binding value changes\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/checkbox)'
+  },
+  'el-checkbox-button/label': {
+    type: 'string|number|boolean',
+    description:
+      'value of the checkbox when used inside a `checkbox-group`\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/checkbox)'
+  },
+  'el-checkbox-button/true-label': {
+    type: 'string|number',
+    description:
+      "value of the checkbox if it's checked\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/checkbox)"
+  },
+  'el-checkbox-button/false-label': {
+    type: 'string|number',
+    description:
+      "value of the checkbox if it's not checked\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/checkbox)"
+  },
+  'el-checkbox-button/disabled': {
+    type: 'boolean',
+    description:
+      'whether the checkbox is disabled, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/checkbox)'
+  },
+  'el-checkbox-button/name': {
+    type: 'string',
+    description:
+      "native 'name' attribute\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/checkbox)"
+  },
+  'el-checkbox-button/checked': {
+    type: 'boolean',
+    description:
+      'if the checkbox is checked, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/checkbox)'
   },
   'el-collapse/model-value': {
     type: 'string ',
@@ -510,63 +581,63 @@ export default {
     description:
       'triggers when active panels change\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/collapse)'
   },
-  'el-collapse/name': {
+  'el-collapse-item/name': {
     type: 'string|number',
     description:
       'unique identification of the panel\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/collapse)'
   },
-  'el-collapse/title': {
+  'el-collapse-item/title': {
     type: 'string',
     description:
       'title of the panel\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/collapse)'
   },
-  'el-collapse/disabled': {
+  'el-collapse-item/disabled': {
     type: 'boolean',
     description:
       'disable the collapse item\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/collapse)'
   },
-  'el-color-picker/model-value': {
+  'el-colorpicker/model-value': {
     type: 'string',
     description:
       'binding value\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/color-picker)'
   },
-  'el-color-picker/disabled': {
+  'el-colorpicker/disabled': {
     type: 'boolean',
     description:
       'whether to disable the ColorPicker, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/color-picker)'
   },
-  'el-color-picker/size': {
+  'el-colorpicker/size': {
     type: 'string',
     description:
       'size of ColorPicker, default: medium / small / mini.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/color-picker)'
   },
-  'el-color-picker/show-alpha': {
+  'el-colorpicker/show-alpha': {
     type: 'boolean',
     description:
       'whether to display the alpha slider, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/color-picker)'
   },
-  'el-color-picker/color-format': {
+  'el-colorpicker/color-format': {
     type: 'string',
     options: ['hsl', 'hsv', 'hex', 'rgb'],
     description:
       'color format of v-model, default: hex (when show-alpha is false)/ rgb (when show-alpha is true).\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/color-picker)'
   },
-  'el-color-picker/popper-class': {
+  'el-colorpicker/popper-class': {
     type: 'string',
     description:
       "custom class name for ColorPicker's dropdown\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/color-picker)"
   },
-  'el-color-picker/predefine': {
+  'el-colorpicker/predefine': {
     type: 'array',
     description:
       'predefined color options\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/color-picker)'
   },
-  'el-color-picker/change': {
+  'el-colorpicker/change': {
     type: 'event',
     description:
       'triggers when input value changes\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/color-picker)'
   },
-  'el-color-picker/active-change': {
+  'el-colorpicker/active-change': {
     type: 'event',
     description:
       'triggers when the current active color changes\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/color-picker)'
@@ -577,57 +648,62 @@ export default {
     description:
       'layout direction for child elements, default: vertical when nested with `el-header` or `el-footer`; horizontal otherwise.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/container)'
   },
-  'el-container/height': {
+  'el-header/height': {
     type: 'string',
     description:
-      'height of the footer, default: 60px.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/container)'
+      'height of the header, default: 60px.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/container)'
   },
-  'el-container/width': {
+  'el-aside/width': {
     type: 'string',
     description:
       'width of the side section, default: 300px.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/container)'
   },
-  'el-date-picker/model-value': {
+  'el-footer/height': {
+    type: 'string',
+    description:
+      'height of the footer, default: 60px.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/container)'
+  },
+  'el-datepicker/model-value': {
     type: 'date',
     description:
       'binding value\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/date-picker)'
   },
-  'el-date-picker/readonly': {
+  'el-datepicker/readonly': {
     type: 'boolean',
     description:
       'whether DatePicker is read only, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/date-picker)'
   },
-  'el-date-picker/disabled': {
+  'el-datepicker/disabled': {
     type: 'boolean',
     description:
       'whether DatePicker is disabled, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/date-picker)'
   },
-  'el-date-picker/editable': {
+  'el-datepicker/editable': {
     type: 'boolean',
     description:
       'whether the input is editable, default: true.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/date-picker)'
   },
-  'el-date-picker/clearable': {
+  'el-datepicker/clearable': {
     type: 'boolean',
     description:
       'whether to show clear button, default: true.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/date-picker)'
   },
-  'el-date-picker/placeholder': {
+  'el-datepicker/placeholder': {
     type: 'string',
     description:
       'placeholder in non-range mode\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/date-picker)'
   },
-  'el-date-picker/start-placeholder': {
+  'el-datepicker/start-placeholder': {
     type: 'string',
     description:
       'placeholder for the start date in range mode\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/date-picker)'
   },
-  'el-date-picker/end-placeholder': {
+  'el-datepicker/end-placeholder': {
     type: 'string',
     description:
       'placeholder for the end date in range mode\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/date-picker)'
   },
-  'el-date-picker/type': {
+  'el-datepicker/type': {
     type: 'string',
     options: [
       'year',
@@ -643,39 +719,39 @@ export default {
     description:
       'type of the picker, default: date.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/date-picker)'
   },
-  'el-date-picker/format': {
+  'el-datepicker/format': {
     type: 'string',
     description:
       'format of the displayed value in the input box, default: yyyy-MM-dd.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/date-picker)'
   },
-  'el-date-picker/align': {
+  'el-datepicker/align': {
     type: 'left|center|right',
     options: ['left'],
     description:
       'alignment\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/date-picker)'
   },
-  'el-date-picker/popper-class': {
+  'el-datepicker/popper-class': {
     type: 'string',
     description:
       "custom class name for DatePicker's dropdown\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/date-picker)"
   },
-  'el-date-picker/picker-options': {
+  'el-datepicker/picker-options': {
     type: 'object',
     description:
       'additional options, check the table below, default: {}.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/date-picker)'
   },
-  'el-date-picker/range-separator': {
+  'el-datepicker/range-separator': {
     type: 'string',
     description:
       "range separator, default: '-'.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/date-picker)"
   },
-  'el-date-picker/default-value': {
+  'el-datepicker/default-value': {
     type: 'date',
     options: ['anything accepted by new Date()'],
     description:
       'optional, default date of the calendar\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/date-picker)'
   },
-  'el-date-picker/default-time': {
+  'el-datepicker/default-time': {
     type: 'string[]',
     options: [
       'Array with length 2, each item is a string like 12:00:00. The first item for the start date and then second item for the end date'
@@ -683,47 +759,47 @@ export default {
     description:
       'optional, the time value to use when selecting date range\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/date-picker)'
   },
-  'el-date-picker/value-format': {
+  'el-datepicker/value-format': {
     type: 'string',
     description:
       'optional, format of binding value. If not specified, the binding value will be a Date object\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/date-picker)'
   },
-  'el-date-picker/name': {
+  'el-datepicker/name': {
     type: 'string',
     description:
       'same as `name` in native input\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/date-picker)'
   },
-  'el-date-picker/unlink-panels': {
+  'el-datepicker/unlink-panels': {
     type: 'boolean',
     description:
       'unlink two date-panels in range-picker, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/date-picker)'
   },
-  'el-date-picker/prefix-icon': {
+  'el-datepicker/prefix-icon': {
     type: 'string',
     description:
       'Custom prefix icon class, default: el-icon-date.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/date-picker)'
   },
-  'el-date-picker/clear-icon': {
+  'el-datepicker/clear-icon': {
     type: 'string',
     description:
       'Custom clear icon class, default: el-icon-circle-close.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/date-picker)'
   },
-  'el-date-picker/validate-event': {
+  'el-datepicker/validate-event': {
     type: 'boolean',
     description:
       'whether to trigger form validation, default: true.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/date-picker)'
   },
-  'el-date-picker/change': {
+  'el-datepicker/change': {
     type: 'event',
     description:
       'triggers when user confirms the value\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/date-picker)'
   },
-  'el-date-picker/blur': {
+  'el-datepicker/blur': {
     type: 'event',
     description:
       'triggers when Input blurs\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/date-picker)'
   },
-  'el-date-picker/focus': {
+  'el-datepicker/focus': {
     type: 'event',
     description:
       'triggers when Input focuses\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/date-picker)'
@@ -785,15 +861,35 @@ export default {
     description:
       'custom content style\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/descriptions)'
   },
-  'el-descriptions/label': {
+  'el-descriptions-item/label': {
     type: 'string',
     description:
       'label text\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/descriptions)'
   },
-  'el-descriptions/span': {
+  'el-descriptions-item/span': {
     type: 'number',
     description:
       'colspan of column, default: 1.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/descriptions)'
+  },
+  'el-descriptions-item/label-class-name': {
+    type: 'string',
+    description:
+      'custom label class name\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/descriptions)'
+  },
+  'el-descriptions-item/content-class-name': {
+    type: 'string',
+    description:
+      'custom content class name\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/descriptions)'
+  },
+  'el-descriptions-item/label-style': {
+    type: 'object',
+    description:
+      'custom label style\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/descriptions)'
+  },
+  'el-descriptions-item/content-style': {
+    type: 'object',
+    description:
+      'custom content style\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/descriptions)'
   },
   'el-dialog/visible': {
     type: 'boolean',
@@ -907,78 +1003,6 @@ export default {
     description:
       'customize the content on the divider line, default: center.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/divider)'
   },
-  'el-drawer/append-to-body': {
-    type: 'boolean',
-    description:
-      'Controls should Drawer be inserted to DocumentBody Element, nested Drawer must assign this param to **true**\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/drawer)'
-  },
-  'el-drawer/before-close': {
-    type:
-      'function|done is function type that accepts a boolean as parameter|calling done with true or without parameter will abort the close procedure',
-    description:
-      'If set, closing procedure will be halted\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/drawer)'
-  },
-  'el-drawer/close-on-press-escape': {
-    type: 'boolean',
-    description:
-      'Indicates whether Drawer can be closed by pressing ESC\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/drawer)'
-  },
-  'el-drawer/custom-class': {
-    type: 'string',
-    description:
-      'Extra class names for Drawer\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/drawer)'
-  },
-  'el-drawer/destroy-on-close': {
-    type: 'boolean',
-    description:
-      'Indicates whether children should be destroyed after Drawer closed\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/drawer)'
-  },
-  'el-drawer/modal': {
-    type: 'boolean',
-    description:
-      'Should show shadowing layer\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/drawer)'
-  },
-  'el-drawer/modal-append-to-body': {
-    type: 'boolean',
-    description:
-      'Indicates should shadowing layer be insert into DocumentBody element\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/drawer)'
-  },
-  'el-drawer/direction': {
-    type: 'direction',
-    options: ['rtl', 'ltr', 'ttb', 'btt'],
-    description:
-      "Drawer's opening direction\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/drawer)"
-  },
-  'el-drawer/show-close': {
-    type: 'boolean',
-    description:
-      'Should show close button at the top right of Drawer\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/drawer)'
-  },
-  'el-drawer/size': {
-    type: 'number|string',
-    description:
-      "Drawer's size, if Drawer is horizontal mode, it effects the width property, otherwise it effects the height property, when size is `number` type, it describes the size by unit of pixels; when size is `string` type, it should be used with `x%` notation, other wise it will be interpreted to pixel unit\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/drawer)"
-  },
-  'el-drawer/title': {
-    type: 'string',
-    description:
-      "Drawer's title, can also be set by named slot, detailed descriptions can be found in the slot form\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/drawer)"
-  },
-  'el-drawer/visible': {
-    type: 'boolean',
-    description:
-      'Should Drawer be displayed, also support the `.sync` notation\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/drawer)'
-  },
-  'el-drawer/wrapper-closable': {
-    type: 'boolean',
-    description:
-      'Indicates whether user can close Drawer by clicking the shadowing layer.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/drawer)'
-  },
-  'el-drawer/with-header': {
-    type: 'boolean',
-    description:
-      "Flag that controls the header section's existance, default to true, when withHeader set to false, both `title attribute` and `title slot` won't work\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/drawer)"
-  },
   'el-drawer/open': {
     type: 'event',
     description:
@@ -1050,7 +1074,7 @@ export default {
   'el-dropdown/disabled': {
     type: 'boolean',
     description:
-      'whether the item is disabled, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/dropdown)'
+      'whether the Dropdown is disabled, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/dropdown)'
   },
   'el-dropdown/click': {
     type: 'event',
@@ -1058,21 +1082,31 @@ export default {
       'if `split-button` is `true`, triggers when left button is clicked\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/dropdown)'
   },
   'el-dropdown/command': {
-    type: 'string|number|object',
+    type: 'event',
     description:
-      "a command to be dispatched to Dropdown's `command` callback\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/dropdown)"
+      'triggers when a dropdown item is clicked\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/dropdown)'
   },
   'el-dropdown/visible-change': {
     type: 'event',
     description:
       'triggers when the dropdown appears/disappears\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/dropdown)'
   },
-  'el-dropdown/divided': {
+  'el-dropdown-menu-item/command': {
+    type: 'string|number|object',
+    description:
+      "a command to be dispatched to Dropdown's `command` callback\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/dropdown)"
+  },
+  'el-dropdown-menu-item/disabled': {
+    type: 'boolean',
+    description:
+      'whether the item is disabled, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/dropdown)'
+  },
+  'el-dropdown-menu-item/divided': {
     type: 'boolean',
     description:
       'whether a divider is displayed, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/dropdown)'
   },
-  'el-dropdown/icon': {
+  'el-dropdown-menu-item/icon': {
     type: 'string',
     description:
       'icon class name\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/dropdown)'
@@ -1116,7 +1150,7 @@ export default {
   'el-form/label-width': {
     type: 'string',
     description:
-      "width of label, e.g. '50px'. Width `auto` is supported.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/form)"
+      "width of label, e.g. '50px'. All its direct child form items will inherit this value. Width `auto` is supported.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/form)"
   },
   'el-form/label-suffix': {
     type: 'string',
@@ -1136,7 +1170,7 @@ export default {
   'el-form/inline-message': {
     type: 'boolean',
     description:
-      'inline style validate message, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/form)'
+      'whether to display the error message inline with the form item, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/form)'
   },
   'el-form/status-icon': {
     type: 'boolean',
@@ -1152,7 +1186,7 @@ export default {
     type: 'string',
     options: ['medium', 'small', 'mini'],
     description:
-      'control the size of components in this form-item\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/form)'
+      'control the size of components in this form\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/form)'
   },
   'el-form/disabled': {
     type: 'boolean',
@@ -1164,26 +1198,52 @@ export default {
     description:
       'triggers after a form item is validated\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/form)'
   },
-  'el-form/prop': {
+  'el-form-item/prop': {
     type: 'string',
     options: ['keys of model that passed to form'],
     description:
       'a key of `model`. In the use of validate and resetFields method, the attribute is required\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/form)'
   },
-  'el-form/label': {
+  'el-form-item/label': {
     type: 'string',
     description:
       'label\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/form)'
   },
-  'el-form/required': {
+  'el-form-item/label-width': {
+    type: 'string',
+    description:
+      "width of label, e.g. '50px'. Width `auto` is supported.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/form)"
+  },
+  'el-form-item/required': {
     type: 'boolean',
     description:
       'whether the field is required or not, will be determined by validation rules if omitted, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/form)'
   },
-  'el-form/error': {
+  'el-form-item/rules': {
+    type: 'object',
+    description:
+      'validation rules of form\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/form)'
+  },
+  'el-form-item/error': {
     type: 'string',
     description:
       'field error message, set its value and the field will validate error and show this message immediately\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/form)'
+  },
+  'el-form-item/show-message': {
+    type: 'boolean',
+    description:
+      'whether to show the error message, default: true.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/form)'
+  },
+  'el-form-item/inline-message': {
+    type: 'boolean',
+    description:
+      'inline style validate message, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/form)'
+  },
+  'el-form-item/size': {
+    type: 'string',
+    options: ['medium', 'small', 'mini'],
+    description:
+      'control the size of components in this form-item\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/form)'
   },
   'el-image/src': {
     type: 'string',
@@ -1192,7 +1252,6 @@ export default {
   },
   'el-image/fit': {
     type: 'string',
-    options: ['fill', 'contain', 'cover', 'none', 'scale-down'],
     description:
       'Indicate how the image should be resized to fit its container, same as [object-fit](https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit)\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/image)'
   },
@@ -1236,104 +1295,104 @@ export default {
     description:
       'Same as native error\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/image)'
   },
-  'el-infinite-scroll/infinite-scroll-disabled': {
+  'el-infinitescroll/infinite-scroll-disabled': {
     type: 'boolean',
     description:
       'is disabled, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/infiniteScroll)'
   },
-  'el-infinite-scroll/infinite-scroll-delay': {
+  'el-infinitescroll/infinite-scroll-delay': {
     type: 'number',
     description:
       'throttle delay (ms), default: 200.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/infiniteScroll)'
   },
-  'el-infinite-scroll/infinite-scroll-distance': {
+  'el-infinitescroll/infinite-scroll-distance': {
     type: 'number',
     description:
       'trigger distance (px), default: 0.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/infiniteScroll)'
   },
-  'el-infinite-scroll/infinite-scroll-immediate': {
+  'el-infinitescroll/infinite-scroll-immediate': {
     type: 'boolean',
     description:
       'Whether to execute the loading method immediately, in case the content cannot be filled up in the initial state., default: true.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/infiniteScroll)'
   },
-  'el-input-number/model-value': {
+  'el-inputnumber/model-value': {
     type: 'number',
     description:
       'binding value, default: 0.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/input-number)'
   },
-  'el-input-number/min': {
+  'el-inputnumber/min': {
     type: 'number',
     description:
       'the minimum allowed value, default: -Infinity.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/input-number)'
   },
-  'el-input-number/max': {
+  'el-inputnumber/max': {
     type: 'number',
     description:
       'the maximum allowed value, default: Infinity.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/input-number)'
   },
-  'el-input-number/step': {
+  'el-inputnumber/step': {
     type: 'number',
     description:
       'incremental step, default: 1.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/input-number)'
   },
-  'el-input-number/step-strictly': {
+  'el-inputnumber/step-strictly': {
     type: 'boolean',
     description:
       'whether input value can only be multiple of step, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/input-number)'
   },
-  'el-input-number/precision': {
+  'el-inputnumber/precision': {
     type: 'number',
     description:
       'precision of input value\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/input-number)'
   },
-  'el-input-number/size': {
+  'el-inputnumber/size': {
     type: 'string',
     options: ['large', 'small'],
     description:
       'size of the component\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/input-number)'
   },
-  'el-input-number/disabled': {
+  'el-inputnumber/disabled': {
     type: 'boolean',
     description:
       'whether the component is disabled, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/input-number)'
   },
-  'el-input-number/controls': {
+  'el-inputnumber/controls': {
     type: 'boolean',
     description:
       'whether to enable the control buttons, default: true.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/input-number)'
   },
-  'el-input-number/controls-position': {
+  'el-inputnumber/controls-position': {
     type: 'string',
     options: ['right'],
     description:
       'position of the control buttons\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/input-number)'
   },
-  'el-input-number/name': {
+  'el-inputnumber/name': {
     type: 'string',
     description:
       'same as `name` in native input\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/input-number)'
   },
-  'el-input-number/label': {
+  'el-inputnumber/label': {
     type: 'string',
     description:
       'label text\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/input-number)'
   },
-  'el-input-number/placeholder': {
+  'el-inputnumber/placeholder': {
     type: 'string',
     description:
       'placeholder in input\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/input-number)'
   },
-  'el-input-number/change': {
+  'el-inputnumber/change': {
     type: 'event',
     description:
       'triggers when the value changes\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/input-number)'
   },
-  'el-input-number/blur': {
+  'el-inputnumber/blur': {
     type: 'event',
     description:
       'triggers when Input blurs\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/input-number)'
   },
-  'el-input-number/focus': {
+  'el-inputnumber/focus': {
     type: 'event',
     description:
       'triggers when Input focuses\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/input-number)'
@@ -1366,7 +1425,7 @@ export default {
   'el-input/placeholder': {
     type: 'string',
     description:
-      'the placeholder of Autocomplete\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/input)'
+      'placeholder of Input\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/input)'
   },
   'el-input/clearable': {
     type: 'boolean',
@@ -1381,7 +1440,7 @@ export default {
   'el-input/disabled': {
     type: 'boolean',
     description:
-      'whether Autocomplete is disabled, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/input)'
+      'whether Input is disabled, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/input)'
   },
   'el-input/size': {
     type: 'string',
@@ -1487,7 +1546,7 @@ export default {
   'el-input/change': {
     type: 'event',
     description:
-      'triggers when the icon inside Input value change\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/input)'
+      'triggers only when the input box loses focus or the user presses Enter\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/input)'
   },
   'el-input/input': {
     type: 'event',
@@ -1499,142 +1558,187 @@ export default {
     description:
       'triggers when the Input is cleared by clicking the clear button\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/input)'
   },
-  'el-input/value-key': {
+  'el-autocomplete/placeholder': {
+    type: 'string',
+    description:
+      'the placeholder of Autocomplete\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/input)'
+  },
+  'el-autocomplete/clearable': {
+    type: 'boolean',
+    description:
+      'whether to show clear button, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/input)'
+  },
+  'el-autocomplete/disabled': {
+    type: 'boolean',
+    description:
+      'whether Autocomplete is disabled, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/input)'
+  },
+  'el-autocomplete/value-key': {
     type: 'string',
     description:
       'key name of the input suggestion object for display, default: value.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/input)'
   },
-  'el-input/icon': {
+  'el-autocomplete/icon': {
     type: 'string',
     description:
       'icon name\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/input)'
   },
-  'el-input/value': {
+  'el-autocomplete/value': {
     type: 'string',
     description:
       'binding value\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/input)'
   },
-  'el-input/debounce': {
+  'el-autocomplete/debounce': {
     type: 'number',
     description:
       'debounce delay when typing, in milliseconds, default: 300.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/input)'
   },
-  'el-input/placement': {
+  'el-autocomplete/placement': {
     type: 'string',
     description:
       'placement of the popup menu, default: bottom-start.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/input)'
   },
-  'el-input/fetch-suggestions': {
+  'el-autocomplete/fetch-suggestions': {
     type: 'function',
     description:
       'a method to fetch input suggestions. When suggestions are ready, invoke `callback(data:[])` to return them to Autocomplete\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/input)'
   },
-  'el-input/popper-class': {
+  'el-autocomplete/popper-class': {
     type: 'string',
     description:
       "custom class name for autocomplete's dropdown\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/input)"
   },
-  'el-input/trigger-on-focus': {
+  'el-autocomplete/trigger-on-focus': {
     type: 'boolean',
     description:
       'whether show suggestions when input focus, default: true.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/input)'
   },
-  'el-input/select-when-unmatched': {
+  'el-autocomplete/name': {
+    type: 'string',
+    description:
+      'same as `name` in native input\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/input)'
+  },
+  'el-autocomplete/select-when-unmatched': {
     type: 'boolean',
     description:
       'whether to emit a `select` event on enter when there is no autocomplete match, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/input)'
   },
-  'el-input/hide-loading': {
+  'el-autocomplete/label': {
+    type: 'string',
+    description:
+      'label text\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/input)'
+  },
+  'el-autocomplete/prefix-icon': {
+    type: 'string',
+    description:
+      'prefix icon class\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/input)'
+  },
+  'el-autocomplete/suffix-icon': {
+    type: 'string',
+    description:
+      'suffix icon class\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/input)'
+  },
+  'el-autocomplete/hide-loading': {
     type: 'boolean',
     description:
       'whether to hide the loading icon in remote search, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/input)'
   },
-  'el-input/popper-append-to-body': {
+  'el-autocomplete/popper-append-to-body': {
     type: 'boolean',
     description:
       'whether to append the dropdown to body. If the positioning of the dropdown is wrong, you can try to set this prop to false, default: true.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/input)'
   },
-  'el-input/highlight-first-item': {
+  'el-autocomplete/highlight-first-item': {
     type: 'boolean',
     description:
       'whether to highlight first item in remote search suggestions by default, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/input)'
   },
-  'el-input/select': {
+  'el-autocomplete/select': {
     type: 'event',
     description:
       'triggers when a suggestion is clicked\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/input)'
   },
-  'el-layout/gutter': {
+  'el-autocomplete/change': {
+    type: 'event',
+    description:
+      'triggers when the icon inside Input value change\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/input)'
+  },
+  'el-row/gutter': {
     type: 'number',
     description:
       'grid spacing, default: 0.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/layout)'
   },
-  'el-layout/type': {
+  'el-row/type': {
     type: 'string',
     description:
       'layout mode, you can use flex, works in modern browsers\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/layout)'
   },
-  'el-layout/justify': {
+  'el-row/justify': {
     type: 'string',
     options: ['start', 'end', 'center', 'space-around', 'space-between'],
     description:
       'horizontal alignment of flex layout, default: start.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/layout)'
   },
-  'el-layout/align': {
+  'el-row/align': {
     type: 'string',
     options: ['top', 'middle', 'bottom'],
     description:
       'vertical alignment of flex layout\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/layout)'
   },
-  'el-layout/tag': {
+  'el-row/tag': {
     type: 'string',
     description:
       'custom element tag, default: div.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/layout)'
   },
-  'el-layout/span': {
+  'el-col/span': {
     type: 'number',
     description:
       'number of column the grid spans, default: 24.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/layout)'
   },
-  'el-layout/offset': {
+  'el-col/offset': {
     type: 'number',
     description:
       'number of spacing on the left side of the grid, default: 0.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/layout)'
   },
-  'el-layout/push': {
+  'el-col/push': {
     type: 'number',
     description:
       'number of columns that grid moves to the right, default: 0.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/layout)'
   },
-  'el-layout/pull': {
+  'el-col/pull': {
     type: 'number',
     description:
       'number of columns that grid moves to the left, default: 0.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/layout)'
   },
-  'el-layout/xs': {
+  'el-col/xs': {
     type: 'number|object ',
     description:
       '`<768px` Responsive columns or column props object\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/layout)'
   },
-  'el-layout/sm': {
+  'el-col/sm': {
     type: 'number|object ',
     description:
       '`≥768px` Responsive columns or column props object\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/layout)'
   },
-  'el-layout/md': {
+  'el-col/md': {
     type: 'number|object ',
     description:
       '`≥992px` Responsive columns or column props object\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/layout)'
   },
-  'el-layout/lg': {
+  'el-col/lg': {
     type: 'number|object ',
     description:
       '`≥1200px` Responsive columns or column props object\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/layout)'
   },
-  'el-layout/xl': {
+  'el-col/xl': {
     type: 'number|object ',
     description:
       '`≥1920px` Responsive columns or column props object\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/layout)'
+  },
+  'el-col/tag': {
+    type: 'string',
+    description:
+      'custom element tag, default: div.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/layout)'
   },
   'el-link/type': {
     type: 'string',
@@ -1676,22 +1780,22 @@ export default {
     description:
       'callback function when sub-menu collapses\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/menu)'
   },
-  'el-menu/click': {
+  'el-menu-item/click': {
     type: 'event',
     description:
       'callback function when menu-item is clicked\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/menu)'
   },
-  'el-page-header/title': {
+  'el-pageheader/title': {
     type: 'string',
     description:
       'main title, default: Back.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/page-header)'
   },
-  'el-page-header/content': {
+  'el-pageheader/content': {
     type: 'string',
     description:
       'content\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/page-header)'
   },
-  'el-page-header/back': {
+  'el-pageheader/back': {
     type: 'event',
     description:
       'triggers when right side is clicked\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/page-header)'
@@ -1998,14 +2102,14 @@ export default {
       'binding value\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/radio)'
   },
   'el-radio/label': {
-    type: 'string|number',
+    type: 'string|number|boolean',
     description:
-      'the value of radio\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/radio)'
+      'the value of Radio\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/radio)'
   },
   'el-radio/disabled': {
     type: 'boolean',
     description:
-      'whether radio is disabled, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/radio)'
+      'whether Radio is disabled, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/radio)'
   },
   'el-radio/border': {
     type: 'boolean',
@@ -2016,7 +2120,7 @@ export default {
     type: 'string',
     options: ['medium', 'small', 'mini'],
     description:
-      'the size of radio buttons or bordered radios\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/radio)'
+      'size of the Radio, only works when `border` is true\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/radio)'
   },
   'el-radio/name': {
     type: 'string',
@@ -2028,15 +2132,51 @@ export default {
     description:
       'triggers when the bound value changes\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/radio)'
   },
-  'el-radio/text-color': {
+  'el-radio-group/model-value': {
+    type: 'string|number|boolean',
+    description:
+      'binding value\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/radio)'
+  },
+  'el-radio-group/size': {
+    type: 'string',
+    options: ['medium', 'small', 'mini'],
+    description:
+      'the size of radio buttons or bordered radios\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/radio)'
+  },
+  'el-radio-group/disabled': {
+    type: 'boolean',
+    description:
+      'whether the nesting radios are disabled, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/radio)'
+  },
+  'el-radio-group/text-color': {
     type: 'string',
     description:
       'font color when button is active, default: #ffffff.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/radio)'
   },
-  'el-radio/fill': {
+  'el-radio-group/fill': {
     type: 'string',
     description:
       'border and background color when button is active, default: #409EFF.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/radio)'
+  },
+  'el-radio-group/change': {
+    type: 'event',
+    description:
+      'triggers when the bound value changes\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/radio)'
+  },
+  'el-radio-button/label': {
+    type: 'string|number',
+    description:
+      'the value of radio\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/radio)'
+  },
+  'el-radio-button/disabled': {
+    type: 'boolean',
+    description:
+      'whether radio is disabled, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/radio)'
+  },
+  'el-radio-button/name': {
+    type: 'string',
+    description:
+      "native 'name' attribute\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/radio)"
   },
   'el-rate/model-value': {
     type: 'number',
@@ -2157,7 +2297,7 @@ export default {
   'el-select/disabled': {
     type: 'boolean',
     description:
-      'whether option is disabled, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/select)'
+      'whether Select is disabled, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/select)'
   },
   'el-select/value-key': {
     type: 'string',
@@ -2305,15 +2445,30 @@ export default {
     description:
       'triggers when Input focuses\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/select)'
   },
-  'el-select/label': {
+  'el-option-group/label': {
+    type: 'string',
+    description:
+      'name of the group\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/select)'
+  },
+  'el-option-group/disabled': {
+    type: 'boolean',
+    description:
+      'whether to disable all options in this group, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/select)'
+  },
+  'el-option/value': {
+    type: 'string|number|object',
+    description:
+      'value of option\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/select)'
+  },
+  'el-option/label': {
     type: 'string|number',
     description:
       'label of option, same as `value` if omitted\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/select)'
   },
-  'el-select/value': {
-    type: 'string|number|object',
+  'el-option/disabled': {
+    type: 'boolean',
     description:
-      'value of option\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/select)'
+      'whether option is disabled, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/select)'
   },
   'el-skeleton/animated': {
     type: 'boolean',
@@ -2340,7 +2495,7 @@ export default {
     description:
       'Rendering delay in millseconds, default: 0.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/skeleton)'
   },
-  'el-skeleton/variant': {
+  'el-skeleton-item/variant': {
     type: 'enum',
     description:
       'The current rendering skeleton type, default: text.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/skeleton)'
@@ -2484,23 +2639,23 @@ export default {
     description:
       'whether to apply simple theme, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/steps)'
   },
-  'el-steps/title': {
+  'el-step/title': {
     type: 'string',
     description:
       'step title\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/steps)'
   },
-  'el-steps/description': {
+  'el-step/description': {
     type: 'string',
     description:
       'step description\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/steps)'
   },
-  'el-steps/icon': {
+  'el-step/icon': {
     type: "step icon's class name. icons can be passed via named slot as well",
     options: ['string'],
     description:
       'step icon\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/steps)'
   },
-  'el-steps/status': {
+  'el-step/status': {
     type: 'wait|process|finish|error|success',
     description:
       'current status. It will be automatically set by Steps if not configured.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/steps)'
@@ -2818,71 +2973,71 @@ export default {
     description:
       'triggers when user expands or collapses a row (for expandable table, second param is expandedRows; for tree Table, second param is expanded)\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/table)'
   },
-  'el-table/type': {
+  'el-table-column/type': {
     type: 'string',
     options: ['selection', 'index', 'expand'],
     description:
       'type of the column. If set to `selection`, the column will display checkbox. If set to `index`, the column will display index of the row (staring from 1). If set to `expand`, the column will display expand icon.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/table)'
   },
-  'el-table/index': {
+  'el-table-column/index': {
     type: 'number|function',
     description:
       'customize indices for each row, works on columns with `type=index`\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/table)'
   },
-  'el-table/label': {
+  'el-table-column/label': {
     type: 'string',
     description:
       'column label\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/table)'
   },
-  'el-table/column-key': {
+  'el-table-column/column-key': {
     type: 'string',
     options: ['string'],
     description:
       "column's key. If you need to use the filter-change event, you need this attribute to identify which column is being filtered\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/table)"
   },
-  'el-table/prop': {
+  'el-table-column/prop': {
     type: 'string',
     description:
       'field name. You can also use its alias: `property`\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/table)'
   },
-  'el-table/width': {
+  'el-table-column/width': {
     type: 'string',
     description:
       'column width\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/table)'
   },
-  'el-table/min-width': {
+  'el-table-column/min-width': {
     type: 'string',
     description:
       'column minimum width. Columns with `width` has a fixed width, while columns with `min-width` has a width that is distributed in proportion\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/table)'
   },
-  'el-table/fixed': {
+  'el-table-column/fixed': {
     type: 'string|boolean',
     options: ['true', 'left', 'right'],
     description:
       'whether column is fixed at left/right. Will be fixed at left if `true`\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/table)'
   },
-  'el-table/render-header': {
+  'el-table-column/render-header': {
     type: 'function',
     description:
       'render function for table header of this column\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/table)'
   },
-  'el-table/sortable': {
+  'el-table-column/sortable': {
     type: 'boolean|string',
     options: ['true, false, custom'],
     description:
       "whether column can be sorted. Remote sorting can be done by setting this attribute to 'custom' and listening to the `sort-change` event of Table, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/table)"
   },
-  'el-table/sort-method': {
+  'el-table-column/sort-method': {
     type: 'function',
     description:
       'sorting method, works when `sortable` is `true`. Should return a number, just like Array.sort\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/table)'
   },
-  'el-table/sort-by': {
+  'el-table-column/sort-by': {
     type: 'function|string|array',
     description:
       'specify which property to sort by, works when `sortable` is `true` and `sort-method` is `undefined`. If set to an Array, the column will sequentially sort by the next property if the previous one is equal\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/table)'
   },
-  'el-table/sort-orders': {
+  'el-table-column/sort-orders': {
     type: 'array',
     options: [
       'the elements in the array need to be one of the following: ascending, descending and null (restores to the original order)'
@@ -2890,75 +3045,75 @@ export default {
     description:
       "the order of the sorting strategies used when sorting the data, works when `sortable` is `true`. Accepts an array, as the user clicks on the header, the column is sorted in order of the elements in the array, default: ['ascending', 'descending', null].\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/table)"
   },
-  'el-table/resizable': {
+  'el-table-column/resizable': {
     type: 'boolean',
     description:
       'whether column width can be resized, works when `border` of `el-table` is `true`, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/table)'
   },
-  'el-table/formatter': {
+  'el-table-column/formatter': {
     type: 'function',
     description:
       'function that formats cell content\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/table)'
   },
-  'el-table/show-overflow-tooltip': {
+  'el-table-column/show-overflow-tooltip': {
     type: 'boolean',
     description:
       'whether to hide extra content and show them in a tooltip when hovering on the cell, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/table)'
   },
-  'el-table/align': {
+  'el-table-column/align': {
     type: 'string',
     options: ['left', 'center', 'right'],
     description:
       'alignment, default: left.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/table)'
   },
-  'el-table/header-align': {
+  'el-table-column/header-align': {
     type: 'string',
     options: ['left', 'center', 'right'],
     description:
       'alignment of the table header. If omitted, the value of the above `align` attribute will be applied\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/table)'
   },
-  'el-table/class-name': {
+  'el-table-column/class-name': {
     type: 'string',
     description:
       'class name of cells in the column\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/table)'
   },
-  'el-table/label-class-name': {
+  'el-table-column/label-class-name': {
     type: 'string',
     description:
       'class name of the label of this column\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/table)'
   },
-  'el-table/selectable': {
+  'el-table-column/selectable': {
     type: 'function',
     description:
       "function that determines if a certain row can be selected, works when `type` is 'selection'\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/table)"
   },
-  'el-table/reserve-selection': {
+  'el-table-column/reserve-selection': {
     type: 'boolean',
     description:
       "whether to reserve selection after data refreshing, works when `type` is 'selection'. Note that `row-key` is required for this to work, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/table)"
   },
-  'el-table/filters': {
+  'el-table-column/filters': {
     type: 'array[{ text|value }]',
     description:
       'an array of data filtering options. For each element in this array, `text` and `value` are required\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/table)'
   },
-  'el-table/filter-placement': {
+  'el-table-column/filter-placement': {
     type: 'string',
     options: ["same as Tooltip's placement"],
     description:
       'placement for the filter dropdown\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/table)'
   },
-  'el-table/filter-multiple': {
+  'el-table-column/filter-multiple': {
     type: 'boolean',
     description:
       'whether data filtering supports multiple options, default: true.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/table)'
   },
-  'el-table/filter-method': {
+  'el-table-column/filter-method': {
     type: 'function',
     description:
       'data filtering method. If `filter-multiple` is on, this method will be called multiple times for each row, and a row will display if one of the calls returns `true`\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/table)'
   },
-  'el-table/filtered-value': {
+  'el-table-column/filtered-value': {
     type: 'array',
     description:
       'filter value for selected data, might be useful when table header is rendered with `render-header`\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/table)'
@@ -3025,22 +3180,27 @@ export default {
     description:
       'triggers when tab-add button or tab-remove is clicked\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/tabs)'
   },
-  'el-tabs/label': {
+  'el-tab-pane/label': {
     type: 'string',
     description:
       'title of the tab\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/tabs)'
   },
-  'el-tabs/disabled': {
+  'el-tab-pane/disabled': {
     type: 'boolean',
     description:
       'whether Tab is disabled, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/tabs)'
   },
-  'el-tabs/name': {
+  'el-tab-pane/name': {
     type: 'string',
     description:
       "identifier corresponding to the name of Tabs, representing the alias of the tab-pane, default: ordinal number of the tab-pane in the sequence, e.g. the first tab-pane is '1'.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/tabs)"
   },
-  'el-tabs/lazy': {
+  'el-tab-pane/closable': {
+    type: 'boolean',
+    description:
+      'whether Tab is closable, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/tabs)'
+  },
+  'el-tab-pane/lazy': {
     type: 'boolean',
     description:
       'whether Tab is lazily rendered, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/tabs)'
@@ -3093,114 +3253,114 @@ export default {
     description:
       'triggers when Tag is removed\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/tag)'
   },
-  'el-time-picker/model-value': {
+  'el-timepicker/model-value': {
     type: 'date',
     description:
       'binding value\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/time-picker)'
   },
-  'el-time-picker/readonly': {
+  'el-timepicker/readonly': {
     type: 'boolean',
     description:
       'whether TimePicker is read only, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/time-picker)'
   },
-  'el-time-picker/disabled': {
+  'el-timepicker/disabled': {
     type: 'boolean',
     description:
       'whether TimePicker is disabled, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/time-picker)'
   },
-  'el-time-picker/editable': {
+  'el-timepicker/editable': {
     type: 'boolean',
     description:
       'whether the input is editable, default: true.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/time-picker)'
   },
-  'el-time-picker/clearable': {
+  'el-timepicker/clearable': {
     type: 'boolean',
     description:
       'whether to show clear button, default: true.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/time-picker)'
   },
-  'el-time-picker/placeholder': {
+  'el-timepicker/placeholder': {
     type: 'string',
     description:
       'placeholder in non-range mode\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/time-picker)'
   },
-  'el-time-picker/start-placeholder': {
+  'el-timepicker/start-placeholder': {
     type: 'string',
     description:
       'placeholder for the start time in range mode\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/time-picker)'
   },
-  'el-time-picker/end-placeholder': {
+  'el-timepicker/end-placeholder': {
     type: 'string',
     description:
       'placeholder for the end time in range mode\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/time-picker)'
   },
-  'el-time-picker/is-range': {
+  'el-timepicker/is-range': {
     type: 'boolean',
     description:
       'whether to pick a time range, only works with `<el-time-picker>`, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/time-picker)'
   },
-  'el-time-picker/arrow-control': {
+  'el-timepicker/arrow-control': {
     type: 'boolean',
     description:
       'whether to pick time using arrow buttons, only works with `<el-time-picker>`, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/time-picker)'
   },
-  'el-time-picker/align': {
+  'el-timepicker/align': {
     type: 'left|center|right',
     options: ['left'],
     description:
       'alignment\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/time-picker)'
   },
-  'el-time-picker/popper-class': {
+  'el-timepicker/popper-class': {
     type: 'string',
     description:
       "custom class name for TimePicker's dropdown\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/time-picker)"
   },
-  'el-time-picker/picker-options': {
+  'el-timepicker/picker-options': {
     type: 'object',
     description:
       'additional options, check the table below, default: {}.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/time-picker)'
   },
-  'el-time-picker/range-separator': {
+  'el-timepicker/range-separator': {
     type: 'string',
     description:
       "range separator, default: '-'.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/time-picker)"
   },
-  'el-time-picker/default-value': {
+  'el-timepicker/default-value': {
     type: 'date for timepicker|string for timeselect',
     options: ['anything accepted by new Date() for TimePicker, selectable value for TimeSelect'],
     description:
       'optional, default date of the calendar\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/time-picker)'
   },
-  'el-time-picker/value-format': {
+  'el-timepicker/value-format': {
     type: 'string',
     description:
       'optional, only for TimePicker, format of binding value. If not specified, the binding value will be a Date object\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/time-picker)'
   },
-  'el-time-picker/name': {
+  'el-timepicker/name': {
     type: 'string',
     description:
       'same as `name` in native input\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/time-picker)'
   },
-  'el-time-picker/prefix-icon': {
+  'el-timepicker/prefix-icon': {
     type: 'string',
     description:
       'Custom prefix icon class, default: el-icon-time.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/time-picker)'
   },
-  'el-time-picker/clear-icon': {
+  'el-timepicker/clear-icon': {
     type: 'string',
     description:
       'Custom clear icon class, default: el-icon-circle-close.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/time-picker)'
   },
-  'el-time-picker/change': {
+  'el-timepicker/change': {
     type: 'event',
     description:
       'triggers when user confirms the value\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/time-picker)'
   },
-  'el-time-picker/blur': {
+  'el-timepicker/blur': {
     type: 'event',
     description:
       'triggers when Input blurs\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/time-picker)'
   },
-  'el-time-picker/focus': {
+  'el-timepicker/focus': {
     type: 'event',
     description:
       'triggers when Input focuses\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/time-picker)'
@@ -3210,41 +3370,41 @@ export default {
     description:
       'whether the node is ascending or descending, default is ascending, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/timeline)'
   },
-  'el-timeline/timestamp': {
+  'el-timeline-item/timestamp': {
     type: 'string',
     description:
       'timestamp content\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/timeline)'
   },
-  'el-timeline/hide-timestamp': {
+  'el-timeline-item/hide-timestamp': {
     type: 'boolean',
     description:
       'whether to show timestamp, default: false.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/timeline)'
   },
-  'el-timeline/placement': {
+  'el-timeline-item/placement': {
     type: 'string',
     options: ['top', 'bottom'],
     description:
       'position of timestamp, default: bottom.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/timeline)'
   },
-  'el-timeline/type': {
+  'el-timeline-item/type': {
     type: 'string',
     options: ['primary', 'success', 'warning', 'danger', 'info'],
     description:
       'node type\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/timeline)'
   },
-  'el-timeline/color': {
+  'el-timeline-item/color': {
     type: 'string',
     options: ['hsl', 'hsv', 'hex', 'rgb'],
     description:
       'background color of node\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/timeline)'
   },
-  'el-timeline/size': {
+  'el-timeline-item/size': {
     type: 'string',
     options: ['normal', 'large'],
     description:
       'node size, default: normal.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/timeline)'
   },
-  'el-timeline/icon': {
+  'el-timeline-item/icon': {
     type: 'string',
     description:
       'icon class name\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/timeline)'

@@ -14,7 +14,7 @@ export default {
     description:
       'Displays important alert messages.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/alert)'
   },
-  'el-avatar': {
+  'el-avatar-avatar': {
     attributes: ['icon', 'size', 'shape', 'src', 'src-set', 'alt', 'fit', 'error'],
     description:
       'Avatars can be used to represent people or objects. It supports images, Icons, or characters.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/avatar)'
@@ -30,6 +30,11 @@ export default {
       'A number or status mark on buttons and icons.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/badge)'
   },
   'el-breadcrumb': {
+    attributes: ['separator', 'separator-class'],
+    description:
+      'Displays the location of the current page, making it easier to browser back.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/breadcrumb)'
+  },
+  'el-breadcrumb-item': {
     attributes: ['to', 'replace'],
     description:
       '[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/breadcrumb)'
@@ -61,26 +66,97 @@ export default {
       'Integrate information in a card container.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/card)'
   },
   'el-carousel': {
+    attributes: [
+      'height',
+      'initial-index',
+      'trigger',
+      'autoplay',
+      'interval',
+      'indicator-position',
+      'arrow',
+      'type',
+      'loop',
+      'direction',
+      'change'
+    ],
+    description:
+      'Loop a series of images or texts in a limited space\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/carousel)'
+  },
+  'el-carousel-item': {
     attributes: ['name', 'label'],
     description:
       '[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/carousel)'
   },
   'el-cascader': {
+    attributes: [
+      'model-value',
+      'options',
+      'props',
+      'size',
+      'placeholder',
+      'disabled',
+      'clearable',
+      'show-all-levels',
+      'collapse-tags',
+      'separator',
+      'filterable',
+      'filter-method',
+      'debounce',
+      'before-filter',
+      'popper-class',
+      'change',
+      'expand-change',
+      'blur',
+      'focus',
+      'visible-change',
+      'remove-tag'
+    ],
+    description:
+      'If the options have a clear hierarchical structure, Cascader can be used to view and select them.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/cascader)'
+  },
+  'el-cascaderpanel': {
     attributes: ['model-value', 'options', 'props', 'change', 'expand-change'],
     description:
       '[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/cascader)'
   },
   'el-checkbox': {
+    attributes: [
+      'model-value',
+      'label',
+      'true-label',
+      'false-label',
+      'disabled',
+      'border',
+      'size',
+      'name',
+      'checked',
+      'indeterminate',
+      'change'
+    ],
+    description:
+      'A group of options for multiple choices.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/checkbox)'
+  },
+  'el-checkbox-group': {
+    attributes: ['model-value', 'size', 'disabled', 'min', 'max', 'text-color', 'fill', 'change'],
+    description:
+      '[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/checkbox)'
+  },
+  'el-checkbox-button': {
     attributes: ['label', 'true-label', 'false-label', 'disabled', 'name', 'checked'],
     description:
       '[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/checkbox)'
   },
   'el-collapse': {
+    attributes: ['model-value', 'accordion', 'change'],
+    description:
+      'Use Collapse to store contents.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/collapse)'
+  },
+  'el-collapse-item': {
     attributes: ['name', 'title', 'disabled'],
     description:
       '[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/collapse)'
   },
-  'el-color-picker': {
+  'el-colorpicker': {
     attributes: [
       'model-value',
       'disabled',
@@ -96,11 +172,26 @@ export default {
       'ColorPicker is a color selector supporting multiple color formats.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/color-picker)'
   },
   'el-container': {
+    attributes: ['direction'],
+    description:
+      'Container components for scaffolding basic structure of the page:\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/container)'
+  },
+  'el-header': {
     attributes: ['height'],
     description:
       '[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/container)'
   },
-  'el-date-picker': {
+  'el-aside': {
+    attributes: ['width'],
+    description:
+      '[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/container)'
+  },
+  'el-footer': {
+    attributes: ['height'],
+    description:
+      '[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/container)'
+  },
+  'el-datepicker': {
     attributes: [
       'model-value',
       'readonly',
@@ -132,6 +223,23 @@ export default {
       'Use Date Picker for date input.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/date-picker)'
   },
   'el-descriptions': {
+    attributes: [
+      'border',
+      'column',
+      'direction',
+      'size',
+      'title',
+      'extra',
+      'colon',
+      'label-class-name',
+      'content-class-name',
+      'label-style',
+      'content-style'
+    ],
+    description:
+      'Display multiple fields in list form.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/descriptions)'
+  },
+  'el-descriptions-item': {
     attributes: [
       'label',
       'span',
@@ -175,30 +283,30 @@ export default {
       'The dividing line that separates the content.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/divider)'
   },
   'el-drawer': {
-    attributes: [
-      'append-to-body',
-      'before-close',
-      'close-on-press-escape',
-      'custom-class',
-      'destroy-on-close',
-      'modal',
-      'modal-append-to-body',
-      'direction',
-      'show-close',
-      'size',
-      'title',
-      'visible',
-      'wrapper-closable',
-      'with-header',
-      'open',
-      'opened',
-      'close',
-      'closed'
-    ],
+    attributes: ['open', 'opened', 'close', 'closed'],
     description:
       "Sometimes, `Dialog` does not always satisfy our requirements, let's say you have a massive form, or you need space to display something like `terms & conditions`, `Drawer` has almost identical API with `Dialog`, but it introduces different user experience.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/drawer)"
   },
   'el-dropdown': {
+    attributes: [
+      'type',
+      'size',
+      'split-button',
+      'placement',
+      'trigger',
+      'hide-on-click',
+      'show-timeout',
+      'hide-timeout',
+      'tabindex',
+      'disabled',
+      'click',
+      'command',
+      'visible-change'
+    ],
+    description:
+      'Toggleable menu for displaying lists of links and actions.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/dropdown)'
+  },
+  'el-dropdown-menu-item': {
     attributes: ['command', 'disabled', 'divided', 'icon'],
     description:
       '[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/dropdown)'
@@ -209,6 +317,26 @@ export default {
       'Placeholder hints for empty states.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/empty)'
   },
   'el-form': {
+    attributes: [
+      'model',
+      'rules',
+      'inline',
+      'label-position',
+      'label-width',
+      'label-suffix',
+      'hide-required-asterisk',
+      'show-message',
+      'inline-message',
+      'status-icon',
+      'validate-on-rule-change',
+      'size',
+      'disabled',
+      'validate'
+    ],
+    description:
+      'Form consists of `input`, `radio`, `select`, `checkbox` and so on. With form, you can collect, verify and submit data.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/form)'
+  },
+  'el-form-item': {
     attributes: [
       'prop',
       'label',
@@ -239,7 +367,7 @@ export default {
     description:
       'Besides the native features of img, support lazy load, custom placeholder and load failure, etc.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/image)'
   },
-  'el-infinite-scroll': {
+  'el-infinitescroll': {
     attributes: [
       'infinite-scroll-disabled',
       'infinite-scroll-delay',
@@ -249,7 +377,7 @@ export default {
     description:
       'Load more data while reach bottom of the page\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/infiniteScroll)'
   },
-  'el-input-number': {
+  'el-inputnumber': {
     attributes: [
       'model-value',
       'min',
@@ -272,6 +400,44 @@ export default {
       'Input numerical values with a customizable range.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/input-number)'
   },
   'el-input': {
+    attributes: [
+      'type',
+      'model-value',
+      'maxlength',
+      'minlength',
+      'show-word-limit',
+      'placeholder',
+      'clearable',
+      'show-password',
+      'disabled',
+      'size',
+      'prefix-icon',
+      'suffix-icon',
+      'rows',
+      'autosize',
+      'autocomplete',
+      'auto-complete',
+      'name',
+      'readonly',
+      'max',
+      'min',
+      'step',
+      'resize',
+      'autofocus',
+      'form',
+      'label',
+      'tabindex',
+      'validate-event',
+      'blur',
+      'focus',
+      'change',
+      'input',
+      'clear'
+    ],
+    description:
+      'Input data using mouse or keyboard.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/input)'
+  },
+  'el-autocomplete': {
     attributes: [
       'placeholder',
       'clearable',
@@ -298,7 +464,12 @@ export default {
     description:
       'You can get some recommended tips based on the current input.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/input)'
   },
-  'el-layout': {
+  'el-row': {
+    attributes: ['gutter', 'type', 'justify', 'align', 'tag'],
+    description:
+      '[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/layout)'
+  },
+  'el-col': {
     attributes: ['span', 'offset', 'push', 'pull', 'xs', 'sm', 'md', 'lg', 'xl', 'tag'],
     description:
       '[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/layout)'
@@ -309,11 +480,16 @@ export default {
       'Text hyperlink\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/link)'
   },
   'el-menu': {
+    attributes: ['select', 'open', 'close'],
+    description:
+      '[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/menu)'
+  },
+  'el-menu-item': {
     attributes: ['click'],
     description:
       '[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/menu)'
   },
-  'el-page-header': {
+  'el-pageheader': {
     attributes: ['title', 'content', 'back'],
     description:
       'If path of the page is simple, it is recommended to use PageHeader instead of the Breadcrumb.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/page-header)'
@@ -398,6 +574,16 @@ export default {
       'Progress is used to show the progress of current operation, and inform the user the current status.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/progress)'
   },
   'el-radio': {
+    attributes: ['model-value', 'label', 'disabled', 'border', 'size', 'name', 'change'],
+    description:
+      'Single selection among multiple options.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/radio)'
+  },
+  'el-radio-group': {
+    attributes: ['model-value', 'size', 'disabled', 'text-color', 'fill', 'change'],
+    description:
+      '[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/radio)'
+  },
+  'el-radio-button': {
     attributes: ['label', 'disabled', 'name'],
     description:
       '[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/radio)'
@@ -432,11 +618,59 @@ export default {
       "Used to give feedback on the result of user's operation or access exception.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/result)"
   },
   'el-select': {
+    attributes: [
+      'model-value',
+      'multiple',
+      'disabled',
+      'value-key',
+      'size',
+      'clearable',
+      'collapse-tags',
+      'multiple-limit',
+      'name',
+      'autocomplete',
+      'auto-complete',
+      'placeholder',
+      'filterable',
+      'allow-create',
+      'filter-method',
+      'remote',
+      'remote-method',
+      'loading',
+      'loading-text',
+      'no-match-text',
+      'no-data-text',
+      'popper-class',
+      'reserve-keyword',
+      'default-first-option',
+      'popper-append-to-body',
+      'automatic-dropdown',
+      'change',
+      'visible-change',
+      'remove-tag',
+      'clear',
+      'blur',
+      'focus'
+    ],
+    description:
+      'When there are plenty of options, use a drop-down menu to display and select desired ones.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/select)'
+  },
+  'el-option-group': {
+    attributes: ['label', 'disabled'],
+    description:
+      '[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/select)'
+  },
+  'el-option': {
     attributes: ['value', 'label', 'disabled'],
     description:
       '[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/select)'
   },
   'el-skeleton': {
+    attributes: ['animated', 'count', 'loading', 'rows', 'throttle'],
+    description:
+      'When loading data, and you need a rich experience for visual and interactions for your end users, you can choose `skeleton`.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/skeleton)'
+  },
+  'el-skeleton-item': {
     attributes: ['variant'],
     description:
       '[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/skeleton)'
@@ -468,6 +702,19 @@ export default {
       'Drag the slider within a fixed range.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/slider)'
   },
   'el-steps': {
+    attributes: [
+      'space',
+      'direction',
+      'active',
+      'process-status',
+      'finish-status',
+      'align-center',
+      'simple'
+    ],
+    description:
+      "Guide the user to complete tasks in accordance with the process. Its steps can be set according to the actual application scenario and the number of the steps can't be less than 2.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/steps)"
+  },
+  'el-step': {
     attributes: ['title', 'description', 'icon', 'status'],
     description:
       '[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/steps)'
@@ -493,6 +740,60 @@ export default {
       'Switch is used for switching between two opposing states.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/switch)'
   },
   'el-table': {
+    attributes: [
+      'data',
+      'height',
+      'max-height',
+      'size',
+      'fit',
+      'show-header',
+      'highlight-current-row',
+      'current-row-key',
+      'row-class-name',
+      'row-style',
+      'cell-class-name',
+      'cell-style',
+      'header-row-class-name',
+      'header-row-style',
+      'header-cell-class-name',
+      'header-cell-style',
+      'row-key',
+      'empty-text',
+      'default-expand-all',
+      'expand-row-keys',
+      'default-sort',
+      'tooltip-effect',
+      'show-summary',
+      'sum-text',
+      'summary-method',
+      'span-method',
+      'select-on-indeterminate',
+      'indent',
+      'lazy',
+      'load',
+      'tree-props',
+      'select',
+      'select-all',
+      'selection-change',
+      'cell-mouse-enter',
+      'cell-mouse-leave',
+      'cell-click',
+      'cell-dblclick',
+      'row-click',
+      'row-contextmenu',
+      'row-dblclick',
+      'header-click',
+      'header-contextmenu',
+      'sort-change',
+      'filter-change',
+      'current-change',
+      'header-dragend',
+      'expand-change'
+    ],
+    description:
+      'Display multiple data with similar format. You can sort, filter, compare your data in a table.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/table)'
+  },
+  'el-table-column': {
     attributes: [
       'type',
       'index',
@@ -526,6 +827,24 @@ export default {
       '[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/table)'
   },
   'el-tabs': {
+    attributes: [
+      'model-value',
+      'type',
+      'closable',
+      'addable',
+      'editable',
+      'tab-position',
+      'stretch',
+      'before-leave',
+      'tab-click',
+      'tab-remove',
+      'tab-add',
+      'edit'
+    ],
+    description:
+      'Divide data collections which are related yet belong to different types.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/tabs)'
+  },
+  'el-tab-pane': {
     attributes: ['label', 'disabled', 'name', 'closable', 'lazy'],
     description:
       '[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/tabs)'
@@ -545,7 +864,7 @@ export default {
     description:
       'Used for marking and selection.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/tag)'
   },
-  'el-time-picker': {
+  'el-timepicker': {
     attributes: [
       'model-value',
       'readonly',
@@ -574,6 +893,11 @@ export default {
       'Use Time Picker for time input.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/time-picker)'
   },
   'el-timeline': {
+    attributes: ['reverse'],
+    description:
+      'Visually display timeline.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/timeline)'
+  },
+  'el-timeline-item': {
     attributes: ['timestamp', 'hide-timestamp', 'placement', 'type', 'color', 'size', 'icon'],
     description:
       '[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/timeline)'
