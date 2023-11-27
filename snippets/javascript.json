@@ -80,7 +80,7 @@
   },
   "vueUseModel": {
     "prefix": "vuModel",
-    "body": [" const data = useVModel(props, 'data', emit)"]
+    "body": [" const data = useVModel(props, 'data', emit,{passi})"]
   },
   "vueUseModels": {
     "prefix": "vuModels",

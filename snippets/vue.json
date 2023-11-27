@@ -506,5 +506,14 @@
       "})"
     ],
     "description": "vue nexttick"
+  }, 
+  "vmodel": {
+    "prefix": "vmodel",
+    "body": [
+        "model: {",
+        "\tprop: 'modelValue',",
+        "\tevent: 'update:modelValue'",
+        "  },"
+    ]
   }
 }
