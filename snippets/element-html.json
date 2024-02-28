@@ -919,5 +919,36 @@
         "\t\t   ",
         "\t\t</el-scrollbar>"
     ]
+  },
+  "jdbcreatetime": {
+    "prefix": "jcbcreateTime",
+    "body": [
+        " <JdbCreateTimeSelect",
+        "\t\t\t\tv-model=\"createByTime.datetime\"",
+        "\t\t\t\tlabel-width=\"120px\"",
+        "\t\t\t\t:min-base-time=\"minBaseTime\"",
+        "\t\t\t\t:max-base-time=\"maxBaseTime\"",
+        "\t\t\t  />"
+    ],
+    "description": "创建时间选择"
+  },
+  "useregions": {
+    "prefix": "useregion",
+    "body": [
+        "import { useRegionsMap } from '@jdcloud/jelement-biz/dist/compositions/useRegionsMap'"
+    ],
+    "description": "region hooks"
+  },
+  "db-delete": {
+    "prefix": "dbdelete",
+    "body": [
+        " <db-delete-instance",
+        "\t\t\t  mfa-action-type=\"terrabase:deleteInstance\"",
+        "\t\t\t  :region-id=\"regionId\"",
+        "\t\t\t  :instance=\"instance\"",
+        "\t\t\t  :callback=\"cb\"",
+        "\t\t\t  :delete-action=\"deleteInstance\"",
+        "\t\t\t/>"
+    ]
   }
 }

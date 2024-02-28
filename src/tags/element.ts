@@ -306,7 +306,7 @@ export default {
     description:
       'Toggleable menu for displaying lists of links and actions.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/dropdown)'
   },
-  'el-dropdown-menu-item': {
+  'el-dropdown-item': {
     attributes: ['command', 'disabled', 'divided', 'icon'],
     description:
       '[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/dropdown)'
@@ -1020,4 +1020,4 @@ export default {
     description:
       'Upload files by clicking or drag-and-drop\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/upload)'
   }
-}
+};
