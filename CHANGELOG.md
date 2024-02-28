@@ -1,3 +1,12 @@
+## [1.16.7](https://github.com/ryansecret/vue-daisy/compare/v1.16.6...v1.16.7) (2024-02-28)
+
+
+### Features
+
+* **snippets:** :sparkles: dbUI&biz components snipets update ([3b0aeb4](https://github.com/ryansecret/vue-daisy/commit/3b0aeb4289a44ba05aa407c3303566d5108f25cd))
+
+
+
 ## [1.16.6](https://github.com/ryansecret/vue-daisy/compare/v1.16.5...v1.16.6) (2023-11-27)
 
 
