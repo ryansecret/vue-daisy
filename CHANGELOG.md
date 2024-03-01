@@ -1,3 +1,12 @@
+## [1.16.8](https://github.com/ryansecret/vue-daisy/compare/v1.16.7...v1.16.8) (2024-03-01)
+
+
+### Features
+
+* **doc:** :sparkles: k8s-expose k8s-helpInfo 文档 ([f1453d5](https://github.com/ryansecret/vue-daisy/commit/f1453d589afc40104a0d102a8a673885998cda86))
+
+
+
 ## [1.16.7](https://github.com/ryansecret/vue-daisy/compare/v1.16.6...v1.16.7) (2024-02-28)
 
 
