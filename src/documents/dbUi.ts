@@ -84,7 +84,12 @@ export default {
 | deleteAction | 删除实例的接口调用及其相关操作 | Function | true | -   | -  |
 | callback | 删除之后的回调，比如列表刷新等，也可以在deleteAction 中处理 | Function | true | -   | -  |
 | needValidateId | 是否需要输入ID验证 | Boolean | true | -   | true |
-| mfaActionType | mfa 时的传参 | String | false | -   | '' |`,    
+| mfaActionType | mfa 时的传参 | String | false | -   | '' |
+
+| Slot  | 描述  | 
+| :--- | :--- | 
+| info  | 信息展示插槽  |  
+`,    
 "db-copy-btn": `[dbUI://404.html) \n
 | 参数  | 描述  | 类型  | require | 可选值 | 默认值 |
 | content | 需要复制的内容 | String | true | -   | ''   |
@@ -110,4 +115,22 @@ export default {
 | footer-left  | 弹框底部左侧  |  
 | footer | 弹框底部右侧，用来替换确定、取消 按钮 |  
  `, 
+  "db-k8sExpose": `[dbUI://404.html) \n
+ | 参数  | 描述  | 类型  | require | 可选值 | 默认值 |
+ | --- | --- | --- | --- | --- | --- |
+ | actionType |操作类型| Sting | - | open,close,modify |  open  |
+ | action | 各业务线调用的方法  | Function, Promise | true | -  |  - |
+ | originAccessType | 现在的对外服务类型 | String | true | 'NodePort','LoadBalancer','HybridExpose'  |  true |
+ | exposeTypes | 所有支持的对外服务类型 | Array | - | -  |  ['NodePort'] |
+ | disabled |  是否可用 | Boolean | - | -  |  true |
+ 
+ | Slot  | 描述  | 
+ | :--- | :--- | 
+ | slot | 默认是 button  |  
+ `,  
+ "db-K8sHelpInfo": `[dbUI://404.html) \n
+ | 参数  | 描述  | 类型  | require | 可选值 | 默认值 |
+ | --- | --- | --- | --- | --- | --- |
+ | accessType | 现在的对外服务类型 | String | false | 'NodePort','LoadBalancer','HybridExpose'  |  - |
+ `,
 };

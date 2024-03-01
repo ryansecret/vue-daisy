@@ -950,5 +950,27 @@
         "\t\t\t  :delete-action=\"deleteInstance\"",
         "\t\t\t/>"
     ]
+  },
+  "db-k8sexpose": {
+    "prefix": "db-k8sexpose",
+    "body": [
+        "<db-k8sExpose",
+        "\t\t:action-type=\"actionType\"",
+        "\t\t:origin-access-type=\"accessType\"",
+        "\t\t:expose-types=\"accessTypeList\"",
+        "\t\t:action=\"modifyExpose\"",
+        "\t\t:disabled=\"!canOperate\"",
+        "\t  >",
+        "\t\t<template v-if=\"isEdit\" #default>",
+        "\t\t  <el-button type=\"text\" icon=\"jc-icon-edit\" />",
+        "\t\t</template>",
+        "\t  </db-k8sExpose>"
+    ]
+  },
+  "db-k8sinfo": {
+    "prefix": "db-k8sinfo",
+    "body": [
+        "<db-K8sHelpInfo :access-type=\"k8sDomainInfo.accessType\" />"
+    ]
   }
 }

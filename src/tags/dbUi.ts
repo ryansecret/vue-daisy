@@ -49,9 +49,14 @@ export default {
         "description": "Vpc 链接",
         "framework": "dbUI"
       },
-      "db-vpcSelect": {
+      "db-vpc-select": {
         "attributes": ["regionId","vpc","subnet", "disableVpc","needIp"],
         "description": "vpc Select",
+        "framework": "dbUI"
+      },
+      "db-k8s-expose": {
+        "attributes": ["actionType","action","originAccessType", "exposeTypes","disabled"],
+        "description": "k8s 对外服务",
         "framework": "dbUI"
       }
 };
