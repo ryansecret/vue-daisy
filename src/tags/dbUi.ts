@@ -58,5 +58,15 @@ export default {
         "attributes": ["actionType","action","originAccessType", "exposeTypes","disabled"],
         "description": "k8s 对外服务",
         "framework": "dbUI"
+      },
+      "db-k8sinfo": {
+        "attributes": ["accessType"],
+        "description": "k8s 对外服务help图标",
+        "framework": "dbUI"
+      },
+      "db-weeks-check": {
+        "attributes": ["v-model","isText"],
+        "description": "周选择checkbox",
+        "framework": "dbUI"
       }
 };

@@ -869,7 +869,7 @@
         "\t:region-id=\"${2:regionId}\"",
         "\t:all-specs=\"${3:classList}\"",
         "\t:displayType=\"${4:true|false}\"",
-        "\t:sold-out-filter=\"${5:isSoldOut}\"",
+        "\t:sold-out-predicate=\"${5:isSoldOut}\"",
         "  />"
     ]
   },
@@ -971,6 +971,35 @@
     "prefix": "db-k8sinfo",
     "body": [
         "<db-K8sHelpInfo :access-type=\"k8sDomainInfo.accessType\" />"
+    ]
+  },
+  "db-weeks-check": {
+    "prefix": "dbweek",
+    "body": [
+        "<db-weeks-check :isText=\"true\" v-model=\"selectedWeeks\"></db-weeks-check>"
+    ]
+   },
+   "db-operation-container": {
+    "prefix": "db-operation",
+    "body": [
+        "<DbOperationConainer>",
+        "\t\t  <el-button type=\"text\">操作2</el-button>",
+        "\t\t\t<el-button type=\"text\">开启K8S2</el-button>",
+        "\t\t  </db-k8sExpose>",
+        "\t\t  <el-button type=\"text\" v-dropdownTrigger=\"fakeOper\">独立的操作</el-button>",
+        "\t\t</DbOperationConainer>"
+     ]
+   },
+   "db-content-tooltip": {
+    "prefix": "dbcontentooltip",
+    "body": [
+        "<db-content-tooltip info=\"这是个很长的文字\" />"
+    ]
+   },
+   "db-az-text": {
+    "prefix": "dbaztext",
+    "body": [
+        " <dbAzText :regionId=\"regionId\" :serviceCode=\"serviceCode\" :azIds=\"azIds\"></dbAzText>"
     ]
   }
 }
