@@ -1,3 +1,12 @@
+## [1.16.9](https://github.com/ryansecret/vue-daisy/compare/v1.16.8...v1.16.9) (2024-03-11)
+
+
+### Features
+
+* **___CUSTOM___:** :sparkles: 添加weekcheck\operationContainer\contentTooltip\azText ([ad50862](https://github.com/ryansecret/vue-daisy/commit/ad5086271d8beb38d351087333962c8747f7f950))
+
+
+
 ## [1.16.8](https://github.com/ryansecret/vue-daisy/compare/v1.16.7...v1.16.8) (2024-03-01)
 
 
