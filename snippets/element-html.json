@@ -1001,5 +1001,26 @@
     "body": [
         " <dbAzText :regionId=\"regionId\" :serviceCode=\"serviceCode\" :azIds=\"azIds\"></dbAzText>"
     ]
-  }
+  },
+  "dbselecttag": {
+    "prefix": "dbselecttag",
+    "body": [
+        "  <db-selected-tags v-model=\"selectedTagKeys\" />"
+    ]
+  },
+  "usepageoptions": {
+    "prefix": "usepageoption",
+    "body": [
+        "\tconst {",
+        "\t  state: pageState,",
+        "\t  handleSizeChange,",
+        "\t  handleCurrentChange,",
+        "\t  resetPageOption,",
+        "\t  selectedTagKeys,",
+        "\t  tagFilterSuccess,",
+        "\t  tagFilterError,",
+        "\t  searchParams",
+        "\t} = usePageWithOptions(getList, { hasTag: true })"
+    ]
+ }
 }

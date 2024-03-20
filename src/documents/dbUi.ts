@@ -133,4 +133,11 @@ export default {
  | --- | --- | --- | --- | --- | --- |
  | accessType | 现在的对外服务类型 | String | false | 'NodePort','LoadBalancer','HybridExpose'  |  - |
  `,
+ "v-dropdownTrigger": `[dbUI://http://xingyun.jd.com/codingRoot/daas-fe/dbUI/blob/master/dbUI/src/components/OperationConainer/index.js) \n
+ v-dropdownTrigger 默认调用组件内的show方法，覆盖90%以上场景，确保组件中存在。\n
+ 对于自定义组件中触发method为其他的，使用
+ v-dropdownTrigger:[method],例如：v-dropdownTrigger:deleteInstance。\n
+ 对于需要触发当前上下文中的方法，使用 v-dropdownTrigger="[method]",例如
+ v-dropdownTrigger="fakeOper"
+ `,
 };
