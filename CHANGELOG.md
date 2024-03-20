@@ -1,3 +1,12 @@
+## [1.16.10](https://github.com/ryansecret/vue-daisy/compare/v1.16.9...v1.16.10) (2024-03-20)
+
+
+### Features
+
+* **snippets:** :sparkles: 添加 dbselecttag &  usepageoptions ([3256cc3](https://github.com/ryansecret/vue-daisy/commit/3256cc39b2d21b6bb7f3d09c1ad4368f92384e04))
+
+
+
 ## [1.16.9](https://github.com/ryansecret/vue-daisy/compare/v1.16.8...v1.16.9) (2024-03-11)
 
 
