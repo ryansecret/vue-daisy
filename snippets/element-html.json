@@ -848,7 +848,7 @@
     ]
    },
    "dbDeployAz": {
-    "prefix": "dbAz",
+    "prefix": "dbDeployAz",
     "body": [
         "\t  <db-deploy-az",
         "\t\tv-model=\"az\"",
@@ -982,7 +982,7 @@
    "db-operation-container": {
     "prefix": "db-operation",
     "body": [
-        "<DbOperationConainer>",
+        "<DbOperationConainer :size=\"btnNum\">",
         "\t\t  <el-button type=\"text\">操作2</el-button>",
         "\t\t\t<el-button type=\"text\">开启K8S2</el-button>",
         "\t\t  </db-k8sExpose>",
@@ -1022,5 +1022,14 @@
         "\t  searchParams",
         "\t} = usePageWithOptions(getList, { hasTag: true })"
     ]
- }
+  },
+  "dbformitem": {
+    "prefix": "dbformitem",
+    "body": [
+        "\t  <dbFormItemTemplate title=\"dbFormItemTemplate\" label-width=\"100px\">",
+        "\t\t<el-form-item label=\"Weeks 显示1\">Weeks 显示1</el-form-item>",
+        "\t\t<el-form-item label=\"Weeks 显示2\">Weeks 显示2</el-form-item>",
+        "\t  </dbFormItemTemplate>"
+    ]
+  }
 }
