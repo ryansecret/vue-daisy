@@ -1,3 +1,12 @@
+## [1.16.11](https://github.com/ryansecret/vue-daisy/compare/v1.16.10...v1.16.11) (2024-04-09)
+
+
+### Features
+
+* **snippets:** :sparkles: 优化dbUI snippets ([06b1b30](https://github.com/ryansecret/vue-daisy/commit/06b1b30d4ad8d1fcb65122ff7a4aa41bf9f1e66d))
+
+
+
 ## [1.16.10](https://github.com/ryansecret/vue-daisy/compare/v1.16.9...v1.16.10) (2024-03-20)
 
 
