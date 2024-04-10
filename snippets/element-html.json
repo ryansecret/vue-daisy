@@ -995,11 +995,16 @@
     "body": [
         "<db-content-tooltip info=\"这是个很长的文字\" />"
     ]
-   },
-   "db-az-text": {
+   }, 
+  "dbAzText": {
     "prefix": "dbaztext",
     "body": [
-        " <dbAzText :regionId=\"regionId\" :serviceCode=\"serviceCode\" :azIds=\"azIds\"></dbAzText>"
+        " <dbAzText",
+        "\t\t\t\t  :region-id=\"regionId\"",
+        "\t\t\t\t  :service-code=\"SERVICE_CODE\"",
+        "\t\t\t\t  :az-ids=\"azId\"",
+        "\t\t\t\t  :azs-map-method=\"getAzMap\"",
+        "\t\t\t\t/>"
     ]
   },
   "dbselecttag": {
