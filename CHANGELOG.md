@@ -1,3 +1,12 @@
+## [1.16.12](https://github.com/ryansecret/vue-daisy/compare/v1.16.11...v1.16.12) (2024-04-10)
+
+
+### Features
+
+* **snippets:** :sparkles: dbAzText ([ee6a8ed](https://github.com/ryansecret/vue-daisy/commit/ee6a8edb56491a329d7b8e09b890a97252daf8dd))
+
+
+
 ## [1.16.11](https://github.com/ryansecret/vue-daisy/compare/v1.16.10...v1.16.11) (2024-04-09)
 
 
