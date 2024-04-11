@@ -1,3 +1,12 @@
+## [1.16.13](https://github.com/ryansecret/vue-daisy/compare/v1.16.12...v1.16.13) (2024-04-11)
+
+
+### Features
+
+* **snippets:** :sparkles: dms login ([668b861](https://github.com/ryansecret/vue-daisy/commit/668b8615aa67961419e6c9f857307ab35767b5e6))
+
+
+
 ## [1.16.12](https://github.com/ryansecret/vue-daisy/compare/v1.16.11...v1.16.12) (2024-04-10)
 
 
