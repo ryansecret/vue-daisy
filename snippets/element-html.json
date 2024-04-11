@@ -1036,5 +1036,11 @@
         "\t\t<el-form-item label=\"Weeks 显示2\">Weeks 显示2</el-form-item>",
         "\t  </dbFormItemTemplate>"
     ]
+  },
+  "db-dms-login": {
+    "prefix": "dbdmslogin",
+    "body": [
+        " <db-dms-login :instance=\"instance\" :dbType=\"DBTYPE.ck\"></db-dms-login>"
+    ]
   }
 }
