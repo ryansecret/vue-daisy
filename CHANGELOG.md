@@ -1,3 +1,12 @@
+## [1.16.14](https://github.com/ryansecret/vue-daisy/compare/v1.16.13...v1.16.14) (2024-04-17)
+
+
+### Features
+
+* **snippets:** :sparkles: 添加 db-switch-external-access ([076c40e](https://github.com/ryansecret/vue-daisy/commit/076c40ed8a39a62a712762c27ed368e0c38f4d32))
+
+
+
 ## [1.16.13](https://github.com/ryansecret/vue-daisy/compare/v1.16.12...v1.16.13) (2024-04-11)
 
 
