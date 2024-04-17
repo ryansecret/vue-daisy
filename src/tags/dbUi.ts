@@ -68,5 +68,10 @@ export default {
         "attributes": ["v-model","isText"],
         "description": "周选择checkbox",
         "framework": "dbUI"
-      }
+      },
+      "db-switch-external-access": {
+        "attributes": ["public-domain","disabled","action"],
+        "description": "周选择checkbox",
+        "framework": "dbUI"
+      },
 };

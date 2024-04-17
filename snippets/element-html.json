@@ -693,8 +693,8 @@
         " <jcb-charge-info :charge-info=\"row.charge\" />"
     ]
   },
-  "jdbrenew": {
-    "prefix": "jdbrenew",
+  "jcbrenew": {
+    "prefix": "jcbrenew",
     "body": [
         "\t\t\t  <JcbRenewButton",
         "\t\t\t\tref=\"renewRef\"",
@@ -1041,6 +1041,16 @@
     "prefix": "dbdmslogin",
     "body": [
         " <db-dms-login :instance=\"instance\" :dbType=\"DBTYPE.ck\"></db-dms-login>"
+    ]
+  },
+  "db-switch-external-access": {
+    "prefix": "dbswitchaccess",
+    "body": [
+        "  <db-switch-external-access",
+        "\t\t:public-domain=\"instance?.publicDomainName\"",
+        "\t\t:disabled=\"!canOperate\"",
+        "\t\t:action=\"confirm\"",
+        "\t  />"
     ]
   }
 }
