@@ -1,3 +1,12 @@
+## [1.16.15](https://github.com/ryansecret/vue-daisy/compare/v1.16.14...v1.16.15) (2024-04-18)
+
+
+### Features
+
+* **snippets:** :sparkles: 分页组件 ([319c721](https://github.com/ryansecret/vue-daisy/commit/319c7214fa759ebb87397b20099f8c78f0b58592))
+
+
+
 ## [1.16.14](https://github.com/ryansecret/vue-daisy/compare/v1.16.13...v1.16.14) (2024-04-17)
 
 
