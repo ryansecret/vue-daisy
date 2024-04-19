@@ -81,7 +81,7 @@ export default {
             "\t\t\t<div class=\"jc-list__action-bar--right\">",
             "\t\t\t  <el-pagination",
             "\t\t\t\t:current-page=\"pageState.pageIndex\"",
-            "\t\t\t\t:page-sizes=\"[10, 20, 30, 50]\"",
+            "\t\t\t\t:page-sizes=\"[10, 20, 50]\"",
             "\t\t\t\t:page-size=\"pageState.pageSize\"",
             "\t\t\t\tlayout=\"total, sizes, prev, pager, next,jumper\"",
             "\t\t\t\t:total=\"pageState.totalCount\"",
