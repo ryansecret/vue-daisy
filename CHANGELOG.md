@@ -1,3 +1,12 @@
+## [1.16.16](https://github.com/ryansecret/vue-daisy/compare/v1.16.15...v1.16.16) (2024-04-19)
+
+
+### Features
+
+* **snippets:** :sparkles: dbpage 分页优化 ([1d3c47e](https://github.com/ryansecret/vue-daisy/commit/1d3c47e7cc9910e22a74d44f36c241414a7bec9a))
+
+
+
 ## [1.16.15](https://github.com/ryansecret/vue-daisy/compare/v1.16.14...v1.16.15) (2024-04-18)
 
 

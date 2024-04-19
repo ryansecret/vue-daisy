@@ -73,23 +73,5 @@ export default {
         "attributes": ["public-domain","disabled","action"],
         "description": "周选择checkbox",
         "framework": "dbUI"
-      },
-      "dbpage": {
-        "prefix": "dbpage",
-        "body": [
-            "\t\t  <div class=\"jc-list__action-bar\">",
-            "\t\t\t<div class=\"jc-list__action-bar--right\">",
-            "\t\t\t  <el-pagination",
-            "\t\t\t\t:current-page=\"pageState.pageIndex\"",
-            "\t\t\t\t:page-sizes=\"[10, 20, 50]\"",
-            "\t\t\t\t:page-size=\"pageState.pageSize\"",
-            "\t\t\t\tlayout=\"total, sizes, prev, pager, next,jumper\"",
-            "\t\t\t\t:total=\"pageState.totalCount\"",
-            "\t\t\t\t@size-change=\"handleSizeChange\"",
-            "\t\t\t\t@current-change=\"handleCurrentChange\"",
-            "\t\t\t  />",
-            "\t\t\t</div>",
-            "\t\t  </div>"
-        ]
-     }
+      }
 };
