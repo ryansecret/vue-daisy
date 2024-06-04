@@ -1,3 +1,12 @@
+## [1.16.17](https://github.com/ryansecret/vue-daisy/compare/v1.16.16...v1.16.17) (2024-06-04)
+
+
+### Features
+
+* **snippets:** :sparkles: region & region text ([41f4941](https://github.com/ryansecret/vue-daisy/commit/41f4941eac5dc40169edcc56961811d2b85e35fe))
+
+
+
 ## [1.16.16](https://github.com/ryansecret/vue-daisy/compare/v1.16.15...v1.16.16) (2024-04-19)
 
 
