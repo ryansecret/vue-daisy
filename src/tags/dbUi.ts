@@ -50,7 +50,7 @@ export default {
         "framework": "dbUI"
       },
       "db-vpc-select": {
-        "attributes": ["regionId","vpc","subnet", "disableVpc","needIp"],
+        "attributes": ["regionId","vpc","subnet", "disableVpc","needIp","filters"],
         "description": "vpc Select",
         "framework": "dbUI"
       },
@@ -73,5 +73,11 @@ export default {
         "attributes": ["public-domain","disabled","action"],
         "description": "周选择checkbox",
         "framework": "dbUI"
-      }
+      },
+      "db-region-radio": {
+        "attributes": ["serviceCode","showQuotaTip","getQuotaMethod","showRegionTip",'regions'],
+        "description": "周选择checkbox",
+        "framework": "dbUI"
+      },
+     
 };

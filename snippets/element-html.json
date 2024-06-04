@@ -1070,5 +1070,22 @@
         "\t\t\t</div>",
         "\t\t  </div>"
     ]
- }
+ },
+ "db-region": {
+  "prefix": "dbregion",
+  "body": [
+      " <db-region-radio",
+      "\t\t\t\t\tv-model=\"regionId\"",
+      "\t\t\t\t\t:service-code=\"SERVICE_CODE\"",
+      "\t\t\t\t\t:show-quota-tip=\"true\"",
+      "\t\t\t\t\t:show-region-tip=\"true\"",
+      "\t\t\t\t  />"
+   ]
+  },
+  "dbregiontext": {
+    "prefix": "dbregiontext",
+    "body": [
+        "<db-region-text :region-id=\"regionId\" :service-code=\"SERVICE_CODE\" />"
+    ]
+  }
 }
