@@ -678,414 +678,396 @@
   "el-statistic ": {
     "prefix": "el-statistic ",
     "body": [
-        " <el-statistic group-separator=\",\" :precision=\"2\" :value=\"value2\" :title=\"title\" />"
+      " <el-statistic group-separator=\",\" :precision=\"2\" :value=\"value2\" :title=\"title\" />"
     ]
   },
   "el-divider ": {
     "prefix": "el-divider ",
-    "body": [
-        "<el-divider />"
-    ]
-  } ,
+    "body": ["<el-divider />"]
+  },
   "jcb-chargeInfo": {
     "prefix": "jcb-charge",
-    "body": [
-        " <jcb-charge-info :charge-info=\"row.charge\" />"
-    ]
+    "body": [" <jcb-charge-info :charge-info=\"row.charge\" />"]
   },
   "jcbrenew": {
     "prefix": "jcbrenew",
     "body": [
-        "\t\t\t  <JcbRenewButton",
-        "\t\t\t\tref=\"renewRef\"",
-        "\t\t\t\t:disabled=\"!canOperate\"",
-        "\t\t\t\t:resource-type=\"APP_CONFIG.serviceCode\"",
-        "\t\t\t\t:service-code=\"APP_CONFIG.serviceCode\"",
-        "\t\t\t\t:resource-id=\"instanceId\"",
-        "\t\t\t\t:region-id=\"regionId\"",
-        "\t\t\t\t:charge-mode=\"instance.charge?.chargeMode\"",
-        "\t\t\t  />"
+      "\t\t\t  <JcbRenewButton",
+      "\t\t\t\tref=\"renewRef\"",
+      "\t\t\t\t:disabled=\"!canOperate\"",
+      "\t\t\t\t:resource-type=\"APP_CONFIG.serviceCode\"",
+      "\t\t\t\t:service-code=\"APP_CONFIG.serviceCode\"",
+      "\t\t\t\t:resource-id=\"instanceId\"",
+      "\t\t\t\t:region-id=\"regionId\"",
+      "\t\t\t\t:charge-mode=\"instance.charge?.chargeMode\"",
+      "\t\t\t  />"
     ],
     "description": "renew"
   },
   "jcb-bill-period": {
     "prefix": "jcb-period",
     "body": [
-        "\t\t\t\t<JcbBillPeriodRadio",
-        "\t\t\t\t  v-model=\"selectedPeriod\"",
-        "\t\t\t\t  :service-code=\"serviceCode\"",
-        "\t\t\t\t  :region-id=\"regionId\"",
-        "\t\t\t\t/>"
+      "\t\t\t\t<JcbBillPeriodRadio",
+      "\t\t\t\t  v-model=\"selectedPeriod\"",
+      "\t\t\t\t  :service-code=\"serviceCode\"",
+      "\t\t\t\t  :region-id=\"regionId\"",
+      "\t\t\t\t/>"
     ]
   },
   "opertionCheck": {
     "prefix": "operationCheck",
     "body": [
-        " <jcb-operation-check :instance=\"instanceInfo\" :externalCheck=\"checkAccout\">",
-        "\t\t\t<template #default=\"{ canOperate }\">",
-        "\t\t\t  <el-button type=\"primary\" :disabled=\"!canOperate\">",
-        "\t\t\t\t编辑",
-        "\t\t\t  </el-button>",
-        "\t\t\t</template>",
-        "\t\t</jcb-operation-check>"
+      " <jcb-operation-check :instance=\"instanceInfo\" :externalCheck=\"checkAccout\">",
+      "\t\t\t<template #default=\"{ canOperate }\">",
+      "\t\t\t  <el-button type=\"primary\" :disabled=\"!canOperate\">",
+      "\t\t\t\t编辑",
+      "\t\t\t  </el-button>",
+      "\t\t\t</template>",
+      "\t\t</jcb-operation-check>"
     ]
   },
   "editWhiteList": {
     "prefix": "editWhiteList",
     "body": [
-        " <jcb-edit-white-list ",
-        "\t\t  :instance=\"instanceInfo\"  ",
-        "\t\t  :edit-action=\"editWhiteList\"",
-        "\t\t  :region-id=\"regionId\"",
-        "\t\t  :ip-list=\"ipList\"",
-        "\t\t  :group-name=\"groupName\"",
-        "\t\t  @editDone=\"refresh\"/>"
+      " <jcb-edit-white-list ",
+      "\t\t  :instance=\"instanceInfo\"  ",
+      "\t\t  :edit-action=\"editWhiteList\"",
+      "\t\t  :region-id=\"regionId\"",
+      "\t\t  :ip-list=\"ipList\"",
+      "\t\t  :group-name=\"groupName\"",
+      "\t\t  @editDone=\"refresh\"/>"
     ]
-   },
-   "dbStatus": {
+  },
+  "dbStatus": {
     "prefix": "dbStatus",
     "body": [
-        "\t\t\t\t<db-status",
-        "\t\t\t\t  :status=\"row.instanceStatus\"",
-        "\t\t\t\t  :status-text=\"\\$t('instanceStatus')\"",
-        "\t\t\t\t  :middle-status=\"INSTANCE_MIDDLE_STATUS\"",
-        "\t\t\t\t/>"
+      "\t\t\t\t<db-status",
+      "\t\t\t\t  :status=\"row.instanceStatus\"",
+      "\t\t\t\t  :status-text=\"\\$t('instanceStatus')\"",
+      "\t\t\t\t  :middle-status=\"INSTANCE_MIDDLE_STATUS\"",
+      "\t\t\t\t/>"
     ]
-   },
-   "dbConfirm": {
+  },
+  "dbConfirm": {
     "prefix": "db-confirm",
     "body": [
-        "\t<db-confirm :visible.sync=\"dgShow\" :cb=\"confirm\" :title=\"\">",
-        "\t  <el-form",
-        "\t\tref=\"formRef\"",
-        "\t\t:model=\"state\"",
-        "\t\tlabel-width=\"100px\"",
-        "\t\tlabel-suffix=\"：\"",
-        "\t\t@submit.native.prevent",
-        "\t\tlabel-position=\"left\"",
-        "\t  >",
-        "\t  ",
-        "\t  </el-form>",
-        "\t</db-confirm>"
+      "\t<db-confirm :visible.sync=\"dgShow\" :cb=\"confirm\" :title=\"\">",
+      "\t  <el-form",
+      "\t\tref=\"formRef\"",
+      "\t\t:model=\"state\"",
+      "\t\tlabel-width=\"100px\"",
+      "\t\tlabel-suffix=\"：\"",
+      "\t\t@submit.native.prevent",
+      "\t\tlabel-position=\"left\"",
+      "\t  >",
+      "\t  ",
+      "\t  </el-form>",
+      "\t</db-confirm>"
     ]
   },
   "dbCopybtn": {
     "prefix": "db-copy-btn",
-    "body": [
-        "<db-copy-btn :content=\"\" class=\"inline\" />"
-    ]
+    "body": ["<db-copy-btn :content=\"\" class=\"inline\" />"]
   },
   "dbInputNumber": {
     "prefix": "db-input-number",
     "body": [
-        "\t\t\t\t\t<db-input-number",
-        "\t\t\t\t\t  v-model=\"\"",
-        "\t\t\t\t\t  :min=\"1\"",
-        "\t\t\t\t\t  :max=\"100\"",
-        "\t\t\t\t\t  :precision=\"0\"",
-        "\t\t\t\t\t/>"
+      "\t\t\t\t\t<db-input-number",
+      "\t\t\t\t\t  v-model=\"\"",
+      "\t\t\t\t\t  :min=\"1\"",
+      "\t\t\t\t\t  :max=\"100\"",
+      "\t\t\t\t\t  :precision=\"0\"",
+      "\t\t\t\t\t/>"
     ]
-   },
-   "dbAutoLoadSelect": {
+  },
+  "dbAutoLoadSelect": {
     "prefix": "db-auto-load-select",
     "body": [
-        "\t<db-auto-load-select",
-        "\t  v-show=\"false\"",
-        "\t  ref=\"vpcRef\"",
-        "\t  v-model=\"currentVpc\"",
-        "\t  :loading.sync=\"loading\"",
-        "\t  lable-key=\"vpcName\"",
-        "\t  :get-list=\"getList\"",
-        "\t  :disabled=\"disableVpc\"",
-        "\t  :placeholder=\"\\$t('choiceVPC')\"",
-        "\t  class=\"w-5/12\"",
-        "\t  value-key=\"vpcId\"",
-        "\t  :page-size=\"10\"",
-        "\t/>"
+      "\t<db-auto-load-select",
+      "\t  v-show=\"false\"",
+      "\t  ref=\"vpcRef\"",
+      "\t  v-model=\"currentVpc\"",
+      "\t  :loading.sync=\"loading\"",
+      "\t  lable-key=\"vpcName\"",
+      "\t  :get-list=\"getList\"",
+      "\t  :disabled=\"disableVpc\"",
+      "\t  :placeholder=\"\\$t('choiceVPC')\"",
+      "\t  class=\"w-5/12\"",
+      "\t  value-key=\"vpcId\"",
+      "\t  :page-size=\"10\"",
+      "\t/>"
     ]
   },
   "dbHelpInfo": {
     "prefix": "db-help-info",
-    "body": [
-        "<db-help-info :info=\"tip\" />"
-    ]
-   },
-   "dbVpcLink": {
+    "body": ["<db-help-info :info=\"tip\" />"]
+  },
+  "dbVpcLink": {
     "prefix": "db-vpc-link",
     "body": [
-        "\t\t<db-vpc-link",
-        "\t\t\t:region-id=\"regionId\"",
-        "\t\t\t:vpc-id=\"instance.vpcId\"",
-        "\t\t\t:subnet-id=\"instance.subnetId\"",
-        "\t\t\t:onlyShowId=\"false\"",
-        "\t\t  />"
+      "\t\t<db-vpc-link",
+      "\t\t\t:region-id=\"regionId\"",
+      "\t\t\t:vpc-id=\"instance.vpcId\"",
+      "\t\t\t:subnet-id=\"instance.subnetId\"",
+      "\t\t\t:onlyShowId=\"false\"",
+      "\t\t  />"
     ]
-   },
-   "dbExcludeContainer": {
+  },
+  "dbExcludeContainer": {
     "prefix": "db-exclude-container",
     "body": [
-        "\t\t <db-exclude-container module-id=\"showBilling\">",
-        "\t\t  ",
-        "\t\t </db-exclude-container>"
+      "\t\t <db-exclude-container module-id=\"showBilling\">",
+      "\t\t  ",
+      "\t\t </db-exclude-container>"
     ]
-   },
-   "dbDateRange": {
+  },
+  "dbDateRange": {
     "prefix": "db-date-range",
-    "body": [
-        "<db-date-range class=\"mx-1\" @change=\"setTime\" />"
-    ]
-   },
-   "dbVpcSelect": {
+    "body": ["<db-date-range class=\"mx-1\" @change=\"setTime\" />"]
+  },
+  "dbVpcSelect": {
     "prefix": "db-vpc-select",
     "body": [
-        "\t\t   <db-vpc-select",
-        "\t\t\t\t\tclass=\"w-3/5\"",
-        "\t\t\t\t\t:region-id=\"regionId\"",
-        "\t\t\t\t\t:vpc.sync=\"buyInfo.vpc\"",
-        "\t\t\t\t\t:subnet.sync=\"buyInfo.subnet\"",
-        "\t\t\t\t\t:need-ip=\"needIpNum\"",
-        "\t\t\t\t  />"
+      "\t\t   <db-vpc-select",
+      "\t\t\t\t\tclass=\"w-3/5\"",
+      "\t\t\t\t\t:region-id=\"regionId\"",
+      "\t\t\t\t\t:vpc.sync=\"buyInfo.vpc\"",
+      "\t\t\t\t\t:subnet.sync=\"buyInfo.subnet\"",
+      "\t\t\t\t\t:need-ip=\"needIpNum\"",
+      "\t\t\t\t  />"
     ]
-   },
-   "dbDeployAz": {
+  },
+  "dbDeployAz": {
     "prefix": "dbDeployAz",
     "body": [
-        "\t  <db-deploy-az",
-        "\t\tv-model=\"az\"",
-        "\t\t:regionId=\"regionId\"",
-        "\t\t:serviceCode=\"serviceCode\"",
-        "\t\t:azsMapMethod=\"azsMapFunction\"",
-        "\t\t:min=\"2\"",
-        "\t\t:max=\"3\"",
-        "\t  >",
-        "\t  </db-deploy-az>"
+      "\t  <db-deploy-az",
+      "\t\tv-model=\"az\"",
+      "\t\t:regionId=\"regionId\"",
+      "\t\t:serviceCode=\"serviceCode\"",
+      "\t\t:azsMapMethod=\"azsMapFunction\"",
+      "\t\t:min=\"2\"",
+      "\t\t:max=\"3\"",
+      "\t  >",
+      "\t  </db-deploy-az>"
     ]
   },
   "dbSpecification": {
     "prefix": "dbSpec",
     "body": [
-        "<db-specification",
-        "\tv-model=\"${1:spec}\"",
-        "\t:region-id=\"${2:regionId}\"",
-        "\t:all-specs=\"${3:classList}\"",
-        "\t:displayType=\"${4:true|false}\"",
-        "\t:sold-out-predicate=\"${5:isSoldOut}\"",
-        "  />"
+      "<db-specification",
+      "\tv-model=\"${1:spec}\"",
+      "\t:region-id=\"${2:regionId}\"",
+      "\t:all-specs=\"${3:classList}\"",
+      "\t:displayType=\"${4:true|false}\"",
+      "\t:sold-out-predicate=\"${5:isSoldOut}\"",
+      "  />"
     ]
   },
   "dbCreateaccount": {
     "prefix": "dbCreateaccount",
     "body": [
-        " <db-create-account",
-        "\t\t:regionId=\"regionId\"",
-        "\t\t:instanceId=\"instanceId\"",
-        "\t\t:createAction=\"createAction\"",
-        "\t\t:validateOption=\"validateOption\"",
-        "\t  >",
-        "\t\t<template #accountTips> 这里写入自定义的账号tips </template>",
-        "\t\t<template #passwordTips> 这里写入自定义的密码tips </template>",
-        "\t  </db-create-account>"
+      " <db-create-account",
+      "\t\t:regionId=\"regionId\"",
+      "\t\t:instanceId=\"instanceId\"",
+      "\t\t:createAction=\"createAction\"",
+      "\t\t:validateOption=\"validateOption\"",
+      "\t  >",
+      "\t\t<template #accountTips> 这里写入自定义的账号tips </template>",
+      "\t\t<template #passwordTips> 这里写入自定义的密码tips </template>",
+      "\t  </db-create-account>"
     ],
     "description": "创建账号密码"
   },
   "dbResetPassword": {
     "prefix": "dbResetPassword",
     "body": [
-        " <db-reset-password",
-        "\t\taccountName=\"ryan\"",
-        "\t\t:regionId=\"regionId\"",
-        "\t\t:instanceId=\"instanceId\"",
-        "\t\t:modifyAction=\"modifyAction\"",
-        "\t\t:validateOption=\"validateOption\"",
-        "\t  ></db-reset-password>"
+      " <db-reset-password",
+      "\t\taccountName=\"ryan\"",
+      "\t\t:regionId=\"regionId\"",
+      "\t\t:instanceId=\"instanceId\"",
+      "\t\t:modifyAction=\"modifyAction\"",
+      "\t\t:validateOption=\"validateOption\"",
+      "\t  ></db-reset-password>"
     ],
     "description": "修改密码"
   },
   "dbDeleteInstance": {
     "prefix": "dbDeleteInstance",
     "body": [
-        "\t  <db-delete-instance",
-        "\t\t:region-id=\"regionId\"",
-        "\t\t:instance=\"instance\"",
-        "\t\t:callback=\"cb\"",
-        "\t\t:delete-action=\"deleteInstance\"",
-        "\t  />"
+      "\t  <db-delete-instance",
+      "\t\t:region-id=\"regionId\"",
+      "\t\t:instance=\"instance\"",
+      "\t\t:callback=\"cb\"",
+      "\t\t:delete-action=\"deleteInstance\"",
+      "\t  />"
     ]
   },
   "el-scrollbar": {
     "prefix": "el-scroll",
     "body": [
-        "\t\t<el-scrollbar view-class=\"view-list\" :noresize=\"true\" tag=\"div\">",
-        "\t\t   ",
-        "\t\t</el-scrollbar>"
+      "\t\t<el-scrollbar view-class=\"view-list\" :noresize=\"true\" tag=\"div\">",
+      "\t\t   ",
+      "\t\t</el-scrollbar>"
     ]
   },
   "jdbcreatetime": {
     "prefix": "jcbcreateTime",
     "body": [
-        " <JdbCreateTimeSelect",
-        "\t\t\t\tv-model=\"createByTime.datetime\"",
-        "\t\t\t\tlabel-width=\"120px\"",
-        "\t\t\t\t:min-base-time=\"minBaseTime\"",
-        "\t\t\t\t:max-base-time=\"maxBaseTime\"",
-        "\t\t\t  />"
+      " <JdbCreateTimeSelect",
+      "\t\t\t\tv-model=\"createByTime.datetime\"",
+      "\t\t\t\tlabel-width=\"120px\"",
+      "\t\t\t\t:min-base-time=\"minBaseTime\"",
+      "\t\t\t\t:max-base-time=\"maxBaseTime\"",
+      "\t\t\t  />"
     ],
     "description": "创建时间选择"
   },
   "useregions": {
     "prefix": "useregion",
     "body": [
-        "import { useRegionsMap } from '@jdcloud/jelement-biz/dist/compositions/useRegionsMap'"
+      "import { useRegionsMap } from '@jdcloud/jelement-biz/dist/compositions/useRegionsMap'"
     ],
     "description": "region hooks"
   },
   "db-delete": {
     "prefix": "dbdelete",
     "body": [
-        " <db-delete-instance",
-        "\t\t\t  mfa-action-type=\"terrabase:deleteInstance\"",
-        "\t\t\t  :region-id=\"regionId\"",
-        "\t\t\t  :instance=\"instance\"",
-        "\t\t\t  :callback=\"cb\"",
-        "\t\t\t  :delete-action=\"deleteInstance\"",
-        "\t\t\t/>"
+      " <db-delete-instance",
+      "\t\t\t  mfa-action-type=\"terrabase:deleteInstance\"",
+      "\t\t\t  :region-id=\"regionId\"",
+      "\t\t\t  :instance=\"instance\"",
+      "\t\t\t  :callback=\"cb\"",
+      "\t\t\t  :delete-action=\"deleteInstance\"",
+      "\t\t\t/>"
     ]
   },
   "db-k8sexpose": {
     "prefix": "db-k8sexpose",
     "body": [
-        "<db-k8sExpose",
-        "\t\t:action-type=\"actionType\"",
-        "\t\t:origin-access-type=\"accessType\"",
-        "\t\t:expose-types=\"accessTypeList\"",
-        "\t\t:action=\"modifyExpose\"",
-        "\t\t:disabled=\"!canOperate\"",
-        "\t  >",
-        "\t\t<template v-if=\"isEdit\" #default>",
-        "\t\t  <el-button type=\"text\" icon=\"jc-icon-edit\" />",
-        "\t\t</template>",
-        "\t  </db-k8sExpose>"
+      "<db-k8sExpose",
+      "\t\t:action-type=\"actionType\"",
+      "\t\t:origin-access-type=\"accessType\"",
+      "\t\t:expose-types=\"accessTypeList\"",
+      "\t\t:action=\"modifyExpose\"",
+      "\t\t:disabled=\"!canOperate\"",
+      "\t  >",
+      "\t\t<template v-if=\"isEdit\" #default>",
+      "\t\t  <el-button type=\"text\" icon=\"jc-icon-edit\" />",
+      "\t\t</template>",
+      "\t  </db-k8sExpose>"
     ]
   },
   "db-k8sinfo": {
     "prefix": "db-k8sinfo",
-    "body": [
-        "<db-K8sHelpInfo :access-type=\"k8sDomainInfo.accessType\" />"
-    ]
+    "body": ["<db-K8sHelpInfo :access-type=\"k8sDomainInfo.accessType\" />"]
   },
   "db-weeks-check": {
     "prefix": "dbweek",
-    "body": [
-        "<db-weeks-check :isText=\"true\" v-model=\"selectedWeeks\"></db-weeks-check>"
-    ]
-   },
-   "db-operation-container": {
+    "body": ["<db-weeks-check :isText=\"true\" v-model=\"selectedWeeks\"></db-weeks-check>"]
+  },
+  "db-operation-container": {
     "prefix": "db-operation",
     "body": [
-        "<DbOperationConainer :size=\"btnNum\">",
-        "\t\t  <el-button type=\"text\">操作2</el-button>",
-        "\t\t\t<el-button type=\"text\">开启K8S2</el-button>",
-        "\t\t  </db-k8sExpose>",
-        "\t\t  <el-button type=\"text\" v-dropdownTrigger=\"fakeOper\">独立的操作</el-button>",
-        "\t\t</DbOperationConainer>"
-     ]
-   },
-   "db-content-tooltip": {
-    "prefix": "dbcontentooltip",
-    "body": [
-        "<db-content-tooltip info=\"这是个很长的文字\" />"
+      "<DbOperationConainer :size=\"btnNum\">",
+      "\t\t  <el-button type=\"text\">操作2</el-button>",
+      "\t\t\t<el-button type=\"text\">开启K8S2</el-button>",
+      "\t\t  </db-k8sExpose>",
+      "\t\t  <el-button type=\"text\" v-dropdownTrigger=\"fakeOper\">独立的操作</el-button>",
+      "\t\t</DbOperationConainer>"
     ]
-   }, 
+  },
+  "db-content-tooltip": {
+    "prefix": "dbcontentooltip",
+    "body": ["<db-content-tooltip info=\"这是个很长的文字\" />"]
+  },
   "dbAzText": {
     "prefix": "dbaztext",
     "body": [
-        " <dbAzText",
-        "\t\t\t\t  :region-id=\"regionId\"",
-        "\t\t\t\t  :service-code=\"SERVICE_CODE\"",
-        "\t\t\t\t  :az-ids=\"azId\"",
-        "\t\t\t\t  :azs-map-method=\"getAzMap\"",
-        "\t\t\t\t/>"
+      " <dbAzText",
+      "\t\t\t\t  :region-id=\"regionId\"",
+      "\t\t\t\t  :service-code=\"SERVICE_CODE\"",
+      "\t\t\t\t  :az-ids=\"azId\"",
+      "\t\t\t\t  :azs-map-method=\"getAzMap\"",
+      "\t\t\t\t/>"
     ]
   },
   "dbselecttag": {
     "prefix": "dbselecttag",
-    "body": [
-        "  <db-selected-tags v-model=\"selectedTagKeys\" />"
-    ]
+    "body": ["  <db-selected-tags v-model=\"selectedTagKeys\" />"]
   },
   "usepageoptions": {
     "prefix": "usepageoption",
     "body": [
-        "\tconst {",
-        "\t  state: pageState,",
-        "\t  handleSizeChange,",
-        "\t  handleCurrentChange,",
-        "\t  resetPageOption,",
-        "\t  selectedTagKeys,",
-        "\t  tagFilterSuccess,",
-        "\t  tagFilterError,",
-        "\t  searchParams",
-        "\t} = usePageWithOptions(getList, { hasTag: true })"
+      "\tconst {",
+      "\t  state: pageState,",
+      "\t  handleSizeChange,",
+      "\t  handleCurrentChange,",
+      "\t  resetPageOption,",
+      "\t  selectedTagKeys,",
+      "\t  tagFilterSuccess,",
+      "\t  tagFilterError,",
+      "\t  searchParams",
+      "\t} = usePageWithOptions(getList, { hasTag: true })"
     ]
   },
   "dbformitem": {
     "prefix": "dbformitem",
     "body": [
-        "\t  <dbFormItemTemplate title=\"dbFormItemTemplate\" label-width=\"100px\">",
-        "\t\t<el-form-item label=\"Weeks 显示1\">Weeks 显示1</el-form-item>",
-        "\t\t<el-form-item label=\"Weeks 显示2\">Weeks 显示2</el-form-item>",
-        "\t  </dbFormItemTemplate>"
+      "\t  <dbFormItemTemplate title=\"dbFormItemTemplate\" label-width=\"100px\">",
+      "\t\t<el-form-item label=\"Weeks 显示1\">Weeks 显示1</el-form-item>",
+      "\t\t<el-form-item label=\"Weeks 显示2\">Weeks 显示2</el-form-item>",
+      "\t  </dbFormItemTemplate>"
     ]
   },
   "db-dms-login": {
     "prefix": "dbdmslogin",
-    "body": [
-        " <db-dms-login :instance=\"instance\" :dbType=\"DBTYPE.ck\"></db-dms-login>"
-    ]
+    "body": [" <db-dms-login :instance=\"instance\" :dbType=\"DBTYPE.ck\"></db-dms-login>"]
   },
   "db-switch-external-access": {
     "prefix": "dbswitchaccess",
     "body": [
-        "  <db-switch-external-access",
-        "\t\t:public-domain=\"instance?.publicDomainName\"",
-        "\t\t:disabled=\"!canOperate\"",
-        "\t\t:action=\"confirm\"",
-        "\t  />"
+      "  <db-switch-external-access",
+      "\t\t:public-domain=\"instance?.publicDomainName\"",
+      "\t\t:disabled=\"!canOperate\"",
+      "\t\t:action=\"confirm\"",
+      "\t  />"
     ]
   },
   "dbpage": {
     "prefix": "dbpage",
     "body": [
-        "\t\t  <div class=\"jc-list__action-bar\">",
-        "\t\t\t<div class=\"jc-list__action-bar--right\">",
-        "\t\t\t  <el-pagination",
-        "\t\t\t\t:current-page=\"pageState.pageIndex\"",
-        "\t\t\t\t:page-sizes=\"[10, 20, 50]\"",
-        "\t\t\t\t:page-size=\"pageState.pageSize\"",
-        "\t\t\t\tlayout=\"total, sizes, prev, pager, next,jumper\"",
-        "\t\t\t\t:total=\"pageState.totalCount\"",
-        "\t\t\t\t@size-change=\"handleSizeChange\"",
-        "\t\t\t\t@current-change=\"handleCurrentChange\"",
-        "\t\t\t  />",
-        "\t\t\t</div>",
-        "\t\t  </div>"
+      "\t\t  <div class=\"jc-list__action-bar\">",
+      "\t\t\t<div class=\"jc-list__action-bar--right\">",
+      "\t\t\t  <el-pagination",
+      "\t\t\t\t:current-page=\"pageState.pageIndex\"",
+      "\t\t\t\t:page-sizes=\"[10, 20, 50]\"",
+      "\t\t\t\t:page-size=\"pageState.pageSize\"",
+      "\t\t\t\tlayout=\"total, sizes, prev, pager, next,jumper\"",
+      "\t\t\t\t:total=\"pageState.totalCount\"",
+      "\t\t\t\t@size-change=\"handleSizeChange\"",
+      "\t\t\t\t@current-change=\"handleCurrentChange\"",
+      "\t\t\t  />",
+      "\t\t\t</div>",
+      "\t\t  </div>"
     ]
- },
- "db-region": {
-  "prefix": "dbregion",
-  "body": [
+  },
+  "db-region": {
+    "prefix": "dbregion",
+    "body": [
       " <db-region-radio",
       "\t\t\t\t\tv-model=\"regionId\"",
       "\t\t\t\t\t:service-code=\"SERVICE_CODE\"",
       "\t\t\t\t\t:show-quota-tip=\"true\"",
       "\t\t\t\t\t:show-region-tip=\"true\"",
       "\t\t\t\t  />"
-   ]
+    ]
   },
   "dbregiontext": {
     "prefix": "dbregiontext",
-    "body": [
-        "<db-region-text :region-id=\"regionId\" :service-code=\"SERVICE_CODE\" />"
-    ]
+    "body": ["<db-region-text :region-id=\"regionId\" :service-code=\"SERVICE_CODE\" />"]
+  },
+  "dbLazyComponent": {
+    "prefix": "dblazy",
+    "body": ["\t<dbLazyComponent> ", "\t  ", "\t</dbLazyComponent>"]
   }
 }
