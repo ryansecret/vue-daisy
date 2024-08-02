@@ -1,3 +1,12 @@
+## [1.16.18](https://github.com/ryansecret/vue-daisy/compare/v1.16.17...v1.16.18) (2024-08-02)
+
+
+### Features
+
+* **snippets:** :sparkles: dbLayzComponent ([023bfe3](https://github.com/ryansecret/vue-daisy/commit/023bfe3075f3516f9ec788e59f08e9b1c1103619))
+
+
+
 ## [1.16.17](https://github.com/ryansecret/vue-daisy/compare/v1.16.16...v1.16.17) (2024-06-04)
 
 
