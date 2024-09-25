@@ -1013,7 +1013,7 @@
   "dbformitem": {
     "prefix": "dbformitem",
     "body": [
-      "\t  <dbFormItemTemplate title=\"dbFormItemTemplate\" label-width=\"100px\">",
+      "\t  <dbFormItemTemplate title=\"dbFormItemTemplate\" tip=\"helpInfo\" label-width=\"100px\">",
       "\t\t<el-form-item label=\"Weeks 显示1\">Weeks 显示1</el-form-item>",
       "\t\t<el-form-item label=\"Weeks 显示2\">Weeks 显示2</el-form-item>",
       "\t  </dbFormItemTemplate>"
