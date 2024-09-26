@@ -1069,5 +1069,12 @@
   "dbLazyComponent": {
     "prefix": "dblazy",
     "body": ["\t<dbLazyComponent> ", "\t  ", "\t</dbLazyComponent>"]
+  },
+  "db-auto-resize": {
+    "prefix": "dbautoresize",
+    "body": [
+      "\t<db-auto-resizeContainer class=\"jc-create-page-toolbar z-1002\">",
+      "\t</db-auto-resizeContainer>"
+    ]
   }
 }
