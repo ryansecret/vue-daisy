@@ -1,3 +1,13 @@
+## [1.16.19](https://github.com/ryansecret/vue-daisy/compare/v1.16.18...v1.16.19) (2024-09-26)
+
+
+### Features
+
+* **snippets:** :sparkles: 更新 dbformitem ([478bd00](https://github.com/ryansecret/vue-daisy/commit/478bd008b23086b73392563ba389d15f4a85da27))
+* **snippets:** :sparkles: 添加autoresize container ([8e612eb](https://github.com/ryansecret/vue-daisy/commit/8e612eb81e6ac16c594a96b1337f5e41fb529733))
+
+
+
 ## [1.16.18](https://github.com/ryansecret/vue-daisy/compare/v1.16.17...v1.16.18) (2024-08-02)
 
 
