@@ -46,15 +46,11 @@
         "path": "./snippets/javascript.json"
       },
       {
-        "language": "vue-html",
-        "path": "./snippets/iview-html.json"
-      },
-      {
         "language": "html",
         "path": "./snippets/element-html.json"
       },
       {
-        "language": "vue-html",
+        "language": "vue",
         "path": "./snippets/element-html.json"
       },
       {
@@ -62,7 +58,7 @@
         "path": "./snippets/vue-html.json"
       },
       {
-        "language": "vue-html",
+        "language": "vue",
         "path": "./snippets/vue-html.json"
       }
     ],
