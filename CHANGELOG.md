@@ -1,3 +1,15 @@
+## [1.16.20](https://github.com/ryansecret/vue-daisy/compare/v1.16.18...v1.16.20) (2024-09-27)
+
+
+### Features
+
+* **pacage:** :sparkles: 配置snippets 生效的文件类型 ([e8a47a2](https://github.com/ryansecret/vue-daisy/commit/e8a47a2fb84589ffdf24c501c2bd598132dced88))
+* **snippets:** :sparkles: release: v1.16.18 ([ee47128](https://github.com/ryansecret/vue-daisy/commit/ee4712808f436eeb8fccbd84995e24a6631726da))
+* **snippets:** :sparkles: 更新 dbformitem ([478bd00](https://github.com/ryansecret/vue-daisy/commit/478bd008b23086b73392563ba389d15f4a85da27))
+* **snippets:** :sparkles: 添加autoresize container ([8e612eb](https://github.com/ryansecret/vue-daisy/commit/8e612eb81e6ac16c594a96b1337f5e41fb529733))
+
+
+
 ## [1.16.19](https://github.com/ryansecret/vue-daisy/compare/v1.16.18...v1.16.19) (2024-09-26)
 
 
