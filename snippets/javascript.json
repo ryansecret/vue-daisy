@@ -4,6 +4,13 @@
     "body": ["import VueTypes from 'vue-types'"],
     "description": "import VueTypes from 'vue-types'"
   },
+  "useregions": {
+    "prefix": "useregion",
+    "body": [
+      "import { useRegionsMap } from '@jdcloud/jelement-biz/dist/compositions/useRegionsMap'"
+    ],
+    "description": "region hooks"
+  },
   "vueUseInject": {
     "prefix": "vuInject",
     "body": [
@@ -288,145 +295,142 @@
   "vueUseClipboard": {
     "prefix": "vuseClipboard",
     "body": [
-        "",
-        "const input = ref('')",
-        "",
-        "const { text, isSupported, copy } = useClipboard()",
-        "const permissionRead = usePermission('clipboard-read')",
-        "const permissionWrite = usePermission('clipboard-write')"
+      "",
+      "const input = ref('')",
+      "",
+      "const { text, isSupported, copy } = useClipboard()",
+      "const permissionRead = usePermission('clipboard-read')",
+      "const permissionWrite = usePermission('clipboard-write')"
     ]
-   },
-   "vueUsefocusTrap": {
+  },
+  "vueUsefocusTrap": {
     "prefix": "vuseForcusTrap",
     "body": [
-        "const target = ref()",
-        "const { hasFocus, activate, deactivate } = useFocusTrap(target, { immediate: true })"
+      "const target = ref()",
+      "const { hasFocus, activate, deactivate } = useFocusTrap(target, { immediate: true })"
     ]
-   },
-   "vuseWebSocket": {
+  },
+  "vuseWebSocket": {
     "prefix": "vuseWebSock",
     "body": [
-        "import { useWebSocket } from '@vueuse/core'",
-        "",
-        "const { status, data, send, open, close } = useWebSocket('ws://websocketurl', {",
-        "  protocols: ['soap'], // ['soap', 'wamp']",
-        "})"
+      "import { useWebSocket } from '@vueuse/core'",
+      "",
+      "const { status, data, send, open, close } = useWebSocket('ws://websocketurl', {",
+      "  protocols: ['soap'], // ['soap', 'wamp']",
+      "})"
     ]
   },
   "vuseClickOutside": {
     "prefix": "vuseOutside",
     "body": [
-        "\tconst target = ref(null)",
-        "",
-        "\tonClickOutside(target, (event) => console.log(event))"
+      "\tconst target = ref(null)",
+      "",
+      "\tonClickOutside(target, (event) => console.log(event))"
     ]
   },
   "vuseStepper": {
     "prefix": "vuseStepper",
     "body": [
-        "\tconst {",
-        "\t  steps,",
-        "\t  stepNames,",
-        "\t  index,",
-        "\t  current,",
-        "\t  next,",
-        "\t  previous,",
-        "\t  isFirst,",
-        "\t  isLast,",
-        "\t  goTo,",
-        "\t  goNext,",
-        "\t  goPrevious,",
-        "\t  goBackTo,",
-        "\t  isNext,",
-        "\t  isPrevious,",
-        "\t  isCurrent,",
-        "\t  isBefore,",
-        "\t  isAfter",
-        "\t} = useStepper(['billing-address', 'terms', 'payment'])",
-        "",
-        "\t// Access the step through `current`",
-        "\tconsole.log(current.value) // 'billing-address'"
+      "\tconst {",
+      "\t  steps,",
+      "\t  stepNames,",
+      "\t  index,",
+      "\t  current,",
+      "\t  next,",
+      "\t  previous,",
+      "\t  isFirst,",
+      "\t  isLast,",
+      "\t  goTo,",
+      "\t  goNext,",
+      "\t  goPrevious,",
+      "\t  goBackTo,",
+      "\t  isNext,",
+      "\t  isPrevious,",
+      "\t  isCurrent,",
+      "\t  isBefore,",
+      "\t  isAfter",
+      "\t} = useStepper(['billing-address', 'terms', 'payment'])",
+      "",
+      "\t// Access the step through `current`",
+      "\tconsole.log(current.value) // 'billing-address'"
     ]
   },
   "vusePage": {
     "prefix": "vusePage",
     "body": [
-        "function fetchData({ currentPage, currentPageSize }: { currentPage: number; currentPageSize: number }) {",
-        "  fetch(currentPage, currentPageSize).then((responseData) => {",
-        "\tdata.value = responseData",
-        "  })",
-        "}",
-        "",
-        "const {",
-        "  currentPage,",
-        "  currentPageSize,",
-        "  pageCount,",
-        "  isFirstPage,",
-        "  isLastPage,",
-        "  prev,",
-        "  next,",
-        "} = useOffsetPagination({",
-        "  total: database.value.length,",
-        "  page: 1,",
-        "  pageSize,",
-        "  onPageChange: fetchData,",
-        "  onPageSizeChange: fetchData,",
-        "})",
-        ""
+      "function fetchData({ currentPage, currentPageSize }: { currentPage: number; currentPageSize: number }) {",
+      "  fetch(currentPage, currentPageSize).then((responseData) => {",
+      "\tdata.value = responseData",
+      "  })",
+      "}",
+      "",
+      "const {",
+      "  currentPage,",
+      "  currentPageSize,",
+      "  pageCount,",
+      "  isFirstPage,",
+      "  isLastPage,",
+      "  prev,",
+      "  next,",
+      "} = useOffsetPagination({",
+      "  total: database.value.length,",
+      "  page: 1,",
+      "  pageSize,",
+      "  onPageChange: fetchData,",
+      "  onPageSizeChange: fetchData,",
+      "})",
+      ""
     ]
   },
   "vuseMagicKeys": {
     "prefix": "vuseMagicKeys",
     "body": [
-        "import { useMagicKeys } from '@vueuse/core'",
-        "",
-        "const keys = useMagicKeys()",
-        "const shiftCtrlA = keys['Shift+Ctrl+A']",
-        "",
-        "watch(shiftCtrlA, (v) => {",
-        "  if (v)",
-        "\tconsole.log('Shift + Ctrl + A have been pressed')",
-        "})"
+      "import { useMagicKeys } from '@vueuse/core'",
+      "",
+      "const keys = useMagicKeys()",
+      "const shiftCtrlA = keys['Shift+Ctrl+A']",
+      "",
+      "watch(shiftCtrlA, (v) => {",
+      "  if (v)",
+      "\tconsole.log('Shift + Ctrl + A have been pressed')",
+      "})"
     ]
   },
   "vuseKeyModifier": {
     "prefix": "vuseKeyModifier",
     "body": [
-        "import { useKeyModifier } from '@vueuse/core'",
-        "",
-        "const capsLockState = useKeyModifier('CapsLock')",
-        "",
-        "console.log(capsLockState.value)"
+      "import { useKeyModifier } from '@vueuse/core'",
+      "",
+      "const capsLockState = useKeyModifier('CapsLock')",
+      "",
+      "console.log(capsLockState.value)"
     ]
   },
   "vuseIdle": {
     "prefix": "vuseIdle",
     "body": [
-        "const { idle, lastActive } = useIdle(5 * 60 * 1000) // 5 min",
-        "",
-        "console.log(idle.value) /"
+      "const { idle, lastActive } = useIdle(5 * 60 * 1000) // 5 min",
+      "",
+      "console.log(idle.value) /"
     ]
   },
   "vuseFullScreen": {
     "prefix": "vuseFullScreen",
-    "body": [
-        "",
-        "const { isFullscreen, enter, exit, toggle } = useFullscreen(el)"
-    ]
+    "body": ["", "const { isFullscreen, enter, exit, toggle } = useFullscreen(el)"]
   },
   "vuseMouseInElement": {
     "prefix": "vuseMouseInElement",
     "body": [
-        "\tconst target = ref(null)",
-        "",
-        "\tconst { x, y, isOutside } = useMouseInElement(target)",
-        "",
-        "\treturn { x, y, isOutside }"
+      "\tconst target = ref(null)",
+      "",
+      "\tconst { x, y, isOutside } = useMouseInElement(target)",
+      "",
+      "\treturn { x, y, isOutside }"
     ]
- },
- "vuseWebWorkerFn": {
-  "prefix": "vuseWebWorkerFn",
-  "body": [
+  },
+  "vuseWebWorkerFn": {
+    "prefix": "vuseWebWorkerFn",
+    "body": [
       "const { workerFn, workerStatus, workerTerminate } = useWebWorkerFn(",
       "  dates => dates.sort(dateFns.compareAsc),",
       "  {",
@@ -436,11 +440,11 @@
       "\t],",
       "  },",
       ")"
-  ]
- },
- "vuseScriptTag": {
-  "prefix": "vuseScriptTag",
-  "body": [
+    ]
+  },
+  "vuseScriptTag": {
+    "prefix": "vuseScriptTag",
+    "body": [
       "useScriptTag(",
       "  'https://player.twitch.tv/js/embed/v1.js',",
       "  // on script tag loaded.",
@@ -448,11 +452,11 @@
       "\t// do something",
       "  },",
       ")"
-  ]
- },
- "excludeModules": {
-  "prefix": "excludeModule",
-  "body": [
+    ]
+  },
+  "excludeModules": {
+    "prefix": "excludeModule",
+    "body": [
       "import { APP_CONFIG } from '@/utils/setting'",
       "",
       "function check(el, binding) {",
@@ -473,6 +477,6 @@
       "  })",
       "}",
       ""
-  ]
- }
+    ]
+  }
 }

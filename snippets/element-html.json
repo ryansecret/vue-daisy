@@ -910,6 +910,18 @@
       "\t\t</el-scrollbar>"
     ]
   },
+  "el-text": {
+    "prefix": "el-text",
+    "body": ["<el-text type=\"danger\">Danger</el-text>"]
+  },
+  "el-space": {
+    "prefix": "el-space",
+    "body": [
+      "\t  <el-space direction=\"vertical\" alignment=\"start\" :size=\"16\">",
+      "\t\t<el-button icon=\"jc-icon-refresh-line\" />",
+      "\t  </el-space>"
+    ]
+  },
   "jdbcreatetime": {
     "prefix": "jcbcreateTime",
     "body": [
@@ -921,13 +933,6 @@
       "\t\t\t  />"
     ],
     "description": "创建时间选择"
-  },
-  "useregions": {
-    "prefix": "useregion",
-    "body": [
-      "import { useRegionsMap } from '@jdcloud/jelement-biz/dist/compositions/useRegionsMap'"
-    ],
-    "description": "region hooks"
   },
   "db-delete": {
     "prefix": "dbdelete",
