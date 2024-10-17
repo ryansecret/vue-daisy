@@ -1,3 +1,12 @@
+## [1.16.21](https://github.com/ryansecret/vue-daisy/compare/v1.16.20...v1.16.21) (2024-10-17)
+
+
+### Features
+
+* **snippets:** :sparkles: 添加el-text & el-space ([3b27931](https://github.com/ryansecret/vue-daisy/commit/3b27931b07ec0a68225a1134cae3066743e8990e))
+
+
+
 ## [1.16.20](https://github.com/ryansecret/vue-daisy/compare/v1.16.18...v1.16.20) (2024-09-27)
 
 
