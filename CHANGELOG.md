@@ -1,3 +1,13 @@
+## [1.16.23](https://github.com/ryansecret/vue-daisy/compare/v1.16.22...v1.16.23) (2024-11-05)
+
+
+### Features
+
+* **CompletionItemProvider:** :sparkles: db-specification 属性修改 ([5072d99](https://github.com/ryansecret/vue-daisy/commit/5072d99bbbe795ff8a6b7a3418af8aee71213638))
+* **tags:** :sparkles: dbUI 添加dbaztext dbregiontext ([867a03c](https://github.com/ryansecret/vue-daisy/commit/867a03c183a88cd4a257bbd599444988a61b50a1))
+
+
+
 ## [1.16.22](https://github.com/ryansecret/vue-daisy/compare/v1.16.21...v1.16.22) (2024-10-25)
 
 
