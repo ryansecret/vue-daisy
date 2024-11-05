@@ -113,12 +113,29 @@ export default {
   },
   "db-switch-external-access": {
     attributes: ["public-domain", "disabled", "action"],
-    description: "周选择checkbox",
+    description: "外网访问",
     framework: "dbUI"
   },
   "db-region-radio": {
-    attributes: ["serviceCode", "showQuotaTip", "getQuotaMethod", "showRegionTip", "regions"],
-    description: "周选择checkbox",
+    attributes: [
+      "serviceCode",
+      "showQuotaTip",
+      "getQuotaMethod",
+      "showRegionTip",
+      "regions",
+      "isOpenCloud"
+    ],
+    description: "region select",
+    framework: "dbUI"
+  },
+  "db-region-text": {
+    attributes: ["regionId", "service-code", "isOpenCloud", "regionsMap"],
+    description: "region text",
+    framework: "dbUI"
+  },
+  "db-az-text": {
+    attributes: ["regionId", "service-code", "az-ids", "azs-map-method"],
+    description: "可用区显示",
     framework: "dbUI"
   }
 };
