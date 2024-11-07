@@ -28,7 +28,8 @@ export default {
       "soldOutMethod",
       "disableAzMethod",
       "azsMapMethod",
-      "defaultSelectAzNum"
+      "defaultSelectAzNum",
+      "azsMap"
     ],
     description: "az 部署",
     framework: "dbUI"
@@ -134,7 +135,7 @@ export default {
     framework: "dbUI"
   },
   "db-az-text": {
-    attributes: ["regionId", "service-code", "az-ids", "azs-map-method"],
+    attributes: ["regionId", "service-code", "az-ids", "azs-map-method", "azsMap"],
     description: "可用区显示",
     framework: "dbUI"
   }
