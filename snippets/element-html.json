@@ -1081,5 +1081,20 @@
       "\t<db-auto-resizeContainer class=\"jc-create-page-toolbar z-1002\">",
       "\t</db-auto-resizeContainer>"
     ]
+  },
+  "dbconfirm message": {
+    "prefix": "dbconfirm:message",
+    "body": [
+      "<db-confirm",
+      "\t\t  :visible.sync=\"dgShow\"",
+      "\t\t  :cb=\"confirm\"",
+      "\t\t  title=\"请确认\"",
+      "\t\t  :isMessage=\"true\"",
+      "\t\t  type=\"warning\"",
+      "\t\t>",
+      "\t\t  这是个提示哈哈哈",
+      "\t\t  <p>我是个换行</p><el-button type=\"text\">按钮</el-button>",
+      "\t\t</db-confirm>"
+    ]
   }
 }

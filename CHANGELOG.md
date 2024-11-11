@@ -1,3 +1,12 @@
+## [1.16.24](https://github.com/ryansecret/vue-daisy/compare/v1.16.23...v1.16.24) (2024-11-11)
+
+
+### Features
+
+* **CompletionItemProvider:** :sparkles: az add azsMap ([5f8d9ff](https://github.com/ryansecret/vue-daisy/commit/5f8d9ff37e121325d9d1081aa6a6bce134046948))
+
+
+
 ## [1.16.23](https://github.com/ryansecret/vue-daisy/compare/v1.16.22...v1.16.23) (2024-11-05)
 
 
