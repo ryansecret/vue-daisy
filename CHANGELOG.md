@@ -1,3 +1,13 @@
+## [1.16.25](https://github.com/ryansecret/vue-daisy/compare/v1.16.24...v1.16.25) (2024-11-15)
+
+
+### Features
+
+* **snippets:** :sparkles: elment spinner ([22c1889](https://github.com/ryansecret/vue-daisy/commit/22c18892a3cd4dc3cbbe577cf50a5b9033c9454f))
+* **snippets:** :sparkles: 添加db group panel ([f78011d](https://github.com/ryansecret/vue-daisy/commit/f78011deee1351783dc8b14ac6798255f769debb))
+
+
+
 ## [1.16.24](https://github.com/ryansecret/vue-daisy/compare/v1.16.23...v1.16.24) (2024-11-11)
 
 
