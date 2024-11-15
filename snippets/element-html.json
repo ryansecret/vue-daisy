@@ -187,7 +187,7 @@
   "el-form": {
     "prefix": "el-form",
     "body": [
-      "<el-form ref=\"${1:formRef}\" :model=\"${2:formData}\" label-width=\"${3:120px}\" label-suffix=\"：\" @submit.native.prevent>",
+      "<el-form ref=\"${1:formRef}\" :model=\"${2:formData}\" label-width=\"${3:120px}\" label-position=\"left\" @submit.native.prevent>",
       "\t$4",
       "</el-form>"
     ]
@@ -756,7 +756,6 @@
       "\t\tref=\"formRef\"",
       "\t\t:model=\"state\"",
       "\t\tlabel-width=\"100px\"",
-      "\t\tlabel-suffix=\"：\"",
       "\t\t@submit.native.prevent",
       "\t\tlabel-position=\"left\"",
       "\t  >",
@@ -1069,7 +1068,9 @@
   },
   "dbregiontext": {
     "prefix": "dbregiontext",
-    "body": ["<db-region-text :region-id=\"regionId\" :service-code=\"SERVICE_CODE\" />"]
+    "body": [
+      "<db-region-text :region-id=\"regionId\" :service-code=\"SERVICE_CODE\" :regions-map.sync=\"regionsMap\"/>"
+    ]
   },
   "dbLazyComponent": {
     "prefix": "dblazy",
@@ -1100,5 +1101,15 @@
   "elementspiner": {
     "prefix": "spinner",
     "body": [" v-loading=\"true\"", "\t\t\t\telement-loading-spinner=\"el-icon-loading\""]
+  },
+  "db group panel": {
+    "prefix": "dbgrouppanel",
+    "body": [
+      " <dbGroupPanel title=\"分组面板demo\" class=\"w-400px\">",
+      "\t\t  <template #header>",
+      "\t\t\t<db-help-info info=\"请出剑，道友\" />",
+      "\t\t  </template>",
+      "\t\t</dbGroupPanel>"
+    ]
   }
 }
