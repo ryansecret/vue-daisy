@@ -1,3 +1,12 @@
+## [1.16.26](https://github.com/ryansecret/vue-daisy/compare/v1.16.25...v1.16.26) (2024-12-30)
+
+
+### Features
+
+* **snippets:** :sparkles: el-form add focus-on-invalid ([5ca40de](https://github.com/ryansecret/vue-daisy/commit/5ca40de2463ed514646b843c9fc4779305f67f54))
+
+
+
 ## [1.16.25](https://github.com/ryansecret/vue-daisy/compare/v1.16.24...v1.16.25) (2024-11-15)
 
 
