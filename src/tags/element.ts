@@ -331,7 +331,8 @@ export default {
       "validate-on-rule-change",
       "size",
       "disabled",
-      "validate"
+      "validate",
+      "focus-on-invalid"
     ],
     description:
       "Form consists of `input`, `radio`, `select`, `checkbox` and so on. With form, you can collect, verify and submit data.\n\n[Docs](https://j.jdcloud.com/jelement-next/jelement-docs/dev/index.html#/zh-CN/component/form)"

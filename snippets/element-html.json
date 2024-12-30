@@ -187,7 +187,7 @@
   "el-form": {
     "prefix": "el-form",
     "body": [
-      "<el-form ref=\"${1:formRef}\" :model=\"${2:formData}\" label-width=\"${3:120px}\" label-position=\"left\" @submit.native.prevent>",
+      "<el-form ref=\"${1:formRef}\" :model=\"${2:formData}\" label-width=\"${3:120px}\" label-position=\"left\" @submit.native.prevent focus-on-invalid>",
       "\t$4",
       "</el-form>"
     ]
@@ -758,6 +758,7 @@
       "\t\tlabel-width=\"100px\"",
       "\t\t@submit.native.prevent",
       "\t\tlabel-position=\"left\"",
+      "\t\tfocus-on-invalid",
       "\t  >",
       "\t  ",
       "\t  </el-form>",
