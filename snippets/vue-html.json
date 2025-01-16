@@ -176,5 +176,44 @@
       "\t  <div class=\"jc-page-content\" />",
       "\t</div>"
     ]
+  },
+  "jct-footer": {
+    "prefix": "jct-footer-sticky",
+    "body": [
+      "  <div class=\"jc-page-footer jc-page-footer-sticky z-1002\">",
+      "\t  <div class=\"jc-list__action-bar\">",
+      "\t\t<div class=\"jc-list__action-bar--right\">",
+      "\t\t  <el-pagination",
+      "\t\t\t:current-page=\"pageState.pageIndex\"",
+      "\t\t\t:page-sizes=\"[10, 20, 30, 50]\"",
+      "\t\t\t:page-size=\"pageState.pageSize\"",
+      "\t\t\tlayout=\"total, sizes, prev, pager, next,jumper\"",
+      "\t\t\t:total=\"pageState.totalCount\"",
+      "\t\t\t@size-change=\"handleSizeChange\"",
+      "\t\t\t@current-change=\"handleCurrentChange\"",
+      "\t\t  />",
+      "\t\t</div>",
+      "\t  </div>",
+      "\t</div>"
+    ]
+  },
+  "jct-name": {
+    "prefix": "jct-name",
+    "body": [
+      "\t<jcb-id-name-display",
+      "\t\t\t\t  :id=\"{ value: row.instanceId, copy: true }\"",
+      "\t\t\t\t  :name=\"{",
+      "\t\t\t\t\tvalue: row.instanceName,",
+      "\t\t\t\t\tlink: {",
+      "\t\t\t\t\t  name: 'detail',",
+      "\t\t\t\t\t  params: {",
+      "\t\t\t\t\t\tinstanceId: row.instanceId,",
+      "\t\t\t\t\t\tregionId",
+      "\t\t\t\t\t  },",
+      "\t\t\t\t\t  query: { ...(categoryCode && { categoryCode }) }",
+      "\t\t\t\t\t}",
+      "\t\t\t\t  }\"",
+      "\t\t\t\t/>"
+    ]
   }
 }
