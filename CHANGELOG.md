@@ -1,3 +1,12 @@
+## [1.16.27](https://github.com/ryansecret/vue-daisy/compare/v1.16.26...v1.16.27) (2025-01-16)
+
+
+### Features
+
+* **snippets:** :sparkles: add jct-footer jct-name ([4fab21c](https://github.com/ryansecret/vue-daisy/commit/4fab21c163ff65f150791bd7bb427498b5f34305))
+
+
+
 ## [1.16.26](https://github.com/ryansecret/vue-daisy/compare/v1.16.25...v1.16.26) (2024-12-30)
 
 

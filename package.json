@@ -2,7 +2,7 @@
   "name": "vue-daisy",
   "displayName": "vue-daisy",
   "description": "vue enhance extension for elementUI、@jdcloud/jelement-biz、@jdcloud/dbU",
-  "version": "1.16.26",
+  "version": "1.16.27",
   "publisher": "ryansecreat",
   "repository": {
     "url": "https://github.com/ryansecret/vue-daisy"
