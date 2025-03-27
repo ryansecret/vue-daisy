@@ -1,3 +1,12 @@
+## [1.16.28](https://github.com/ryansecret/vue-daisy/compare/v1.16.27...v1.16.28) (2025-03-27)
+
+
+### Features
+
+* **snippets:** :sparkles: add dbMaintainTime ([3c80b1c](https://github.com/ryansecret/vue-daisy/commit/3c80b1c2c572317132707d474f9eea307b661f11))
+
+
+
 ## [1.16.27](https://github.com/ryansecret/vue-daisy/compare/v1.16.26...v1.16.27) (2025-01-16)
 
 
