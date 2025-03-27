@@ -1112,5 +1112,18 @@
       "\t\t  </template>",
       "\t\t</dbGroupPanel>"
     ]
+  },
+  "dbMaintainTime": {
+    "prefix": "dbmaintain",
+    "body": [
+      "<dbMaintainTime",
+      "\t\t  :maintainTime=\"maintainTime\"",
+      "\t\t  :timeGap=\"4\"",
+      "\t\t  :timeStart=\"2\"",
+      "\t\t  :showTips=\"false\"",
+      "\t\t  :action=\"editMaintainTime\"",
+      "\t\t  :instance=\"null\"",
+      "\t\t></dbMaintainTime>"
+    ]
   }
 }
