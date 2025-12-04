@@ -1,3 +1,18 @@
+# [1.17.0](https://github.com/ryansecret/vue-daisy/compare/v1.16.28...v1.17.0) (2025-12-04)
+
+
+### Bug Fixes
+
+* improve type handling for attribute properties in CompatibilityProxy ([e4c8ec6](https://github.com/ryansecret/vue-daisy/commit/e4c8ec6a193f956d836dbca0824664c6ebf41467))
+
+
+### Features
+
+* **___CUSTOM___:** :sparkles: 同时发布到open vsx ([aceb365](https://github.com/ryansecret/vue-daisy/commit/aceb3651175e1d447cb42a5f1cdce171cfba1b3f))
+* add Vue Daisy VSCode extension development guidelines and core utilities ([06cee50](https://github.com/ryansecret/vue-daisy/commit/06cee50f45b1c370dcded57ad39f96329e7493c9))
+
+
+
 ## [1.16.28](https://github.com/ryansecret/vue-daisy/compare/v1.16.27...v1.16.28) (2025-03-27)
 
 
