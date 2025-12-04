@@ -381,7 +381,7 @@ const CompatibilityProxy = new Proxy(VueAttributes, {
       return [];
     }
 
-    return target[prop as keyof AttributeCollection];
+    return target[prop as unknown as string];
   },
 
   has(target: AttributeCollection, prop: string | symbol): boolean {

@@ -499,10 +499,12 @@ export default class ElementCompletionItemProvider implements CompletionItemProv
       if (attrItem.type === "boolean") {
         options = ["true", "false"];
       } else if (attrItem.type === "icon") {
-        options = ATTRS["icons"] || [];
+        const iconsAttr = ATTRS["icons"];
+        options = Array.isArray(iconsAttr) ? iconsAttr : iconsAttr?.options || [];
       } else if (attrItem.type === "shortcut-icon") {
         options = [];
-        const icons = ATTRS["icons"] || [];
+        const iconsAttr = ATTRS["icons"];
+        const icons = Array.isArray(iconsAttr) ? iconsAttr : iconsAttr?.options || [];
         icons.forEach((icon: string) => {
           options!.push(icon.replace(/^el-icon-/, ""));
         });
